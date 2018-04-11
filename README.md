@@ -14,10 +14,6 @@ npm install --save-dev @zendeskgarden/svg-icons
 The package contains a `src` folder with individual SVG icons along with
 a combined "spritemap" `dist` of SVG symbols.
 
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
-
 ## Usage
 
 Garden SVGs come in two flavors – monochrome and two-tone. The primary
