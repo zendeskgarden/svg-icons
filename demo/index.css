@@ -1,0 +1,17 @@
+svg {
+  vertical-align: top;
+  height: 1em;
+  width: 1em;
+}
+
+.c-menu__item .c-tag {
+  cursor: pointer;
+}
+
+.c-menu__item .c-range {
+  margin: -5px 0;
+}
+
+.c-range--inline .c-range__input {
+  width: 156px;
+}

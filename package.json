@@ -1,0 +1,58 @@
+{
+  "name": "@zendesk/garden-svg-icons",
+  "description": "Garden SVG icons",
+  "author": "Zendesk Garden <garden@zendesk.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://garden.zendesk.com/",
+  "repository": "https://github.com/zendeskgarden/svg-icons",
+  "bugs": {
+    "url": "https://github.com/zendeskgarden/svg-icons/issues"
+  },
+  "version": "3.0.0",
+  "main": "dist/index.svg",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
+    "format": "prettier-package-json --write && yarn format:optimize --quiet --recursive src/**",
+    "format:optimize": "svgo --config=.svgo.yml",
+    "lint": "eslint scripts/*.js",
+    "prepare": "yarn build",
+    "start": "yarn watch & live-server demo",
+    "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'master' ] && standard-version --no-verify",
+    "test": "yarn lint && yarn format && git diff --quiet",
+    "watch": "yarn build watch"
+  },
+  "devDependencies": {
+    "@zendesk/eslint-config-garden": "^4.1.0",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.1",
+    "gh-pages": "^1.1.0",
+    "gulp": "^4.0.0",
+    "gulp-file": "^0.4.0",
+    "gulp-svg-sprite": "^1.3.7",
+    "husky": "^0.15.0-rc.8",
+    "live-server": "^1.2.0",
+    "prettier-package-json": "^1.4.0",
+    "standard-version": "^4.3.0",
+    "svgo": "https://github.com/dabutvin/svgo#recursive"
+  },
+  "keywords": [
+    "garden",
+    "icons",
+    "svg",
+    "zendesk"
+  ],
+  "publishConfig": {
+    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn format",
+      "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn --ignore-scripts --pure-lockfile; fi",
+      "post-merge": "yarn --ignore-scripts --pure-lockfile"
+    }
+  }
+}
