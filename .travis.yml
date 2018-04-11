@@ -12,32 +12,23 @@ cache:
   directories:
     - node_modules
 
-before_install:
-  - npm config set @zendesk:registry https://zdrepo.jfrog.io/zdrepo/api/npm/npm/
-  - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:_password $ARTIFACTORY_PASSWORD
-  - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:username $ARTIFACTORY_USERNAME
-  - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:email $ARTIFACTORY_EMAIL
-  - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:always-auth true
-
 install: yarn --frozen-lockfile
 
-script: yarn test
-
 before_deploy:
+  - export NODE_DEBUG=gh-pages
   - find demo -type l | xargs sed -i '' || true # convert symlinks to regular files
-  - npm config set _auth $ARTIFACTORY_API_KEY
-  - npm config set email $ARTIFACTORY_EMAIL
 
 deploy:
-  - provider: pages
-    github_token: $GITHUB_TOKEN
-    local_dir: demo
+  - provider: script
+    script: scripts/gh-pages.js
     skip_cleanup: true
     on:
       branch: master
 
-  - provider: script
-    script: npm publish
+  - provider: npm
+    email: garden@zendesk.com
+    api_key: $NPM_TOKEN
+    skip_cleanup: true
     on:
       branch: master
       tags: true
