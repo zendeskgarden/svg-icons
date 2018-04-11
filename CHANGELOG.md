@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.0"></a>
+# 4.0.0 (2018-04-11)
+
+
+### Features
+
+* prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#1](https://github.com/zendeskgarden/svg-icons/issues/1)) ([008c4de](https://github.com/zendeskgarden/svg-icons/commit/008c4de))
+
+
+### BREAKING CHANGES
+
+* package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/zendeskgarden/svg-icons/compare/v2.5.0...v3.0.0) (2018-04-10)
 
