@@ -1,4 +1,4 @@
-# Garden SVG Icons [![Build Status](https://travis-ci.com/zendeskgarden/svg-icons.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/svg-icons)
+# Garden SVG Icons [![npm version](https://img.shields.io/npm/v/@zendeskgarden/svg-icons.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/svg-icons) [![Build Status](https://img.shields.io/travis/zendeskgarden/svg-icons/master.svg?style=flat-square)](https://travis-ci.org/zendeskgarden/svg-icons) [![Dependency Status](https://img.shields.io/david/dev/zendeskgarden/svg-icons.svg?style=flat-square)](https://david-dm.org/zendeskgarden/svg-icons?type=dev)
 
 > :seedling: Garden is a design system for Zendesk
 
@@ -8,15 +8,11 @@ products. All source icons are optimized for size + readability.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-svg-icons
+npm install --save-dev @zendeskgarden/svg-icons
 ```
 
 The package contains a `src` folder with individual SVG icons along with
 a combined "spritemap" `dist` of SVG symbols.
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
@@ -45,7 +41,7 @@ vary depending on the particular needs of your application.
   caching as any other JS asset.
 
   ```js
-  import ZendeskIcon from '@zendesk/garden-svg-icons/src/26/zendesk.svg';
+  import ZendeskIcon from '@zendeskgarden/svg-icons/src/26/zendesk.svg';
 
   class ZendeskButton extends React.Component {
     render() {
@@ -65,7 +61,7 @@ vary depending on the particular needs of your application.
 
   ```js
   "postcss-inline-svg": {
-    "path": "node_modules/@zendesk/garden-svg-icons/src"
+    "path": "node_modules/@zendeskgarden/svg-icons/src"
   }
   ```
 
