@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/svg-icons/issues"
   },
-  "version": "4.0.0",
+  "version": "4.0.1",
   "main": "dist/index.svg",
   "files": [
     "dist",
@@ -27,16 +27,16 @@
   },
   "devDependencies": {
     "@zendeskgarden/eslint-config": "^5.0.2",
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.18.2",
     "eslint-plugin-notice": "^0.6.7",
     "gh-pages": "^1.1.0",
     "gulp": "^4.0.0",
     "gulp-file": "^0.4.0",
     "gulp-svg-sprite": "^1.4.0",
-    "husky": "^0.15.0-rc.12",
+    "husky": "^1.0.0-rc.2",
     "live-server": "^1.2.0",
-    "prettier-package-json": "^1.5.1",
+    "prettier-package-json": "^1.6.0",
     "standard-version": "^4.3.0",
     "svgo": "https://github.com/dabutvin/svgo#recursive"
   },
