@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/svg-icons/issues"
   },
-  "version": "4.0.1",
+  "version": "4.1.0",
   "main": "dist/index.svg",
   "files": [
     "dist",

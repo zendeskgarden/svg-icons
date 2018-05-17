@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/zendeskgarden/svg-icons/compare/v4.0.1...v4.1.0) (2018-05-17)
+
+
+### Features
+
+* add wordmarks for The Zendesk Suite ([#4](https://github.com/zendeskgarden/svg-icons/issues/4)) ([ea7e86b](https://github.com/zendeskgarden/svg-icons/commit/ea7e86b))
+
+
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://github.com/zendeskgarden/svg-icons/compare/v4.0.0...v4.0.1) (2018-05-03)
 
