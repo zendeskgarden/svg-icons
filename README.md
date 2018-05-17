@@ -8,7 +8,7 @@ products. All source icons are optimized for size + readability.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/svg-icons
+npm install @zendeskgarden/svg-icons
 ```
 
 The package contains a `src` folder with individual SVG icons along with

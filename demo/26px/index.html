@@ -33,6 +33,12 @@
 
   .wordmark { transition: color .4s; }
 
+  .wordmark-capital-suite { width: 2em !important; }
+
+  .wordmark-capital-the { width: 1.5em !important; }
+
+  .wordmark-capital-zendesk { width: 3.35em !important; }
+
   .wordmark-chat { width: 1.8em !important; }
 
   .wordmark-connect { width: 3.27em !important; }
@@ -55,12 +61,13 @@
 
   .is-dark .wordmark { color: #FFF; }
 
-  .relationshape + .wordmark {
-    margin-top: .19em;
-    margin-left: .58em;
-  }
+  .relationshape ~ .wordmark { margin-top: .19em; }
+
+  .relationshape + .wordmark { margin-left: 1em; }
 
   .relationshape + .wordmark-inbox { margin-top: .15em; }
+
+  .relationshape ~ [class*='wordmark-capital'] { margin-top: .08em }
 
   .wordmark-zendesk + .wordmark { margin-left: .05em; }
   </style>
@@ -172,6 +179,20 @@
             <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-zendesk">
           </svg>
           <code class="c-code u-micro u-p-xs">&lt;svg id="zd-svg-icon-26-wordmark-zendesk"&gt;</code>
+        </span
+        ><span class="l-grid__item u-2/2 u-mb u-truncate">
+          <svg class="wordmark wordmark-capital-the">
+            <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-capital-the">
+          </svg>
+          <svg class="wordmark wordmark-capital-zendesk">
+            <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-capital-zendesk">
+          </svg>
+          <svg class="wordmark wordmark-capital-suite">
+            <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-capital-suite">
+          </svg>
+          <code class="c-code u-micro u-p-xs">&lt;svg id="zd-svg-icon-26-wordmark-capital-the"&gt;</code>
+          <code class="c-code u-micro u-p-xs">&lt;svg id="zd-svg-icon-26-wordmark-capital-zendesk"&gt;</code>
+          <code class="c-code u-micro u-p-xs">&lt;svg id="zd-svg-icon-26-wordmark-capital-suite"&gt;</code>
         </span>
       </div>
       <h2 class="u-beta u-mb">Wordmark Layout</h2>
@@ -310,6 +331,28 @@
             <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-talk">
           </svg>
         </span
+        ><span class="l-grid__item u-1/2 u-mb u-truncate">
+          <svg class="relationshape">
+            <use xlink:href="../index.svg#zd-svg-icon-26-zendesk">
+          </svg>
+          <svg class="wordmark wordmark-capital-the">
+            <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-capital-the">
+          </svg>
+          <svg class="wordmark wordmark-capital-zendesk">
+            <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-capital-zendesk">
+          </svg>
+          <svg class="wordmark wordmark-capital-suite">
+            <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-capital-suite">
+          </svg>
+        </span
+        ><span class="l-grid__item u-1/2 u-mb u-truncate">
+          <svg class="wordmark wordmark-capital-zendesk">
+            <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-capital-zendesk">
+          </svg>
+          <svg class="wordmark wordmark-capital-suite">
+            <use xlink:href="../index.svg#zd-svg-icon-26-wordmark-capital-suite">
+          </svg>
+        </span>
       </div>
     </div>
   </main>
