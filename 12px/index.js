@@ -142,6 +142,8 @@ Garden.svgIDs = [
   'zd-svg-icon-12-interlocking-rings-stroke',
   'zd-svg-icon-12-italic-fill',
   'zd-svg-icon-12-italic-stroke',
+  'zd-svg-icon-12-language-fill',
+  'zd-svg-icon-12-language-stroke',
   'zd-svg-icon-12-lifesaver-fill',
   'zd-svg-icon-12-lifesaver-stroke',
   'zd-svg-icon-12-lightning-bolt-fill',
