@@ -34,10 +34,10 @@
     "gulp": "^4.0.0",
     "gulp-file": "^0.4.0",
     "gulp-svg-sprite": "^1.4.0",
-    "husky": "^1.0.0-rc.6",
+    "husky": "^1.0.0-rc.8",
     "live-server": "^1.2.0",
     "prettier-package-json": "^1.6.0",
-    "standard-version": "^4.3.0",
+    "standard-version": "^4.4.0",
     "svgo": "https://github.com/dabutvin/svgo#recursive"
   },
   "keywords": [
