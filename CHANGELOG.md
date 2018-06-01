@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/zendeskgarden/svg-icons/compare/v4.2.0...v4.3.0) (2018-06-01)
+
+
+### Features
+
+* add 26px "user lock" icon ([#6](https://github.com/zendeskgarden/svg-icons/issues/6)) ([05ab6ee](https://github.com/zendeskgarden/svg-icons/commit/05ab6ee))
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/zendeskgarden/svg-icons/compare/v4.1.0...v4.2.0) (2018-05-23)
 
