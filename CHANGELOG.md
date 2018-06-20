@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/zendeskgarden/svg-icons/compare/v4.3.1...v4.4.0) (2018-06-20)
+
+
+### Features
+
+* add `circle-full`, `location`, `notes`, and `smile-slight` icons ([#8](https://github.com/zendeskgarden/svg-icons/issues/8)) ([1f40021](https://github.com/zendeskgarden/svg-icons/commit/1f40021))
+
+
+
 <a name="4.3.1"></a>
 ## [4.3.1](https://github.com/zendeskgarden/svg-icons/compare/v4.3.0...v4.3.1) (2018-06-12)
 
