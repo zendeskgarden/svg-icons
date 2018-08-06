@@ -1,5 +1,9 @@
 {
   "extends": [
     "config:base"
+  ],
+  "rebaseStalePrs": true,
+  "reviewers": [
+    "zendeskgarden/maintainers"
   ]
 }
