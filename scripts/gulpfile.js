@@ -28,7 +28,7 @@ function toJS(source) {
       if (_file.endsWith('.svg')) {
         const basename = path.basename(_file, '.svg');
         const suffix = `${dimension}${config.shape.id.separator}${basename}`;
-        const id = config.shape.id.generator.replace(/%s/g, suffix);
+        const id = config.shape.id.generator.replace(/%s/gu, suffix);
 
         retVal.push(`'${id}'`);
       }
