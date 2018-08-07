@@ -4,6 +4,8 @@
   ],
   "rebaseStalePrs": true,
   "reviewers": [
-    "zendeskgarden/maintainers"
+    "austin94",
+    "ryanseddon",
+    "jzempel"
   ]
 }
