@@ -78,9 +78,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@zendeskgarden/eslint-config@7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-7.0.1.tgz#5573d2aa492c52e7dbdf9561a8c69210b1abfb22"
+"@zendeskgarden/eslint-config@7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-7.0.2.tgz#aa682cf8f67f555f3c7ab2f27fe87ea9e75085be"
 
 JSONStream@^1.0.4:
   version "1.3.2"
