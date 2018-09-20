@@ -38,7 +38,7 @@
     "live-server": "1.2.0",
     "prettier-package-json": "2.0.0",
     "standard-version": "4.4.0",
-    "svgo": "1.0.5"
+    "svgo": "1.1.1"
   },
   "keywords": [
     "garden",
