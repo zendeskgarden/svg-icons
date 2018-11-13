@@ -20,7 +20,7 @@
     "format:optimize": "svgo --config=.svgo.yml",
     "lint": "eslint scripts/*.js",
     "prepare": "yarn build",
-    "start": "yarn watch & live-server demo",
+    "start": "yarn build && yarn watch & live-server demo",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'master' ] && standard-version --no-verify",
     "test": "yarn lint && yarn format && git diff --quiet",
     "watch": "yarn build watch"
