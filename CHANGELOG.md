@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.5.0"></a>
+# [4.5.0](https://github.com/zendeskgarden/svg-icons/compare/v4.4.5...v4.5.0) (2018-11-13)
+
+
+### Features
+
+* add new sunshine & sell icons ([#40](https://github.com/zendeskgarden/svg-icons/issues/40)) ([477eeab](https://github.com/zendeskgarden/svg-icons/commit/477eeab))
+
+
+
 <a name="4.4.5"></a>
 ## [4.4.5](https://github.com/zendeskgarden/svg-icons/compare/v4.4.4...v4.4.5) (2018-09-05)
 
