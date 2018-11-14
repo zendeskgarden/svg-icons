@@ -193,7 +193,6 @@ Garden.svgIDs = [
   'zd-svg-icon-16-overflow-stroke',
   'zd-svg-icon-16-panels-fill',
   'zd-svg-icon-16-panels-stroke',
-  'zd-svg-icon-16-paperclip-angle',
   'zd-svg-icon-16-paperclip',
   'zd-svg-icon-16-pause-fill',
   'zd-svg-icon-16-pause-stroke',
