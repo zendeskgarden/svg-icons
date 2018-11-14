@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/zendeskgarden/svg-icons/compare/v4.5.0...v5.0.0) (2018-11-14)
+
+
+### Bug Fixes
+
+* remove `paperclip-angle` icons ([#43](https://github.com/zendeskgarden/svg-icons/issues/43)) ([dd8fc51](https://github.com/zendeskgarden/svg-icons/commit/dd8fc51))
+
+
+### BREAKING CHANGES
+
+* prunes outdated designs that are not intended for use.
+
+
+
 <a name="4.5.0"></a>
 # [4.5.0](https://github.com/zendeskgarden/svg-icons/compare/v4.4.5...v4.5.0) (2018-11-13)
 
