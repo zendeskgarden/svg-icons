@@ -4,6 +4,7 @@
   ],
   "rebaseStalePrs": true,
   "reviewers": [
+    "austin94",
     "ryanseddon",
     "jzempel"
   ],
