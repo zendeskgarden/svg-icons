@@ -14,7 +14,7 @@ $(document).ready(function() {
     var size = $(this).val();
 
     $('.c-main svg').css('fontSize', size + 'px');
-    $('.js-size-text').html(size).toggleClass('u-bg-submarine', ((size % initialSize) != 0));
+    $('.js-size-text').html(size).toggleClass('c-tag--blue', ((size % initialSize) != 0));
     $('code').toggleClass('u-display-none', (size != initialSize));
   }).click(function() {
     return false;
