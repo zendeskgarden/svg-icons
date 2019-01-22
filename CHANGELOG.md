@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.1.0"></a>
+# [5.1.0](https://github.com/zendeskgarden/svg-icons/compare/v5.0.0...v5.1.0) (2019-01-22)
+
+
+### Features
+
+* new `cursor-arrow` and `megaphone` icons ([#53](https://github.com/zendeskgarden/svg-icons/issues/53)) ([9849d42](https://github.com/zendeskgarden/svg-icons/commit/9849d42))
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/zendeskgarden/svg-icons/compare/v4.5.0...v5.0.0) (2018-11-14)
 
