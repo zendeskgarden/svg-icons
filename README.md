@@ -26,7 +26,7 @@ external source).
 
 ```html
 <svg style="color: blue; fill: red;">
-  <use xlink:href="index.svg#zd-svg-icon-14-sort">
+  <use xlink:href="index.svg#zd-svg-icon-12-sort-fill">
 </svg>
 ```
 
@@ -90,7 +90,7 @@ vary depending on the particular needs of your application.
 
   ```html
   <svg>
-    <use xlink:href="/path/to/index.svg#zd-svg-icon-14-chevron">
+    <use xlink:href="/path/to/index.svg#zd-svg-icon-16-chevron-down-stroke">
   </svg>
   ```
 
