@@ -3,7 +3,7 @@ $(document).ready(function() {
     if (value.indexOf('wordmark') === -1) {
       $('.c-main__body > .l-grid:first-child').append('<span class="l-grid__item u-1/4 u-mb u-truncate">' +
         '<svg><use xlink:href="../index.svg#' + value + '"></svg>\n' +
-        '<code class="c-code u-micro u-p-xs">&lt;svg id="' + value + '"&gt;</code>' +
+        '<code class="c-code u-fs-xs u-p-xs">&lt;svg id="' + value + '"&gt;</code>' +
       '</span>');
     }
   });
