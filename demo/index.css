@@ -15,3 +15,5 @@ svg {
 .c-range--inline .c-range__input {
   width: 156px;
 }
+
+.u-fs-xs { font-size: 10px !important; }
