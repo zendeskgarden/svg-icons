@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.0"></a>
+# [5.2.0](https://github.com/zendeskgarden/svg-icons/compare/v5.1.0...v5.2.0) (2019-02-06)
+
+
+### Features
+
+* add 26px `answer-bot` and `building` icons ([#56](https://github.com/zendeskgarden/svg-icons/issues/56)) ([5f34f0f](https://github.com/zendeskgarden/svg-icons/commit/5f34f0f))
+
+
+
 <a name="5.1.0"></a>
 # [5.1.0](https://github.com/zendeskgarden/svg-icons/compare/v5.0.0...v5.1.0) (2019-01-22)
 
