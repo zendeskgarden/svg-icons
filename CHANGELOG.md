@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.3.0"></a>
+# [5.3.0](https://github.com/zendeskgarden/svg-icons/compare/v5.2.0...v5.3.0) (2019-02-12)
+
+
+### Features
+
+* add emoji picker icons ([#59](https://github.com/zendeskgarden/svg-icons/issues/59)) ([5f83f32](https://github.com/zendeskgarden/svg-icons/commit/5f83f32))
+
+
+
 <a name="5.2.0"></a>
 # [5.2.0](https://github.com/zendeskgarden/svg-icons/compare/v5.1.0...v5.2.0) (2019-02-06)
 
