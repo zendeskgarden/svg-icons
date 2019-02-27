@@ -26,7 +26,7 @@
     "watch": "yarn build watch"
   },
   "devDependencies": {
-    "@zendeskgarden/eslint-config": "7.1.1",
+    "@zendeskgarden/eslint-config": "7.1.2",
     "babel-eslint": "10.0.1",
     "eslint": "5.14.1",
     "eslint-plugin-notice": "0.7.8",
