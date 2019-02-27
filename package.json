@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
-    "format": "prettier-package-json --write && yarn format:optimize --quiet src/**",
+    "format": "prettier-package-json --write && yarn format:optimize src --recursive --quiet",
     "format:optimize": "svgo --config=.svgo.yml",
     "lint": "eslint scripts/*.js",
     "prepare": "yarn build",
