@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
-    "format": "prettier-package-json --write && yarn format:optimize --quiet src/**",
+    "format": "prettier-package-json --write && yarn format:optimize src --recursive --quiet",
     "format:optimize": "svgo --config=.svgo.yml",
     "lint": "eslint scripts/*.js",
     "prepare": "yarn build",
@@ -38,7 +38,7 @@
     "live-server": "1.2.1",
     "prettier-package-json": "2.1.0",
     "standard-version": "5.0.0",
-    "svgo": "1.1.1"
+    "svgo": "1.2.0"
   },
   "keywords": [
     "garden",
