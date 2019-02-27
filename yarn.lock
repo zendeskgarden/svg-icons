@@ -90,10 +90,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@zendeskgarden/eslint-config@7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-7.1.1.tgz#5c4df570da14b57d7a9bede1df8ee5fdbd662feb"
-  integrity sha512-yKBEk8wh1mPq6ZBYN8Mh3oFCfIzb1csfn7yKW+LFxpsZpaZlU5+d83AgnxLeGf0r/IbqCX6arf8raAhC+Cx56A==
+"@zendeskgarden/eslint-config@7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-7.1.2.tgz#f1a4431c6e1a43c7f42f37969b9cd101657d9dc8"
+  integrity sha512-0Ku0liV4U+dX2nQ2IQr9tqXU/428CWSJbH7/WXMSV1swcVhYOCxhEhwe3GpmOy/tTTDtKG4nB+0sE2uKVLLkhA==
 
 JSONStream@^1.0.4:
   version "1.3.2"
