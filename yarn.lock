@@ -1638,10 +1638,10 @@ escape-string-regexp@1.0.5, escape-string-regexp@^1.0.2, escape-string-regexp@^1
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-notice@0.7.7:
-  version "0.7.7"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.7.7.tgz#cc47d5b52b5907a23b1dcc008e69ab5607ee8789"
-  integrity sha512-kHVNObyW2QPEqunQyZiV9loKRV04IuDv096rtYJSziyDASOSPcjl2eLibQdw8BFNbb/DNZj3obN8iMAeydL2hg==
+eslint-plugin-notice@0.7.8:
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.7.8.tgz#c6887927061fcf1c638c0559476045a521703006"
+  integrity sha512-a18VwxiBp4TmXRVpx7T5D4ilHnMS1Gq/5OMUriCcJGHD72Cbji7qVk19DGOW9vBHnJJKeg0yU95a7/o8JQoMCw==
   dependencies:
     find-root "^1.1.0"
     lodash ">=2.4.0"
