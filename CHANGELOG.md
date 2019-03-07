@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.3.1](https://github.com/zendeskgarden/svg-icons/compare/v5.3.0...v5.3.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* refine icon squared vs. rounded strokes ([#70](https://github.com/zendeskgarden/svg-icons/issues/70)) ([055cee7](https://github.com/zendeskgarden/svg-icons/commit/055cee7))
+
+
+
 <a name="5.3.0"></a>
 # [5.3.0](https://github.com/zendeskgarden/svg-icons/compare/v5.2.0...v5.3.0) (2019-02-12)
 
