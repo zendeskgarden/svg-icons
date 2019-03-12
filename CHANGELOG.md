@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.0.0](https://github.com/zendeskgarden/svg-icons/compare/v5.3.1...v6.0.0) (2019-03-12)
+
+
+### chore
+
+* remove all 14px icons ([#71](https://github.com/zendeskgarden/svg-icons/issues/71)) ([5a3d203](https://github.com/zendeskgarden/svg-icons/commit/5a3d203))
+
+
+### BREAKING CHANGES
+
+* removes the following deprecated icons:
+* **ALL** `14/*.svg`
+* `26/inbox.svg`
+
+
+
 ## [5.3.1](https://github.com/zendeskgarden/svg-icons/compare/v5.3.0...v5.3.1) (2019-03-07)
 
 
