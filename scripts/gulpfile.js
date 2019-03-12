@@ -48,13 +48,6 @@ gulp.task('demo/12px', () => {
     .pipe(gulp.dest('demo/12px'));
 });
 
-gulp.task('demo/14px', () => {
-  const indexJS = toJS('src/14');
-
-  return file('index.js', indexJS, { src: true })
-    .pipe(gulp.dest('demo/14px'));
-});
-
 gulp.task('demo/16px', () => {
   const indexJS = toJS('src/16');
 
@@ -71,7 +64,6 @@ gulp.task('demo/26px', () => {
 
 gulp.task('demo', gulp.parallel(
   'demo/12px',
-  'demo/14px',
   'demo/16px',
   'demo/26px'
 ));

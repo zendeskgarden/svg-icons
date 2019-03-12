@@ -28,7 +28,6 @@ Garden.svgIDs = [
   'zd-svg-icon-26-group-fill',
   'zd-svg-icon-26-help-center',
   'zd-svg-icon-26-home-fill',
-  'zd-svg-icon-26-inbox',
   'zd-svg-icon-26-knowledge-base',
   'zd-svg-icon-26-line-chart',
   'zd-svg-icon-26-macro',
