@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.1.0](https://github.com/zendeskgarden/svg-icons/compare/v6.0.0...v6.1.0) (2019-03-21)
+
+
+### Features
+
+* add sunshine wordmark ([#74](https://github.com/zendeskgarden/svg-icons/issues/74)) ([db26da2](https://github.com/zendeskgarden/svg-icons/commit/db26da2))
+
+
+
 # [6.0.0](https://github.com/zendeskgarden/svg-icons/compare/v5.3.1...v6.0.0) (2019-03-12)
 
 
