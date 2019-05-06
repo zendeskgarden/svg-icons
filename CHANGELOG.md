@@ -1,6 +1,15 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [6.2.0](https://github.com/zendeskgarden/svg-icons/compare/v6.1.1...v6.2.0) (2019-05-06)
+
+
+### Features
+
+* add `horizontal-rule` and `line-item-rtl` icons ([#82](https://github.com/zendeskgarden/svg-icons/issues/82)) ([c784465](https://github.com/zendeskgarden/svg-icons/commit/c784465))
+
+
 
 ## [6.1.1](https://github.com/zendeskgarden/svg-icons/compare/v6.1.0...v6.1.1) (2019-03-28)
 
