@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.3.0](https://github.com/zendeskgarden/svg-icons/compare/v6.2.0...v6.3.0) (2019-05-17)
+
+
+### Features
+
+* add new `at` icons and update `sunshine` icon ([#84](https://github.com/zendeskgarden/svg-icons/issues/84)) ([c10c34c](https://github.com/zendeskgarden/svg-icons/commit/c10c34c))
+
+
+
 ## [6.2.0](https://github.com/zendeskgarden/svg-icons/compare/v6.1.1...v6.2.0) (2019-05-06)
 
 
