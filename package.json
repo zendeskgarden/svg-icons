@@ -29,7 +29,7 @@
     "@zendeskgarden/eslint-config": "7.2.1",
     "babel-eslint": "10.0.1",
     "eslint": "5.16.0",
-    "eslint-plugin-notice": "0.7.8",
+    "eslint-plugin-notice": "0.8.8",
     "gh-pages": "2.0.1",
     "gulp": "4.0.2",
     "gulp-file": "0.4.0",
