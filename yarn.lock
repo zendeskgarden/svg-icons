@@ -1736,13 +1736,13 @@ escape-string-regexp@1.0.5, escape-string-regexp@^1.0.2, escape-string-regexp@^1
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-notice@0.7.8:
-  version "0.7.8"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.7.8.tgz#c6887927061fcf1c638c0559476045a521703006"
-  integrity sha512-a18VwxiBp4TmXRVpx7T5D4ilHnMS1Gq/5OMUriCcJGHD72Cbji7qVk19DGOW9vBHnJJKeg0yU95a7/o8JQoMCw==
+eslint-plugin-notice@0.8.8:
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.8.8.tgz#ed13958e3d5c837c5bb19d45b4c83618e3dd80ab"
+  integrity sha512-i6aPKIfp2Uaki2ppN9hHxYz5ZvIyubxvaWkEtLLU66Yzw288iuQFkQ4DN3zBzJktMu6NWh8SVLuAvYu0XFfZmA==
   dependencies:
     find-root "^1.1.0"
-    lodash ">=2.4.0"
+    lodash "^4.17.11"
     metric-lcs "^0.1.2"
 
 eslint-scope@3.7.1:
@@ -3673,7 +3673,7 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
-lodash@>=2.4.0, lodash@^4.14.0, lodash@^4.2.1:
+lodash@^4.14.0, lodash@^4.2.1:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
   integrity sha512-svL3uiZf1RwhH+cWrfZn3A4+U58wbP0tGVTLQPbjplZxZ8ROD9VLuNgsRniTlLe7OlSqR79RUehXgpBW/s0IQw==
