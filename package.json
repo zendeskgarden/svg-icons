@@ -30,7 +30,7 @@
     "babel-eslint": "10.0.2",
     "eslint": "6.1.0",
     "eslint-plugin-notice": "0.8.8",
-    "gh-pages": "2.0.1",
+    "gh-pages": "2.1.0",
     "gulp": "4.0.2",
     "gulp-file": "0.4.0",
     "gulp-svg-sprite": "1.5.0",
