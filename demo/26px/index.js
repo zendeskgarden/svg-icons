@@ -56,6 +56,7 @@ Garden.svgIDs = [
   'zd-svg-icon-26-wordmark-chat',
   'zd-svg-icon-26-wordmark-connect',
   'zd-svg-icon-26-wordmark-explore',
+  'zd-svg-icon-26-wordmark-gather',
   'zd-svg-icon-26-wordmark-guide',
   'zd-svg-icon-26-wordmark-help-center',
   'zd-svg-icon-26-wordmark-inbox',
