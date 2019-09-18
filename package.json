@@ -38,6 +38,7 @@
     "live-server": "1.2.1",
     "prettier-package-json": "2.1.0",
     "standard-version": "7.0.0",
+    "svglint": "1.0.5",
     "svgo": "1.3.0"
   },
   "keywords": [
