@@ -1,6 +1,5 @@
 {
   "extends": ["config:base", "group:allNonMajor"],
   "rebaseStalePrs": true,
-  "reviewers": ["team:maintainers"],
   "schedule": ["every 2 weeks on Tuesday"]
 }
