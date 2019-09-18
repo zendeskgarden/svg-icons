@@ -28,7 +28,7 @@
   "devDependencies": {
     "@zendeskgarden/eslint-config": "9.0.0",
     "babel-eslint": "10.0.3",
-    "eslint": "6.3.0",
+    "eslint": "6.4.0",
     "eslint-plugin-notice": "0.8.9",
     "gh-pages": "2.1.1",
     "gulp": "4.0.2",
