@@ -296,6 +296,8 @@ Garden.svgIDs = [
   'zd-svg-icon-16-translation-updated-stroke',
   'zd-svg-icon-16-trash-fill',
   'zd-svg-icon-16-trash-stroke',
+  'zd-svg-icon-16-twitter-fill',
+  'zd-svg-icon-16-twitter-stroke',
   'zd-svg-icon-16-underline-fill',
   'zd-svg-icon-16-underline-stroke',
   'zd-svg-icon-16-upload-fill',
