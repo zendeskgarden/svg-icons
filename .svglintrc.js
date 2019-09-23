@@ -10,7 +10,7 @@ module.exports = {
       },
       {
         'rule::selector': 'svg',
-        viewBox: /^0 0/u
+        'viewBox': /^0 0/u
       }
     ],
     custom: [
