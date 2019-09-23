@@ -2,14 +2,14 @@ module.exports = {
   rules: {
     attr: [
       {
-        "fill-rule": false
+        'fill-rule': false
       },
       {
-        "rule::selector": "circle",
-        "stroke-linejoin": false
+        'rule::selector': 'circle',
+        'stroke-linejoin': false
       },
       {
-        "rule::selector": "svg",
+        'rule::selector': 'svg',
         viewBox: /^0 0/u
       }
     ],
@@ -19,7 +19,7 @@ module.exports = {
         const fillCurrentColor = $.find('[fill="currentColor"]');
 
         if (strokeCurrentColor.length + fillCurrentColor.length === 0) {
-          reporter.error("Missing `currentColor`", null, ast);
+          reporter.error('Missing `currentColor`', null, ast);
         }
       }
     ]
