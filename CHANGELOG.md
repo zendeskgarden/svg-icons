@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.4.0](https://github.com/zendeskgarden/svg-icons/compare/v6.3.1...v6.4.0) (2019-09-24)
+
+
+### Features
+
+* add new icons (fb, twitter, slack, whatsapp) ([#120](https://github.com/zendeskgarden/svg-icons/issues/120)) ([350cdf4](https://github.com/zendeskgarden/svg-icons/commit/350cdf4))
+
 ### [6.3.1](https://github.com/zendeskgarden/svg-icons/compare/v6.3.0...v6.3.1) (2019-07-18)
 
 
