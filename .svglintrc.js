@@ -5,6 +5,10 @@ module.exports = {
         'fill-rule': false
       },
       {
+        'rule::selector': 'circle',
+        'stroke-linejoin': false
+      },
+      {
         'rule::selector': 'svg',
         'viewBox': /^0 0/u
       }
