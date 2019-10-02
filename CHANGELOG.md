@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.5.0](https://github.com/zendeskgarden/svg-icons/compare/v6.4.0...v6.5.0) (2019-10-02)
+
+
+### Features
+
+* add 26px `platform` icon ([#121](https://github.com/zendeskgarden/svg-icons/issues/121)) ([2007763](https://github.com/zendeskgarden/svg-icons/commit/2007763))
+
 ## [6.4.0](https://github.com/zendeskgarden/svg-icons/compare/v6.3.1...v6.4.0) (2019-09-24)
 
 
