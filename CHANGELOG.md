@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.6.0](https://github.com/zendeskgarden/svg-icons/compare/v6.5.0...v6.6.0) (2019-10-03)
+
+
+### Features
+
+* add `gather` product icons ([#122](https://github.com/zendeskgarden/svg-icons/issues/122)) ([49f762f](https://github.com/zendeskgarden/svg-icons/commit/49f762f))
+
 ## [6.5.0](https://github.com/zendeskgarden/svg-icons/compare/v6.4.0...v6.5.0) (2019-10-02)
 
 
