@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/svg-icons/issues"
   },
-  "version": "6.3.1",
+  "version": "6.5.0",
   "main": "dist/index.svg",
   "files": [
     "dist",
@@ -18,26 +18,29 @@
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
     "format": "prettier-package-json --write && yarn format:optimize src --recursive --quiet",
     "format:optimize": "svgo --config=.svgo.yml",
-    "lint": "eslint scripts/*.js",
+    "lint": "yarn lint:js && yarn lint:svg",
+    "lint:js": "eslint scripts/*.js",
+    "lint:svg": "svglint src/**/*.svg",
     "prepare": "yarn build",
     "start": "yarn build && yarn watch & live-server demo",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'master' ] && standard-version --no-verify",
-    "test": "yarn lint && yarn format && git diff --quiet",
+    "test": "yarn format && yarn lint && git diff --quiet",
     "watch": "yarn build watch"
   },
   "devDependencies": {
-    "@zendeskgarden/eslint-config": "7.2.2",
-    "babel-eslint": "10.0.2",
-    "eslint": "6.1.0",
-    "eslint-plugin-notice": "0.8.8",
+    "@zendeskgarden/eslint-config": "10.0.0",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.4.0",
+    "eslint-plugin-notice": "0.8.9",
     "gh-pages": "2.1.1",
     "gulp": "4.0.2",
     "gulp-file": "0.4.0",
     "gulp-svg-sprite": "1.5.0",
-    "husky": "3.0.3",
+    "husky": "3.0.5",
     "live-server": "1.2.1",
     "prettier-package-json": "2.1.0",
     "standard-version": "7.0.0",
+    "svglint": "1.0.5",
     "svgo": "1.3.0"
   },
   "keywords": [

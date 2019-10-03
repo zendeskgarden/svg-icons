@@ -34,6 +34,7 @@ Garden.svgIDs = [
   'zd-svg-icon-26-moderation',
   'zd-svg-icon-26-organization',
   'zd-svg-icon-26-person',
+  'zd-svg-icon-26-platform',
   'zd-svg-icon-26-play',
   'zd-svg-icon-26-relationshape-chat',
   'zd-svg-icon-26-relationshape-connect',

@@ -1,12 +1,5 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base", "group:allNonMajor"],
   "rebaseStalePrs": true,
-  "reviewers": [
-    "austin94",
-    "ryanseddon",
-    "jzempel"
-  ],
-  "schedule": ["on Wednesday"]
+  "schedule": ["every 2 weeks on Tuesday"]
 }
