@@ -48,6 +48,7 @@ Garden.svgIDs = [
   'zd-svg-icon-26-search',
   'zd-svg-icon-26-security',
   'zd-svg-icon-26-settings-fill',
+  'zd-svg-icon-26-shapes',
   'zd-svg-icon-26-sunshine',
   'zd-svg-icon-26-user-lock',
   'zd-svg-icon-26-views-fill',
