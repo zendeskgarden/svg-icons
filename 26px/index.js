@@ -39,6 +39,7 @@ Garden.svgIDs = [
   'zd-svg-icon-26-relationshape-chat',
   'zd-svg-icon-26-relationshape-connect',
   'zd-svg-icon-26-relationshape-explore',
+  'zd-svg-icon-26-relationshape-garden',
   'zd-svg-icon-26-relationshape-gather',
   'zd-svg-icon-26-relationshape-guide',
   'zd-svg-icon-26-relationshape-message',
