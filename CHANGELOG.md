@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.8.1](https://github.com/zendeskgarden/svg-icons/compare/v6.8.0...v6.8.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* revise grid 2x2 icon ([#129](https://github.com/zendeskgarden/svg-icons/issues/129)) ([72db388](https://github.com/zendeskgarden/svg-icons/commit/72db38853f7b1f19369a420d9affeb5938ea8069))
+
 ## [6.8.0](https://github.com/zendeskgarden/svg-icons/compare/v6.7.0...v6.8.0) (2019-11-12)
 
 
