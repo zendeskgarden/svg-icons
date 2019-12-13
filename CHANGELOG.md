@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.9.0](https://github.com/zendeskgarden/svg-icons/compare/v6.8.1...v6.9.0) (2019-12-13)
+
+
+### Features
+
+* add reach wordmark ([#133](https://github.com/zendeskgarden/svg-icons/issues/133)) ([95876da](https://github.com/zendeskgarden/svg-icons/commit/95876dac4cc873510af71115050c4c6b32d924f6))
+
 ### [6.8.1](https://github.com/zendeskgarden/svg-icons/compare/v6.8.0...v6.8.1) (2019-11-20)
 
 
