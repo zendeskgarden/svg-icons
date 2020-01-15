@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.10.0](https://github.com/zendeskgarden/svg-icons/compare/v6.9.0...v6.10.0) (2020-01-23)
+
+
+### Features
+
+* add `linkedin` icons ([#139](https://github.com/zendeskgarden/svg-icons/issues/139)) ([6d0fd7e](https://github.com/zendeskgarden/svg-icons/commit/6d0fd7e7831f9098e0165ad697d1735da5c4a153))
+
 ## [6.9.0](https://github.com/zendeskgarden/svg-icons/compare/v6.8.1...v6.9.0) (2019-12-13)
 
 
