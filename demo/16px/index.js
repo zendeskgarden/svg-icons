@@ -173,6 +173,8 @@ Garden.svgIDs = [
   'zd-svg-icon-16-line-graph-stroke',
   'zd-svg-icon-16-link-fill',
   'zd-svg-icon-16-link-stroke',
+  'zd-svg-icon-16-linkedin-fill',
+  'zd-svg-icon-16-linkedin-stroke',
   'zd-svg-icon-16-list-bullet-fill',
   'zd-svg-icon-16-list-bullet-stroke',
   'zd-svg-icon-16-list-number-fill',
