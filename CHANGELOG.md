@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.11.0](https://github.com/zendeskgarden/svg-icons/compare/v6.10.0...v6.11.0) (2020-02-19)
+
+
+### Features
+
+* add `overflow-vertical` icons ([#141](https://github.com/zendeskgarden/svg-icons/issues/141)) ([228abfc](https://github.com/zendeskgarden/svg-icons/commit/228abfcfd7bf504280409b1349d2926b24b54c20))
+
 ## [6.10.0](https://github.com/zendeskgarden/svg-icons/compare/v6.9.0...v6.10.0) (2020-01-23)
 
 
