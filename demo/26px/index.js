@@ -54,6 +54,8 @@ Garden.svgIDs = [
   'zd-svg-icon-26-user-lock',
   'zd-svg-icon-26-views-fill',
   'zd-svg-icon-26-widget',
+  'zd-svg-icon-26-wordmark-bold-suite',
+  'zd-svg-icon-26-wordmark-bold-support',
   'zd-svg-icon-26-wordmark-capital-suite',
   'zd-svg-icon-26-wordmark-capital-the',
   'zd-svg-icon-26-wordmark-capital-zendesk',
