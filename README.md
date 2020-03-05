@@ -34,23 +34,27 @@ Once installed, SVG icons may be accessed in a variety of ways. The
 following list demonstrates several possibilities, however usage will
 vary depending on the particular needs of your application.
 
-* **JavaScript**
+- **JavaScript**
 
   In the following snippet, a source SVG is loaded just like any other
   JS module. SVGs loaded in this manner will benefit from the same
   caching as any other JS asset.
 
   ```js
-  import ZendeskIcon from '@zendeskgarden/svg-icons/src/26/zendesk.svg';
+  import ZendeskIcon from "@zendeskgarden/svg-icons/src/26/zendesk.svg";
 
   class ZendeskButton extends React.Component {
     render() {
-      return <button><ZendeskIcon /></button>;
+      return (
+        <button>
+          <ZendeskIcon />
+        </button>
+      );
     }
   }
   ```
 
-* **PostCSS**
+- **PostCSS**
 
   Several Garden [CSS
   Components](https://github.com/zendeskgarden/css-components) utilize
@@ -69,7 +73,7 @@ vary depending on the particular needs of your application.
 
   ```css
   .icon {
-    background-image: svg-load('14/remove.svg', color: #007FAB);
+    background-image: svg-load("14/remove.svg", color: #007fab);
   }
   ```
 
@@ -82,7 +86,7 @@ vary depending on the particular needs of your application.
   }
   ```
 
-* **Spritemap**
+- **Spritemap**
 
   The main distribution from the npm package is an SVG "spritemap"
   containing all source icons as `<symbol>` elements. Once that file is
@@ -100,7 +104,7 @@ vary depending on the particular needs of your application.
   [svg4everybody](https://github.com/jonathantneal/svg4everybody) to
   compensate for browsers (IE9-11) that can't handle external SVG content.
 
-* **Build pipeline**
+- **Build pipeline**
 
   There are numerous plugins for handling SVG files via an asset bundler
   (webpack, gulp, grunt, etc.). Search
@@ -124,6 +128,6 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
-Copyright 2019 Zendesk
+Copyright 2020 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)
