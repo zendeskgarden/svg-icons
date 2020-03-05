@@ -1,4 +1,11 @@
-# Garden SVG Icons [![npm version](https://img.shields.io/npm/v/@zendeskgarden/svg-icons.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/svg-icons) [![Build Status](https://img.shields.io/travis/zendeskgarden/svg-icons/master.svg?style=flat-square)](https://travis-ci.org/zendeskgarden/svg-icons) [![Dependency Status](https://img.shields.io/david/dev/zendeskgarden/svg-icons.svg?style=flat-square)](https://david-dm.org/zendeskgarden/svg-icons?type=dev)
+# Garden SVG Icons [![npm version][npm version badge]][npm version link] [![Build Status][build status badge]][build status link] [![Dependency Status][dependency status badge]][dependency status link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/svg-icons
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/svg-icons
+[build status badge]: https://flat.badgen.net/circleci/github/zendeskgarden/svg-icons/master?label=build
+[build status link]: https://circleci.com/gh/zendeskgarden/svg-icons/tree/master
+[dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/svg-icons?label=dependencies
+[dependency status link]: https://david-dm.org/zendeskgarden/svg-icons?type=dev
 
 > :seedling: Garden is a design system for Zendesk
 
@@ -34,23 +41,27 @@ Once installed, SVG icons may be accessed in a variety of ways. The
 following list demonstrates several possibilities, however usage will
 vary depending on the particular needs of your application.
 
-* **JavaScript**
+- **JavaScript**
 
   In the following snippet, a source SVG is loaded just like any other
   JS module. SVGs loaded in this manner will benefit from the same
   caching as any other JS asset.
 
   ```js
-  import ZendeskIcon from '@zendeskgarden/svg-icons/src/26/zendesk.svg';
+  import ZendeskIcon from "@zendeskgarden/svg-icons/src/26/zendesk.svg";
 
   class ZendeskButton extends React.Component {
     render() {
-      return <button><ZendeskIcon /></button>;
+      return (
+        <button>
+          <ZendeskIcon />
+        </button>
+      );
     }
   }
   ```
 
-* **PostCSS**
+- **PostCSS**
 
   Several Garden [CSS
   Components](https://github.com/zendeskgarden/css-components) utilize
@@ -69,7 +80,7 @@ vary depending on the particular needs of your application.
 
   ```css
   .icon {
-    background-image: svg-load('14/remove.svg', color: #007FAB);
+    background-image: svg-load("14/remove.svg", color: #007fab);
   }
   ```
 
@@ -82,7 +93,7 @@ vary depending on the particular needs of your application.
   }
   ```
 
-* **Spritemap**
+- **Spritemap**
 
   The main distribution from the npm package is an SVG "spritemap"
   containing all source icons as `<symbol>` elements. Once that file is
@@ -100,7 +111,7 @@ vary depending on the particular needs of your application.
   [svg4everybody](https://github.com/jonathantneal/svg4everybody) to
   compensate for browsers (IE9-11) that can't handle external SVG content.
 
-* **Build pipeline**
+- **Build pipeline**
 
   There are numerous plugins for handling SVG files via an asset bundler
   (webpack, gulp, grunt, etc.). Search
@@ -124,6 +135,6 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
-Copyright 2019 Zendesk
+Copyright 2020 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)
