@@ -1,4 +1,11 @@
-# Garden SVG Icons [![npm version](https://img.shields.io/npm/v/@zendeskgarden/svg-icons.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/svg-icons) [![Build Status](https://img.shields.io/travis/zendeskgarden/svg-icons/master.svg?style=flat-square)](https://travis-ci.org/zendeskgarden/svg-icons) [![Dependency Status](https://img.shields.io/david/dev/zendeskgarden/svg-icons.svg?style=flat-square)](https://david-dm.org/zendeskgarden/svg-icons?type=dev)
+# Garden SVG Icons [![npm version][npm version badge]][npm version link] [![Build Status][build status badge]][build status link] [![Dependency Status][dependency status badge]][dependency status link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/svg-icons
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/svg-icons
+[build status badge]: https://flat.badgen.net/circleci/github/zendeskgarden/svg-icons/master?label=build
+[build status link]: https://circleci.com/gh/zendeskgarden/svg-icons/tree/master
+[dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/svg-icons?label=dependencies
+[dependency status link]: https://david-dm.org/zendeskgarden/svg-icons?type=dev
 
 > :seedling: Garden is a design system for Zendesk
 
