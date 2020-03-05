@@ -34,6 +34,15 @@ jobs:
       - *attach_workspace
       - run: yarn test
 
+  deploy:
+    executor: node/default
+    environment:
+      NODE_DEBUG: gh-pages
+    steps:
+      - *attach_workspace
+      - run: find demo -type l | xargs sed -i '' || true # convert symlinks to regular files
+      - run: scripts/gh-pages.js
+
   publish:
     executor: node/default
     steps:
@@ -50,6 +59,10 @@ workflows:
           requires:
             - build
           <<: *filters_tags
+      - deploy:
+          requires:
+            - test
+          context: maintainer
       - publish:
           requires:
             - test
