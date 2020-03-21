@@ -21,7 +21,6 @@ jobs:
       - checkout
       - node/with-cache:
           cache-key: yarn.lock
-          dir: ~/.cache/yarn
           steps:
             - run: yarn --frozen-lockfile
       - persist_to_workspace:
