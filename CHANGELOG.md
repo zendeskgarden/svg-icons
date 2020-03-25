@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.14.0](https://github.com/zendeskgarden/svg-icons/compare/v6.13.1...v6.14.0) (2020-03-25)
+
+
+### Features
+
+* add double chevron icons ([#151](https://github.com/zendeskgarden/svg-icons/issues/151)) ([b9e6a26](https://github.com/zendeskgarden/svg-icons/commit/b9e6a26421c527fb1487311288b45a437dc51a89))
+
+
+### Bug Fixes
+
+* use default CircleCI node_modules cache ([#150](https://github.com/zendeskgarden/svg-icons/issues/150)) ([c98f8f0](https://github.com/zendeskgarden/svg-icons/commit/c98f8f095ff9665162de497b21c8dcb91d80e6c5))
+
 ### [6.13.1](https://github.com/zendeskgarden/svg-icons/compare/v6.13.0...v6.13.1) (2020-03-05)
 
 ## [6.13.0](https://github.com/zendeskgarden/svg-icons/compare/v6.12.0...v6.13.0) (2020-03-05)
