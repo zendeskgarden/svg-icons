@@ -71,6 +71,8 @@ Garden.svgIDs = [
   'zd-svg-icon-12-chevron-up-stroke',
   'zd-svg-icon-12-circle-fill',
   'zd-svg-icon-12-circle-full-stroke',
+  'zd-svg-icon-12-circle-sm-fill',
+  'zd-svg-icon-12-circle-sm-stroke',
   'zd-svg-icon-12-circle-stroke',
   'zd-svg-icon-12-clipboard-blank-fill',
   'zd-svg-icon-12-clipboard-blank-stroke',
