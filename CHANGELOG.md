@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.15.0](https://github.com/zendeskgarden/svg-icons/compare/v6.14.0...v6.15.0) (2020-04-02)
+
+
+### Features
+
+* add `circle-sm` icons ([#152](https://github.com/zendeskgarden/svg-icons/issues/152)) ([b775e3f](https://github.com/zendeskgarden/svg-icons/commit/b775e3f1edabf64a0be75fc624737f7afdb685cd))
+
 ## [6.14.0](https://github.com/zendeskgarden/svg-icons/compare/v6.13.1...v6.14.0) (2020-03-25)
 
 
