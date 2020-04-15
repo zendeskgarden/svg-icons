@@ -284,10 +284,10 @@
   resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-11.0.3.tgz#838440a42960e5bd668f4d23a6fc3b055810ae76"
   integrity sha512-WKaqZ/6qLs+ALDsXW/jKsWLkC9rz5Bc/Fj6RSOncEglWSmRZEseVekB+Fi7ktr6XW/gKwhbm+qe57I0mrcuCeg==
 
-"@zendeskgarden/scripts@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/scripts/-/scripts-0.1.2.tgz#67ad55fb3e93ea55807c9733ac64c04c076ad778"
-  integrity sha512-yqd3aT0kg5KpyNGNK6h9mQ3phLu8g6/KB+0cz6673mRZ4FUZkfV2/qplTomOIhg3kcn0d/7gf1QsEvAGyAPgGQ==
+"@zendeskgarden/scripts@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/scripts/-/scripts-0.1.3.tgz#1f3e8fd6306eb7fe9b4186e3164b341bc7d212b6"
+  integrity sha512-bVEdi73SZ2abMMq8stYJCkBTKiZIPF7VmIcohA8gz7O8z06Ax/FlLwsi8D0U+agcDC27+kH2MNhHUzGu4i33Cw==
   dependencies:
     "@octokit/rest" "17.1.4"
     chalk "4.0.0"
@@ -2248,7 +2248,7 @@ dot-prop@^3.0.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv@8.2.0:
+dotenv@8.2.0, dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -2364,6 +2364,16 @@ env-variable@0.0.x:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/env-variable/-/env-variable-0.0.4.tgz#0d6280cf507d84242befe35a512b5ae4be77c54e"
   integrity sha512-+jpGxSWG4vr6gVxUHOc4p+ilPnql7NzZxOZBxNldsKGjCF+97df3CbuX7XMaDa5oAVkKQj4rKp38rYdC4VcpDg==
+
+envalid@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/envalid/-/envalid-6.0.1.tgz#f9e80aab4ec0202a90ae7c57a428f20ab422bd01"
+  integrity sha512-o2+xxQhpp7NSjrSeAJautFVYeNb6MUpEceVVuMoSEfgp9oq4XMb9fp3HODvZuh5Sg9zmrG3a5nClVaY1XqOdlg==
+  dependencies:
+    chalk "^3.0.0"
+    dotenv "^8.2.0"
+    meant "^1.0.1"
+    validator "^12.0.0"
 
 err-code@^1.0.0:
   version "1.1.2"
@@ -4955,6 +4965,11 @@ mdn-data@~1.1.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-1.1.4.tgz#50b5d4ffc4575276573c4eedb8780812a8419f01"
   integrity sha512-FSYbp3lyKjyj3E7fMl6rYvUdX0FBXaluGqlFoYESWQlyUTq8R+wp0rkFxoYFqZlHCvsUXGjyJmLQSnXToYhOSA==
+
+meant@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/meant/-/meant-1.0.1.tgz#66044fea2f23230ec806fb515efea29c44d2115d"
+  integrity sha512-UakVLFjKkbbUwNWJ2frVLnnAtbb7D7DsloxRd3s/gDpI8rdv8W5Hp3NaDb+POBI1fQdeussER6NB8vpcRURvlg==
 
 mem@^4.0.0:
   version "4.0.0"
@@ -8132,6 +8147,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
+
+validator@^12.0.0:
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-12.2.0.tgz#660d47e96267033fd070096c3b1a6f2db4380a0a"
+  integrity sha512-jJfE/DW6tIK1Ek8nCfNFqt8Wb3nzMoAbocBF6/Icgg1ZFSBpObdnwVY2jQj6qUqzhx5jc71fpvBWyLGO7Xl+nQ==
 
 value-or-function@^3.0.0:
   version "3.0.0"
