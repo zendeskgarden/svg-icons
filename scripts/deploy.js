@@ -27,7 +27,7 @@ envalid.cleanEnv(process.env, {
   } else {
     const repository = await garden.githubRepository();
     const commit = await garden.githubCommit();
-    const message = `https://github.com/${repository}/commit/${commit}`;
+    const message = `https://github.com/${repository.owner}/${repository.repo}/commit/${commit}`;
     const command = async () => {
       const result = await garden.netlifyDeploy({
         dir,
