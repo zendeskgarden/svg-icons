@@ -1,6 +1,13 @@
 {
-  "extends": [
-    "@zendeskgarden",
-    "@zendeskgarden/eslint-config/plugins/notice.js"
-  ]
+  "extends": ["@zendeskgarden", "@zendeskgarden/eslint-config/plugins/notice.js"],
+  "rules": {
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
+  }
 }
