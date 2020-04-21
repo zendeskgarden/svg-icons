@@ -19,10 +19,9 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/with-cache:
+      - node/install-packages:
           cache-key: yarn.lock
-          steps:
-            - run: yarn --frozen-lockfile
+          pkg-manager: yarn
       - persist_to_workspace:
           root: *workspace_root
           paths: .
