@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node@2.0.2
 
 references:
   workspace_root: &workspace_root ~/project
@@ -19,10 +19,9 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/with-cache:
+      - node/install-packages:
           cache-key: yarn.lock
-          steps:
-            - run: yarn --frozen-lockfile
+          pkg-manager: yarn
       - persist_to_workspace:
           root: *workspace_root
           paths: .
