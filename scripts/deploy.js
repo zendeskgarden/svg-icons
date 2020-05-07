@@ -44,6 +44,7 @@ envalid.cleanEnv(process.env, {
     /* eslint-disable-next-line no-console */
     console.log(`Deployed to ${url}`);
   } catch (error) {
+    /* eslint-disable-next-line no-console */
     console.error(error);
     process.exitCode = 1;
   }
