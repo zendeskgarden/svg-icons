@@ -260,6 +260,8 @@ Garden.svgIDs = [
   'zd-svg-icon-12-play-circle-stroke',
   'zd-svg-icon-12-play-fill',
   'zd-svg-icon-12-play-stroke',
+  'zd-svg-icon-12-plug-fill',
+  'zd-svg-icon-12-plug-stroke',
   'zd-svg-icon-12-plus-circle-fill',
   'zd-svg-icon-12-plus-circle-stroke',
   'zd-svg-icon-12-plus-fill',
