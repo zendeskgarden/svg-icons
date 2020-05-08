@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.16.0](https://github.com/zendeskgarden/svg-icons/compare/v6.15.0...v6.16.0) (2020-05-08)
+
+
+### Features
+
+* new marketplace icons ([#158](https://github.com/zendeskgarden/svg-icons/issues/158)) ([bd44a01](https://github.com/zendeskgarden/svg-icons/commit/bd44a01cf1c6123a79111d51b90a1091aa2213e7))
+
 ## [6.15.0](https://github.com/zendeskgarden/svg-icons/compare/v6.14.0...v6.15.0) (2020-04-02)
 
 
