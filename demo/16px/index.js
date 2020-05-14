@@ -157,6 +157,8 @@ Garden.svgIDs = [
   'zd-svg-icon-16-heading-stroke',
   'zd-svg-icon-16-heart-fill',
   'zd-svg-icon-16-heart-stroke',
+  'zd-svg-icon-16-history-fill',
+  'zd-svg-icon-16-history-stroke',
   'zd-svg-icon-16-home-fill',
   'zd-svg-icon-16-home-stroke',
   'zd-svg-icon-16-horizontal-rule-fill',
