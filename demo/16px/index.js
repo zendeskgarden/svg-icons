@@ -144,6 +144,8 @@ Garden.svgIDs = [
   'zd-svg-icon-16-folder-open-stroke',
   'zd-svg-icon-16-gear-fill',
   'zd-svg-icon-16-gear-stroke',
+  'zd-svg-icon-16-github-fill',
+  'zd-svg-icon-16-github-stroke',
   'zd-svg-icon-16-globe-fill',
   'zd-svg-icon-16-globe-stroke',
   'zd-svg-icon-16-grid-2x2-fill',
@@ -262,6 +264,8 @@ Garden.svgIDs = [
   'zd-svg-icon-16-play-circle-stroke',
   'zd-svg-icon-16-play-fill',
   'zd-svg-icon-16-play-stroke',
+  'zd-svg-icon-16-plug-fill',
+  'zd-svg-icon-16-plug-stroke',
   'zd-svg-icon-16-plus-circle-fill',
   'zd-svg-icon-16-plus-circle-stroke',
   'zd-svg-icon-16-plus-fill',
@@ -286,6 +290,8 @@ Garden.svgIDs = [
   'zd-svg-icon-16-share-stroke',
   'zd-svg-icon-16-shield-fill',
   'zd-svg-icon-16-shield-stroke',
+  'zd-svg-icon-16-shopping-cart-fill',
+  'zd-svg-icon-16-shopping-cart-stroke',
   'zd-svg-icon-16-signpost-fill',
   'zd-svg-icon-16-signpost-stroke',
   'zd-svg-icon-16-slack-fill',
@@ -363,5 +369,7 @@ Garden.svgIDs = [
   'zd-svg-icon-16-x-circle-fill',
   'zd-svg-icon-16-x-circle-stroke',
   'zd-svg-icon-16-x-fill',
-  'zd-svg-icon-16-x-stroke'
+  'zd-svg-icon-16-x-stroke',
+  'zd-svg-icon-16-zendesk-fill',
+  'zd-svg-icon-16-zendesk-stroke'
 ];

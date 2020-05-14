@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@2.0.2
+  node: circleci/node@2.1.0
 
 references:
   workspace_root: &workspace_root ~/project
@@ -60,7 +60,7 @@ workflows:
       - deploy:
           requires:
             - test
-          context: maintainer
+          context: writer
       - publish:
           requires:
             - test
