@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.17.0](https://github.com/zendeskgarden/svg-icons/compare/v6.16.0...v6.17.0) (2020-05-14)
+
+
+### Features
+
+* new history icons ([#159](https://github.com/zendeskgarden/svg-icons/issues/159)) ([6e8d81e](https://github.com/zendeskgarden/svg-icons/commit/6e8d81e11d737b0c2a6fd0f6c3ae30a7c17a6030))
+
 ## [6.16.0](https://github.com/zendeskgarden/svg-icons/compare/v6.15.0...v6.16.0) (2020-05-08)
 
 
