@@ -28,11 +28,12 @@
     "watch": "yarn build watch"
   },
   "devDependencies": {
-    "@zendeskgarden/eslint-config": "11.0.4",
+    "@zendeskgarden/eslint-config": "12.0.1",
     "@zendeskgarden/scripts": "0.1.9",
     "babel-eslint": "10.1.0",
     "envalid": "6.0.1",
     "eslint": "7.0.0",
+    "eslint-plugin-node": "11.1.0",
     "eslint-plugin-notice": "0.9.10",
     "gulp": "4.0.2",
     "gulp-file": "0.4.0",
