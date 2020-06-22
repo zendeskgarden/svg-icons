@@ -32,7 +32,7 @@
     "@zendeskgarden/scripts": "0.1.10",
     "babel-eslint": "10.1.0",
     "envalid": "6.0.2",
-    "eslint": "7.1.0",
+    "eslint": "7.3.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-notice": "0.9.10",
     "gulp": "4.0.2",
