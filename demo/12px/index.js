@@ -190,6 +190,8 @@ Garden.svgIDs = [
   'zd-svg-icon-12-line-social-fill',
   'zd-svg-icon-12-line-social-stroke',
   'zd-svg-icon-12-link-fill',
+  'zd-svg-icon-12-link-remove-fill',
+  'zd-svg-icon-12-link-remove-stroke',
   'zd-svg-icon-12-link-stroke',
   'zd-svg-icon-12-linkedin-fill',
   'zd-svg-icon-12-linkedin-stroke',
