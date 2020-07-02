@@ -23,7 +23,7 @@
     "lint:svg": "svglint src/**/*.svg",
     "prepare": "yarn build",
     "start": "yarn build && yarn watch & live-server demo",
-    "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'master' ] && standard-version --no-verify",
+    "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
     "test": "yarn format && yarn lint && git diff --quiet",
     "watch": "yarn build watch"
   },
