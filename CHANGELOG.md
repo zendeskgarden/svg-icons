@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.18.0](https://github.com/zendeskgarden/svg-icons/compare/v6.17.0...v6.18.0) (2020-07-02)
+
+
+### Features
+
+* new link-remove icons and updated link icons ([#170](https://github.com/zendeskgarden/svg-icons/issues/170)) ([4cba586](https://github.com/zendeskgarden/svg-icons/commit/4cba586ac8e0454082fcc80bb36d761cd360ab5f))
+
 ## [6.17.0](https://github.com/zendeskgarden/svg-icons/compare/v6.16.0...v6.17.0) (2020-05-14)
 
 
