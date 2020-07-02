@@ -2,8 +2,8 @@
 
 [npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/svg-icons
 [npm version link]: https://www.npmjs.com/package/@zendeskgarden/svg-icons
-[build status badge]: https://flat.badgen.net/circleci/github/zendeskgarden/svg-icons/master?label=build
-[build status link]: https://circleci.com/gh/zendeskgarden/svg-icons/tree/master
+[build status badge]: https://flat.badgen.net/circleci/github/zendeskgarden/svg-icons/main?label=build
+[build status link]: https://circleci.com/gh/zendeskgarden/svg-icons/tree/main
 [dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/svg-icons?label=dependencies
 [dependency status link]: https://david-dm.org/zendeskgarden/svg-icons?type=dev
 
