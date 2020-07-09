@@ -2,6 +2,7 @@ Garden.svgIDs = [
   'zd-svg-icon-26-answer-bot',
   'zd-svg-icon-26-app',
   'zd-svg-icon-26-arrange-content',
+  'zd-svg-icon-26-arrow-right-left',
   'zd-svg-icon-26-bar-chart',
   'zd-svg-icon-26-book',
   'zd-svg-icon-26-building',
