@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.19.0](https://github.com/zendeskgarden/svg-icons/compare/v6.18.0...v6.19.0) (2020-07-13)
+
+
+### Features
+
+* add new 26px arrow-right-left icon ([#173](https://github.com/zendeskgarden/svg-icons/issues/173)) ([2872a41](https://github.com/zendeskgarden/svg-icons/commit/2872a4180fcb8ec3b298d7f9c56d8ae172a5d6fc))
+* add new circle-line icons and resize existing circle icons to match ([#174](https://github.com/zendeskgarden/svg-icons/issues/174)) ([1c7685a](https://github.com/zendeskgarden/svg-icons/commit/1c7685a911250dcc8f0d03bd19c439a6927dec41))
+* add new public reply icon ([#175](https://github.com/zendeskgarden/svg-icons/issues/175)) ([e219bb5](https://github.com/zendeskgarden/svg-icons/commit/e219bb58652922d16df002104e9b891cf7dc4bb3))
+* add new scheduled publishing icons ([#172](https://github.com/zendeskgarden/svg-icons/issues/172)) ([1bd38a3](https://github.com/zendeskgarden/svg-icons/commit/1bd38a3b2634a859483a9b5214c0e154587e4312))
+
 ## [6.18.0](https://github.com/zendeskgarden/svg-icons/compare/v6.17.0...v6.18.0) (2020-07-02)
 
 
