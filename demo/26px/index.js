@@ -28,7 +28,9 @@ Garden.svgIDs = [
   'zd-svg-icon-26-file-zip',
   'zd-svg-icon-26-file',
   'zd-svg-icon-26-garden',
+  'zd-svg-icon-26-grid-add',
   'zd-svg-icon-26-group-fill',
+  'zd-svg-icon-26-headset',
   'zd-svg-icon-26-help-center',
   'zd-svg-icon-26-home-fill',
   'zd-svg-icon-26-knowledge-base',
@@ -77,5 +79,6 @@ Garden.svgIDs = [
   'zd-svg-icon-26-wordmark-support',
   'zd-svg-icon-26-wordmark-talk',
   'zd-svg-icon-26-wordmark-zendesk',
+  'zd-svg-icon-26-workflow',
   'zd-svg-icon-26-zendesk'
 ];
