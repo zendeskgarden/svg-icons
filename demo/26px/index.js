@@ -4,6 +4,7 @@ Garden.svgIDs = [
   'zd-svg-icon-26-arrange-content',
   'zd-svg-icon-26-bar-chart',
   'zd-svg-icon-26-book',
+  'zd-svg-icon-26-bot-generic',
   'zd-svg-icon-26-building',
   'zd-svg-icon-26-call-in',
   'zd-svg-icon-26-chat',
