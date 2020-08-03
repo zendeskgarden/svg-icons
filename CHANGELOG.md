@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.21.0](https://github.com/zendeskgarden/svg-icons/compare/v6.20.0...v6.21.0) (2020-08-03)
+
+
+### Features
+
+* add grid-add, headset, and workflow icons ([#182](https://github.com/zendeskgarden/svg-icons/issues/182)) ([9edc230](https://github.com/zendeskgarden/svg-icons/commit/9edc230fc0ce60ff54215d0e9c44b353a5b48ed9))
+
 ## [6.20.0](https://github.com/zendeskgarden/svg-icons/compare/v6.19.0...v6.20.0) (2020-07-24)
 
 
