@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.22.0](https://github.com/zendeskgarden/svg-icons/compare/v6.21.0...v6.22.0) (2020-08-11)
+
+
+### Features
+
+* add new alt-text icons ([#183](https://github.com/zendeskgarden/svg-icons/issues/183)) ([a438f3c](https://github.com/zendeskgarden/svg-icons/commit/a438f3cf385fb80a992ab15ebc2fc3b63ccbc6a6))
+* fix 26px book icon ([#184](https://github.com/zendeskgarden/svg-icons/issues/184)) ([08faba6](https://github.com/zendeskgarden/svg-icons/commit/08faba6b2b6f932c150536f3fb3b7ccb819d4998))
+
 ## [6.21.0](https://github.com/zendeskgarden/svg-icons/compare/v6.20.0...v6.21.0) (2020-08-03)
 
 
