@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.23.0](https://github.com/zendeskgarden/svg-icons/compare/v6.22.0...v6.23.0) (2020-09-18)
+
+
+### Features
+
+* add new 26px hook icon ([#191](https://github.com/zendeskgarden/svg-icons/issues/191)) ([93710a6](https://github.com/zendeskgarden/svg-icons/commit/93710a63d8264e6f7040bd4ef8d077e9b5880c7b))
+
 ## [6.22.0](https://github.com/zendeskgarden/svg-icons/compare/v6.21.0...v6.22.0) (2020-08-11)
 
 
