@@ -33,6 +33,7 @@ Garden.svgIDs = [
   'zd-svg-icon-26-headset',
   'zd-svg-icon-26-help-center',
   'zd-svg-icon-26-home-fill',
+  'zd-svg-icon-26-hook',
   'zd-svg-icon-26-knowledge-base',
   'zd-svg-icon-26-line-chart',
   'zd-svg-icon-26-macro',
