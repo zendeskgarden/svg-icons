@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.24.0](https://github.com/zendeskgarden/svg-icons/compare/v6.23.0...v6.24.0) (2020-10-07)
+
+
+### Features
+
+* add css icons ([#194](https://github.com/zendeskgarden/svg-icons/issues/194)) ([1e59389](https://github.com/zendeskgarden/svg-icons/commit/1e593899510a42230d7c17a6c72cbeb44fc91cea))
+
+
+### Bug Fixes
+
+* adjust answer-bot brand colors ([#192](https://github.com/zendeskgarden/svg-icons/issues/192)) ([fc9f3a8](https://github.com/zendeskgarden/svg-icons/commit/fc9f3a8d135e3f1b9150f039364372a8f5573824))
+
 ## [6.23.0](https://github.com/zendeskgarden/svg-icons/compare/v6.22.0...v6.23.0) (2020-09-18)
 
 
