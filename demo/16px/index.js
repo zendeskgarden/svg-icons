@@ -101,6 +101,8 @@ Garden.svgIDs = [
   'zd-svg-icon-16-copy-stroke',
   'zd-svg-icon-16-credit-card-fill',
   'zd-svg-icon-16-credit-card-stroke',
+  'zd-svg-icon-16-css-fill',
+  'zd-svg-icon-16-css-stroke',
   'zd-svg-icon-16-cursor-arrow-fill',
   'zd-svg-icon-16-cursor-arrow-stroke',
   'zd-svg-icon-16-cutlery-fill',
