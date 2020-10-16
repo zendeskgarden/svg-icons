@@ -21,6 +21,8 @@ Garden.svgIDs = [
   'zd-svg-icon-12-arrow-retweet-stroke',
   'zd-svg-icon-12-arrow-reverse-fill',
   'zd-svg-icon-12-arrow-reverse-stroke',
+  'zd-svg-icon-12-arrow-trending-fill',
+  'zd-svg-icon-12-arrow-trending-stroke',
   'zd-svg-icon-12-asterisk-fill',
   'zd-svg-icon-12-asterisk-stroke',
   'zd-svg-icon-12-at-fill',
