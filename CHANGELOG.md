@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.25.0](https://github.com/zendeskgarden/svg-icons/compare/v6.24.0...v6.25.0) (2020-10-20)
+
+
+### Features
+
+* add arrow-trending icons ([#196](https://github.com/zendeskgarden/svg-icons/issues/196)) ([1307c19](https://github.com/zendeskgarden/svg-icons/commit/1307c1954273c428e7c3da0d085c7816fdea4ff2))
+
 ## [6.24.0](https://github.com/zendeskgarden/svg-icons/compare/v6.23.0...v6.24.0) (2020-10-07)
 
 
