@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.25.1](https://github.com/zendeskgarden/svg-icons/compare/v6.25.0...v6.25.1) (2020-10-30)
+
+
+### Bug Fixes
+
+* adjust bold icons to better match typography ([#197](https://github.com/zendeskgarden/svg-icons/issues/197)) ([b078788](https://github.com/zendeskgarden/svg-icons/commit/b078788b6843357bf639a01843e903a3ba25b431))
+
 ## [6.25.0](https://github.com/zendeskgarden/svg-icons/compare/v6.24.0...v6.25.0) (2020-10-20)
 
 
