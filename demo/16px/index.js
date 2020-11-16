@@ -47,6 +47,8 @@ Garden.svgIDs = [
   'zd-svg-icon-16-car-stroke',
   'zd-svg-icon-16-center-fill',
   'zd-svg-icon-16-center-stroke',
+  'zd-svg-icon-16-check-badge-fill',
+  'zd-svg-icon-16-check-badge-stroke',
   'zd-svg-icon-16-check-box-double-fill',
   'zd-svg-icon-16-check-box-double-stroke',
   'zd-svg-icon-16-check-box-fill',
