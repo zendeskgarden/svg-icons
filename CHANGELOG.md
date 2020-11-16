@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.26.0](https://github.com/zendeskgarden/svg-icons/compare/v6.25.1...v6.26.0) (2020-11-16)
+
+
+### Features
+
+* add check-badge icons ([#198](https://github.com/zendeskgarden/svg-icons/issues/198)) ([fe14394](https://github.com/zendeskgarden/svg-icons/commit/fe1439418757b2940aae66477a0bd4ea35ccfda4))
+
 ### [6.25.1](https://github.com/zendeskgarden/svg-icons/compare/v6.25.0...v6.25.1) (2020-10-30)
 
 
