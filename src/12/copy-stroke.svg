@@ -1,6 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12">
-  <g fill="none" stroke="currentColor">
-    <rect width="7" height="7" x="4.5" y="4.5" rx=".5" ry=".5"/>
-    <path stroke-linecap="round" d="M2.5 7.5H1A.5.5 0 01.5 7V1A.5.5 0 011 .5h6a.5.5 0 01.5.5v1.5"/>
-  </g>
+  <path fill="currentColor" d="M11 4a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h6zm0 1H5v6h6V5zM7 0a1 1 0 011 1v1.5a.5.5 0 01-1 0V1H1v6h1.5a.5.5 0 010 1H1a1 1 0 01-1-1V1a1 1 0 011-1h6z"/>
 </svg>
