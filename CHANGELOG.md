@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.27.0](https://github.com/zendeskgarden/svg-icons/compare/v6.26.0...v6.27.0) (2020-12-04)
+
+
+### Features
+
+* add align-justify icons ([#200](https://github.com/zendeskgarden/svg-icons/issues/200)) ([0b78075](https://github.com/zendeskgarden/svg-icons/commit/0b780756fec7f3994577d510da206a0d0d78cd97))
+
+
+### Bug Fixes
+
+* update icons to paths ([#201](https://github.com/zendeskgarden/svg-icons/issues/201)) ([e799d1d](https://github.com/zendeskgarden/svg-icons/commit/e799d1d63ea46cf7414d274b29b41e2b66452947))
+
 ## [6.26.0](https://github.com/zendeskgarden/svg-icons/compare/v6.25.1...v6.26.0) (2020-11-16)
 
 
