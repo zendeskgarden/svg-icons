@@ -1,4 +1,4 @@
-Garden.svgIDs = [
+export const SVGs = [
   'zd-svg-icon-26-answer-bot',
   'zd-svg-icon-26-app',
   'zd-svg-icon-26-arrange-content',

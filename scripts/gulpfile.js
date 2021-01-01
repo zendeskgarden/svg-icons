@@ -38,7 +38,7 @@ function toJS(source) {
   };
   const files = fs.readdirSync(source);
 
-  return `Garden.svgIDs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
+  return `export const SVGs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
 }
 
 gulp.task('demo/12px', () => {
