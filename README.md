@@ -7,7 +7,7 @@
 [dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/svg-icons?label=dependencies
 [dependency status link]: https://david-dm.org/zendeskgarden/svg-icons?type=dev
 
-> :seedling: Garden is a design system for Zendesk
+> :seedling: Garden is the design system by Zendesk
 
 This repo packages a collection of SVG icons used throughout Zendesk
 products. All source icons are optimized for size + readability.
@@ -135,6 +135,6 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
-Copyright 2020 Zendesk
+Copyright 2021 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)

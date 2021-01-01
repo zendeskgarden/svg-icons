@@ -17,8 +17,7 @@
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
     "build:demo": "build-storybook -s ./dist -o demo",
-    "format": "prettier-package-json --write && yarn format:all --write && yarn format:optimize src --recursive --quiet",
-    "format:all": "prettier --loglevel warn './' '!.github/ISSUE_TEMPLATE.md'",
+    "format": "prettier-package-json --write && prettier --loglevel warn ./ --write && yarn format:optimize src --recursive --quiet",
     "format:optimize": "svgo --config=.svgo.yml",
     "lint": "yarn lint:js && yarn lint:svg",
     "lint:js": "eslint ./",
@@ -44,6 +43,7 @@
     "babel-loader": "8.2.2",
     "envalid": "6.0.2",
     "eslint": "7.15.0",
+    "eslint-config-prettier": "7.1.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-notice": "0.9.10",
     "gulp": "4.0.2",

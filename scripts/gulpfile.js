@@ -38,7 +38,14 @@ function toJS(source) {
   };
   const files = fs.readdirSync(source);
 
-  return `export const SVGs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
+  return `/**
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+export const SVGs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
 }
 
 gulp.task('stories/12px', () => {
