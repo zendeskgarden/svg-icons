@@ -9,9 +9,10 @@ import { Col, Grid, Row } from '@zendeskgarden/react-grid';
 import Icon from './Icon';
 import IconGrid from './IconGrid';
 import { PALETTE } from '@zendeskgarden/react-theming';
+import PropTypes from 'prop-types';
 import React from 'react';
-import styled from 'styled-components';
 import { SVGs } from './26px';
+import styled from 'styled-components';
 
 export default {
   title: '26 px'
@@ -56,6 +57,12 @@ Icons.argTypes = {
   ...argTypes
 };
 
+Icons.propTypes = {
+  color: PropTypes.string,
+  fill: PropTypes.string,
+  size: PropTypes.number
+}
+
 export const Wordmarks = ({ color, fill, size }) => (
   <IconGrid
     color={color}
@@ -75,6 +82,12 @@ Wordmarks.args = {
 Wordmarks.argTypes = {
   ...argTypes
 };
+
+Wordmarks.propTypes = {
+  color: PropTypes.string,
+  fill: PropTypes.string,
+  size: PropTypes.number
+}
 
 const StyledSpan = styled.span`
   display: inline-block;
@@ -185,3 +198,9 @@ WordmarkLayouts.argTypes = {
     }
   }
 };
+
+WordmarkLayouts.propTypes = {
+  color: PropTypes.string,
+  fill: PropTypes.string,
+  size: PropTypes.number
+}

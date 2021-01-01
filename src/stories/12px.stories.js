@@ -6,6 +6,7 @@
  */
 
 import IconGrid from './IconGrid';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { SVGs } from './12px';
 
@@ -35,3 +36,9 @@ Icons.argTypes = {
     control: { type: 'range', min: 8, max: 60, step: 1 }
   }
 };
+
+Icons.propTypes = {
+  color: PropTypes.string,
+  fill: PropTypes.string,
+  size: PropTypes.number
+}

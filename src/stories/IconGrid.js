@@ -8,6 +8,7 @@
 import { Code, Ellipsis } from '@zendeskgarden/react-typography';
 import { Col, Grid, Row } from '@zendeskgarden/react-grid';
 import Icon from './Icon';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const IconGrid = ({ color, columns, fill, size, svgs }) => (
@@ -27,6 +28,15 @@ const IconGrid = ({ color, columns, fill, size, svgs }) => (
     </Row>
   </Grid>
 );
+
+IconGrid.propTypes = {
+  color: PropTypes.string,
+  columns: PropTypes.number,
+  fill: PropTypes.string,
+  id: PropTypes.string,
+  size: PropTypes.number,
+  svgs: PropTypes.array
+}
 
 IconGrid.defaultProps = {
   columns: 4
