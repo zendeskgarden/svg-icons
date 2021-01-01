@@ -7,7 +7,7 @@
 
 import IconGrid from './IconGrid';
 import React from 'react';
-import { SVGs } from '../../demo/12px/index';
+import { SVGs } from './12px';
 
 export default {
   title: '12 px'

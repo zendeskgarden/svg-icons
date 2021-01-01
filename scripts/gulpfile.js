@@ -44,22 +44,22 @@ function toJS(source) {
 gulp.task('demo/12px', () => {
   const indexJS = toJS('src/12');
 
-  return file('index.js', indexJS, { src: true })
-    .pipe(gulp.dest('demo/12px'));
+  return file('12px.js', indexJS, { src: true })
+    .pipe(gulp.dest('src/stories'));
 });
 
 gulp.task('demo/16px', () => {
   const indexJS = toJS('src/16');
 
-  return file('index.js', indexJS, { src: true })
-    .pipe(gulp.dest('demo/16px'));
+  return file('16px.js', indexJS, { src: true })
+    .pipe(gulp.dest('src/stories'));
 });
 
 gulp.task('demo/26px', () => {
   const indexJS = toJS('src/26');
 
-  return file('index.js', indexJS, { src: true })
-    .pipe(gulp.dest('demo/26px'));
+  return file('26px.js', indexJS, { src: true })
+    .pipe(gulp.dest('src/stories'));
 });
 
 gulp.task('demo', gulp.parallel(

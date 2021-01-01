@@ -13,8 +13,8 @@ addons.setConfig({
   panelPosition: 'right',
   theme: create({
     brandTitle: 'Zendesk Garden SVG Icons',
-    brandUrl: 'https://zendeskgarden.github.io/svg-icons',
-    brandImage: 'https://zendeskgarden.github.io/favicons/garden/mask-icon.svg',
+    brandUrl: 'https://github.com/zendeskgarden/svg-icons',
+    brandImage: null,
     colorSecondary: DEFAULT_THEME.palette.blue[600],
     fontBase: DEFAULT_THEME.fonts.system,
     fontCode: DEFAULT_THEME.fonts.mono

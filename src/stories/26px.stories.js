@@ -11,7 +11,7 @@ import IconGrid from './IconGrid';
 import { PALETTE } from '@zendeskgarden/react-theming';
 import React from 'react';
 import styled from 'styled-components';
-import { SVGs } from '../../demo/26px/index';
+import { SVGs } from './26px';
 
 export default {
   title: '26 px'
