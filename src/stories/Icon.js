@@ -19,6 +19,6 @@ Icon.propTypes = {
   fill: PropTypes.string,
   id: PropTypes.string,
   size: PropTypes.number
-}
+};
 
 export default Icon;

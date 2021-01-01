@@ -41,4 +41,4 @@ Icons.propTypes = {
   color: PropTypes.string,
   fill: PropTypes.string,
   size: PropTypes.number
-}
+};

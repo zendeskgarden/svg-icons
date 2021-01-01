@@ -61,7 +61,7 @@ Icons.propTypes = {
   color: PropTypes.string,
   fill: PropTypes.string,
   size: PropTypes.number
-}
+};
 
 export const Wordmarks = ({ color, fill, size }) => (
   <IconGrid
@@ -87,7 +87,7 @@ Wordmarks.propTypes = {
   color: PropTypes.string,
   fill: PropTypes.string,
   size: PropTypes.number
-}
+};
 
 const StyledSpan = styled.span`
   display: inline-block;
@@ -203,4 +203,4 @@ WordmarkLayouts.propTypes = {
   color: PropTypes.string,
   fill: PropTypes.string,
   size: PropTypes.number
-}
+};

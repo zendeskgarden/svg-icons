@@ -36,7 +36,7 @@ IconGrid.propTypes = {
   id: PropTypes.string,
   size: PropTypes.number,
   svgs: PropTypes.array
-}
+};
 
 IconGrid.defaultProps = {
   columns: 4
