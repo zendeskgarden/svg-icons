@@ -21,5 +21,10 @@ export const parameters = {
     theme: create({
       base: DEFAULT_THEME.colors.base
     })
+  },
+  options: {
+    storySort: {
+      order: ['README']
+    }
   }
 };

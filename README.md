@@ -70,7 +70,7 @@ vary depending on the particular needs of your application.
 
   1. Configure the plugin:
 
-  ```js
+  ```json
   "postcss-inline-svg": {
     "path": "node_modules/@zendeskgarden/svg-icons/src"
   }
