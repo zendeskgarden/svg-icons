@@ -41,43 +41,33 @@ function toJS(source) {
   return `export const SVGs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
 }
 
-gulp.task('demo/12px', () => {
+gulp.task('stories/12px', () => {
   const indexJS = toJS('src/12');
 
-  return file('12px.js', indexJS, { src: true })
-    .pipe(gulp.dest('src/stories'));
+  return file('12px.js', indexJS, { src: true }).pipe(gulp.dest('src/stories'));
 });
 
-gulp.task('demo/16px', () => {
+gulp.task('stories/16px', () => {
   const indexJS = toJS('src/16');
 
-  return file('16px.js', indexJS, { src: true })
-    .pipe(gulp.dest('src/stories'));
+  return file('16px.js', indexJS, { src: true }).pipe(gulp.dest('src/stories'));
 });
 
-gulp.task('demo/26px', () => {
+gulp.task('stories/26px', () => {
   const indexJS = toJS('src/26');
 
-  return file('26px.js', indexJS, { src: true })
-    .pipe(gulp.dest('src/stories'));
+  return file('26px.js', indexJS, { src: true }).pipe(gulp.dest('src/stories'));
 });
 
-gulp.task('demo', gulp.parallel(
-  'demo/12px',
-  'demo/16px',
-  'demo/26px'
-));
+gulp.task('stories', gulp.parallel('stories/12px', 'stories/16px', 'stories/26px'));
 
 const source = path.join('src', '**', '*.svg');
 
 gulp.task('dist', () => {
-  return gulp
-    .src(source)
-    .pipe(svgSprite(config))
-    .pipe(gulp.dest('dist'));
+  return gulp.src(source).pipe(svgSprite(config)).pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', gulp.parallel('dist', 'demo'));
+gulp.task('default', gulp.parallel('dist', 'stories'));
 
 gulp.task('watch', () => {
   gulp.watch(source, gulp.parallel('default'));

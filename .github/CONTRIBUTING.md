@@ -27,14 +27,14 @@ on your system. After you clone this repo, run `yarn` to install
 dependencies needed for development. After installation, the following
 commands are available:
 
-* `yarn start` to launch the SVG icon demo server with live reload
+- `yarn start` to launch the SVG icon demo server with live reload
   – source files will be watched for changes.
-* `yarn test` to run package tests.
-* `yarn lint` to enforce consistent code conventions. Note this is run
+- `yarn test` to run package tests.
+- `yarn lint` to enforce consistent code conventions. Note this is run
   as a git `pre-commit` hook.
-* `yarn format` to optimize SVGs and enforce code style with opinionated
+- `yarn format` to optimize SVGs and enforce code style with opinionated
   formats. Note this is run as a git `pre-commit` hook.
-* `yarn build` to rebuild the SVG spritemap symbol distribution and
+- `yarn build` to rebuild the SVG spritemap symbol distribution and
   update SVG demo pages. The build runs as part of the initial install.
 
 ## Pull Request Workflow
@@ -82,29 +82,29 @@ Get SVG designs from Illustrator (not Sketch). Ensure all visible
 1. Run `yarn format` to optimize SVGs via
    [svgo](https://www.npmjs.com/package/svgo).
 1. Edit the optimized SVG source file.
-    1. Swap out any leftover `<defs>` and `<use>` elements, eliminating
-       all internal xlink and references.
-    1. Remove any leftover `xmlns:xlink` and `data-*` attributes – we
-       don't use these.
-    1. Attempt to remove `fill-rule="evenodd"` – it’s usually not
-       needed.
-    1. Remove unnecessary `stroke-linejoin` attributes where there are
-       no lines to join.
-    1. Remove unnecessary `stroke-linecap` attributes where there are no
-       lines to cap.
-    1. Make color corrections.
-        1. For monochrome SVGs, make sure all foreground fill and
-           stroke attributes are set to `currentColor`. This allows
-           an inline icon to receive the font color of it's parent
-           element. When optimal, combine these attributes under a SVG
-           [`<g>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g)
-           element.
-        1. For two-tone SVGs (such as Zendesk's relationshapes) set
-           the color foreground to `currentColor` and leave the neutral
-           foreground open to receive styling via the CSS fill property
-           (see the
-           [hack](https://css-tricks.com/lodge/svg/21-get-two-colors-use/)
-           for details).
+   1. Swap out any leftover `<defs>` and `<use>` elements, eliminating
+      all internal xlink and references.
+   1. Remove any leftover `xmlns:xlink` and `data-*` attributes – we
+      don't use these.
+   1. Attempt to remove `fill-rule="evenodd"` – it’s usually not
+      needed.
+   1. Remove unnecessary `stroke-linejoin` attributes where there are
+      no lines to join.
+   1. Remove unnecessary `stroke-linecap` attributes where there are no
+      lines to cap.
+   1. Make color corrections.
+      1. For monochrome SVGs, make sure all foreground fill and
+         stroke attributes are set to `currentColor`. This allows
+         an inline icon to receive the font color of it's parent
+         element. When optimal, combine these attributes under a SVG
+         [`<g>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g)
+         element.
+      1. For two-tone SVGs (such as Zendesk's relationshapes) set
+         the color foreground to `currentColor` and leave the neutral
+         foreground open to receive styling via the CSS fill property
+         (see the
+         [hack](https://css-tricks.com/lodge/svg/21-get-two-colors-use/)
+         for details).
 1. Add SVG `width` and `height` attributes that correspond to the
    `viewBox` – for bulletproof cross-browser scaling.
 
