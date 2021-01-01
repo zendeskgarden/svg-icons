@@ -33,7 +33,6 @@ IconGrid.propTypes = {
   color: PropTypes.string,
   columns: PropTypes.number,
   fill: PropTypes.string,
-  id: PropTypes.string,
   size: PropTypes.number,
   svgs: PropTypes.array
 };
