@@ -5,9 +5,9 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
 import { addons } from '@storybook/addons';
 import { create } from '@storybook/theming/create';
-import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
 
 addons.setConfig({
   panelPosition: 'right',

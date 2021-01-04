@@ -51,19 +51,19 @@ export const SVGs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
 gulp.task('stories/12px', () => {
   const indexJS = toJS('src/12');
 
-  return file('12px.js', indexJS, { src: true }).pipe(gulp.dest('src/stories'));
+  return file('12px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
 
 gulp.task('stories/16px', () => {
   const indexJS = toJS('src/16');
 
-  return file('16px.js', indexJS, { src: true }).pipe(gulp.dest('src/stories'));
+  return file('16px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
 
 gulp.task('stories/26px', () => {
   const indexJS = toJS('src/26');
 
-  return file('26px.js', indexJS, { src: true }).pipe(gulp.dest('src/stories'));
+  return file('26px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
 
 gulp.task('stories', gulp.parallel('stories/12px', 'stories/16px', 'stories/26px'));

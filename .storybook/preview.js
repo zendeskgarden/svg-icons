@@ -5,11 +5,9 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import { create } from '@storybook/theming/create';
-import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
-import { PARAM_KEY as viewMode } from '@storybook/addon-docs/dist/shared';
-
 import './preview.css';
+import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
+import { create } from '@storybook/theming/create';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
