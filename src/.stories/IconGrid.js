@@ -20,7 +20,7 @@ const IconGrid = ({ color, columns, fill, size, svgs }) => (
           <br />
           <Ellipsis title={id}>
             <Code size="small" style={{ whiteSpace: 'nowrap' }}>
-              {id}
+              {id.substring(15)}
             </Code>
           </Ellipsis>
         </Col>
