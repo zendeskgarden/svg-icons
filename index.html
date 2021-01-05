@@ -1,70 +1,55 @@
-<!doctype html>
-<html>
-<head>
-  <script async src="//www.googletagmanager.com/gtag/js?id=UA-970836-25"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-970836-25');
-  </script>
-  <title>SVG Icons / Assets / Zendesk Garden</title>
-  <link href="//zendeskgarden.github.io/css-components/bedrock/index.css" rel="stylesheet">
-  <link href="//zendeskgarden.github.io/css-components/forms/checkbox/index.css" rel="stylesheet">
-  <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
-  <link href="index.css" rel="stylesheet">
-  <link href="//zendeskgarden.github.io/css-components/utilities/index.css" rel="stylesheet">
-</head>
-<body>
-  <header class="c-header">
-    <figure class="c-header__logo">
-      <a class="u-fg-inherit" href="//zendeskgarden.github.io">
-        <svg class="c-header__logo__svg svg-square">
-          <use xlink:href="index.svg#zd-svg-icon-26-garden">
-        </svg>
-      </a
-    ></figure
-    ><h1 class="c-header__title"
-      ><a class="u-fg-inherit" href="//zendeskgarden.github.io/assets">Assets</a>
-      <span>/ SVG Icons</span>
-    </h1>
-    <ul class="c-ctl c-ctl--header">
-      <li class="c-ctl__item">
-        <fieldset class="c-chk">
-          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-          <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
-        </fieldset>
-      </li>
-    </ul>
-  </header>
-  <main class="c-main c-main--page">
-    <a href="https://github.com/zendeskgarden/svg-icons"><img class="u-float-right u-ml-sm u-mt-sm" src="github.svg"></a>
-    <a href="https://www.npmjs.com/package/@zendeskgarden/svg-icons"><img class="u-float-right u-mt-sm" src="https://img.shields.io/npm/v/@zendeskgarden/svg-icons.svg?style=flat-square"></a>
-    <h1 class="c-main__title">SVG Icons</h1>
-    <div class="c-main__body">
-      <p class="u-mb">Garden SVG icons come in several different flavors.
-      Follow the links below to check out the different icon sizes.</p>
-      <ul class="u-fs-lg u-mb">
-        <li class="u-mb-xs"><a href="12px">12 px</a></li>
-        <li class="u-mb-xs"><a href="16px">16 px</a></li>
-        <li class="u-mb-xs"><a href="26px">26 px</a></li>
-      </ul>
-      <section id="playground">
-        <h1 class="c-main__subtitle u-fs-xl u-mb">Playground</h1>
-        <div class="c-playground">
-          <div class="c-playground__preview"></div>
-<textarea class="c-playground__code"><svg class="u-fg-inherit u-fs-xxl">
-  <use xlink:href="index.svg#zd-svg-icon-26-zendesk">
-</svg>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Storybook</title><meta name="viewport" content="width=device-width,initial-scale=1"/><style>html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-<svg class="u-fg-green-400 u-fs-xxl u-ml" fill="#555">
-  <use xlink:href="../index.svg#zd-svg-icon-26-garden">
-</svg></textarea>
-        </div>
-      </section>
-    </div>
-  </main>
-  <script src="//zendeskgarden.github.io/index.js"></script>
-  <script src="//zendeskgarden.github.io/css-components/forms/checkbox/index.js"></script>
-</body>
-</html>
+  * {
+    box-sizing: border-box;
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
+    if (window.top !== window) {
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('unable to connect to top frame for connecting dev tools');
+  }
+
+  window.onerror = function onerror(message, source, line, column, err) {
+    if (window.CONFIG_TYPE !== 'DEVELOPMENT') return;
+    // eslint-disable-next-line no-var, vars-on-top
+    var xhr = new window.XMLHttpRequest();
+    xhr.open('POST', '/runtime-error');
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    xhr.send(
+      JSON.stringify({
+        /* eslint-disable object-shorthand */
+        message: message,
+        source: source,
+        line: line,
+        column: column,
+        error: err && { message: err.message, name: err.name, stack: err.stack },
+        origin: 'manager',
+        /* eslint-enable object-shorthand */
+      })
+    );
+  };</script><link rel="icon" href="https://zendeskgarden.github.io/favicons/garden/favicon.ico"/><style>#root[hidden],
+      #docs-root[hidden] {
+        display: none !important;
+      }</style></head><body><div id="root"></div><div id="docs-root"></div><script>window['CONFIG_TYPE'] = "PRODUCTION";
+            
+        
+            
+              window['LOGLEVEL'] = "info";
+            
+        
+            
+        
+            
+        
+            
+              window['DOCS_MODE'] = false;</script><script src="runtime~main.870e8ee0658e83d05c6b.bundle.js"></script><script src="vendors~main.efdde32f2a318cbfbaf4.bundle.js"></script><script src="main.298569bfdde75da09d58.bundle.js"></script></body></html>
