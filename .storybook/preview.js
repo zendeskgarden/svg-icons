@@ -7,7 +7,17 @@
 
 import './preview.css';
 import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
+import React from 'react';
 import { create } from '@storybook/theming/create';
+import svg4everybody from 'svg4everybody';
+
+export const decorators = [
+  Story => {
+    svg4everybody({ polyfill: true });
+
+    return <Story />;
+  }
+];
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
