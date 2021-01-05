@@ -38,46 +38,43 @@ function toJS(source) {
   };
   const files = fs.readdirSync(source);
 
-  return `Garden.svgIDs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
+  return `/**
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+export const SVGs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
 }
 
-gulp.task('demo/12px', () => {
+gulp.task('stories/12px', () => {
   const indexJS = toJS('src/12');
 
-  return file('index.js', indexJS, { src: true })
-    .pipe(gulp.dest('demo/12px'));
+  return file('12px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
 
-gulp.task('demo/16px', () => {
+gulp.task('stories/16px', () => {
   const indexJS = toJS('src/16');
 
-  return file('index.js', indexJS, { src: true })
-    .pipe(gulp.dest('demo/16px'));
+  return file('16px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
 
-gulp.task('demo/26px', () => {
+gulp.task('stories/26px', () => {
   const indexJS = toJS('src/26');
 
-  return file('index.js', indexJS, { src: true })
-    .pipe(gulp.dest('demo/26px'));
+  return file('26px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
 
-gulp.task('demo', gulp.parallel(
-  'demo/12px',
-  'demo/16px',
-  'demo/26px'
-));
+gulp.task('stories', gulp.parallel('stories/12px', 'stories/16px', 'stories/26px'));
 
 const source = path.join('src', '**', '*.svg');
 
 gulp.task('dist', () => {
-  return gulp
-    .src(source)
-    .pipe(svgSprite(config))
-    .pipe(gulp.dest('dist'));
+  return gulp.src(source).pipe(svgSprite(config)).pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', gulp.parallel('dist', 'demo'));
+gulp.task('default', gulp.parallel('dist', 'stories'));
 
 gulp.task('watch', () => {
   gulp.watch(source, gulp.parallel('default'));
