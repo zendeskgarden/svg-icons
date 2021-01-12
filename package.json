@@ -34,7 +34,7 @@
     "@storybook/addon-essentials": "6.1.14",
     "@storybook/addon-links": "6.1.14",
     "@storybook/react": "6.1.14",
-    "@zendeskgarden/eslint-config": "17.1.0",
+    "@zendeskgarden/eslint-config": "18.0.0",
     "@zendeskgarden/react-grid": "8.29.2",
     "@zendeskgarden/react-theming": "8.29.2",
     "@zendeskgarden/react-typography": "8.29.2",
