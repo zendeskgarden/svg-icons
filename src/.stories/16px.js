@@ -6,6 +6,8 @@
  */
 
 export const SVGs = [
+  'zd-svg-icon-16-123-fill',
+  'zd-svg-icon-16-123-stroke',
   'zd-svg-icon-16-adjust-fill',
   'zd-svg-icon-16-adjust-stroke',
   'zd-svg-icon-16-alert-error-fill',

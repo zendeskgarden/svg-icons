@@ -5,7 +5,6 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import './preview.css';
 import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
 import React from 'react';
 import { create } from '@storybook/theming/create';
@@ -20,7 +19,6 @@ export const decorators = [
 ];
 
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
     default: DEFAULT_THEME.colors.base,
     grid: { disable: true }
