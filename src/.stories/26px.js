@@ -45,6 +45,7 @@ export const SVGs = [
   'zd-svg-icon-26-line-chart',
   'zd-svg-icon-26-macro',
   'zd-svg-icon-26-moderation',
+  'zd-svg-icon-26-monitor',
   'zd-svg-icon-26-organization',
   'zd-svg-icon-26-person',
   'zd-svg-icon-26-platform',
