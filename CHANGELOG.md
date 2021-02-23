@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.29.0](https://github.com/zendeskgarden/svg-icons/compare/v6.28.0...v6.29.0) (2021-02-23)
+
+
+### Features
+
+* add monitor icon ([#210](https://github.com/zendeskgarden/svg-icons/issues/210)) ([d4a10ef](https://github.com/zendeskgarden/svg-icons/commit/d4a10efd1ab14667c87a519f7d39581a6d08d63e))
+* add palette icons ([#211](https://github.com/zendeskgarden/svg-icons/issues/211)) ([4a6567f](https://github.com/zendeskgarden/svg-icons/commit/4a6567f42d1129bfdf62b561116637a83cdc7bd3))
+
+
+### Bug Fixes
+
+* update terminal icons to paths ([#212](https://github.com/zendeskgarden/svg-icons/issues/212)) ([5c8d938](https://github.com/zendeskgarden/svg-icons/commit/5c8d938aa27f194139c5ee8cefc92ef96596aba4))
+
 ## [6.28.0](https://github.com/zendeskgarden/svg-icons/compare/v6.27.0...v6.28.0) (2021-01-27)
 
 
