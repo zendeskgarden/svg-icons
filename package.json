@@ -22,6 +22,7 @@
     "lint": "yarn lint:js && yarn lint:svg",
     "lint:js": "eslint ./ ./.storybook",
     "lint:svg": "svglint src/**/*.svg",
+    "postinstall": "husky install",
     "prepare": "yarn build",
     "start": "yarn build && start-storybook -s ./dist -p 6006",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
