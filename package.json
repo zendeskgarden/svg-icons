@@ -39,7 +39,7 @@
     "@zendeskgarden/scripts": "0.1.11",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
-    "envalid": "6.0.2",
+    "envalid": "7.0.0",
     "eslint": "7.21.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-jsx-a11y": "6.4.1",
