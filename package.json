@@ -30,7 +30,7 @@
     "watch": "yarn build watch"
   },
   "devDependencies": {
-    "@babel/core": "7.13.8",
+    "@babel/core": "7.13.10",
     "@storybook/addon-essentials": "6.1.21",
     "@storybook/react": "6.1.21",
     "@zendeskgarden/eslint-config": "19.0.0",
