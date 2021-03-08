@@ -2843,10 +2843,10 @@
   dependencies:
     "@babel/runtime" "^7.8.4"
 
-"@zendeskgarden/eslint-config@18.0.0":
-  version "18.0.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-18.0.0.tgz#a439d8725f2c4a2eee3f6c73b632d1d0961416a1"
-  integrity sha512-iiVJaAb4QWwhTgaF3y+2nacG7qj2FwLHffmjLT5ElJFYiAflsQ6qGmbAqpBAZLZMhSTpNOh8IbFx3yn4VPer5A==
+"@zendeskgarden/eslint-config@19.0.0":
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-19.0.0.tgz#cb8be4761a7fe86b756ebbb978f4a1816739c620"
+  integrity sha512-+G3WhkG8OGePbCSwJxcMuYdPXvz+KH4QB+cT/HUt6FeXVItPXPPbzgkzUuxl8GOCT2X6vUH6iyOvNG6hKrHCEw==
 
 "@zendeskgarden/react-grid@8.32.2":
   version "8.32.2"
