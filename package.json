@@ -18,7 +18,7 @@
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
     "build:demo": "build-storybook -s ./dist -o demo",
     "format": "prettier-package-json --write && prettier --loglevel warn ./ --write && yarn format:optimize src --recursive --quiet",
-    "format:optimize": "svgo --config=.svgo.yml",
+    "format:optimize": "svgo",
     "postinstall": "husky install",
     "lint": "yarn lint:js && yarn lint:svg",
     "lint:js": "eslint ./ ./.storybook",
