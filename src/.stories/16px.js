@@ -297,6 +297,8 @@ export const SVGs = [
   'zd-svg-icon-16-phone-call-speaker-fill',
   'zd-svg-icon-16-phone-call-speaker-stroke',
   'zd-svg-icon-16-phone-call-transfer-fill',
+  'zd-svg-icon-16-phone-call-transfer-only-fill',
+  'zd-svg-icon-16-phone-call-transfer-only-stroke',
   'zd-svg-icon-16-phone-call-transfer-stroke',
   'zd-svg-icon-16-phone-fill',
   'zd-svg-icon-16-phone-stroke',
