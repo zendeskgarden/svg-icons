@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.30.0](https://github.com/zendeskgarden/svg-icons/compare/v6.29.0...v6.30.0) (2021-03-30)
+
+
+### Features
+
+* add sandbox and transfer icons ([#220](https://github.com/zendeskgarden/svg-icons/issues/220)) ([2400c34](https://github.com/zendeskgarden/svg-icons/commit/2400c342ead852348cc79418b03fc0d71e425f80))
+
 ## [6.29.0](https://github.com/zendeskgarden/svg-icons/compare/v6.28.0...v6.29.0) (2021-02-23)
 
 
