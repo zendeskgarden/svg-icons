@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.30.1](https://github.com/zendeskgarden/svg-icons/compare/v6.30.0...v6.30.1) (2021-03-31)
+
+
+### Bug Fixes
+
+* prevent husky from running on postinstall ([#222](https://github.com/zendeskgarden/svg-icons/issues/222)) ([f8e198a](https://github.com/zendeskgarden/svg-icons/commit/f8e198a72ef21c4237372a24495f3f1d32911b9a))
+
 ## [6.30.0](https://github.com/zendeskgarden/svg-icons/compare/v6.29.0...v6.30.0) (2021-03-30)
 
 
