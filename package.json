@@ -32,7 +32,7 @@
     "@babel/core": "7.13.10",
     "@storybook/addon-essentials": "6.1.21",
     "@storybook/react": "6.1.21",
-    "@zendeskgarden/eslint-config": "19.0.0",
+    "@zendeskgarden/eslint-config": "20.0.0",
     "@zendeskgarden/react-grid": "8.32.2",
     "@zendeskgarden/react-theming": "8.32.2",
     "@zendeskgarden/react-typography": "8.32.2",
