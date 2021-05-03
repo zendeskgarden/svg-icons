@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.30.2](https://github.com/zendeskgarden/svg-icons/compare/v6.30.1...v6.30.2) (2021-05-03)
+
 ### [6.30.1](https://github.com/zendeskgarden/svg-icons/compare/v6.30.0...v6.30.1) (2021-03-31)
 
 
