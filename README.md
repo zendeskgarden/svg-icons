@@ -48,7 +48,7 @@ vary depending on the particular needs of your application.
   caching as any other JS asset.
 
   ```js
-  import ZendeskIcon from "@zendeskgarden/svg-icons/src/26/zendesk.svg";
+  import ZendeskIcon from '@zendeskgarden/svg-icons/src/26/zendesk.svg';
 
   class ZendeskButton extends React.Component {
     render() {
@@ -80,7 +80,7 @@ vary depending on the particular needs of your application.
 
   ```css
   .icon {
-    background-image: svg-load("14/remove.svg", color: #007fab);
+    background-image: svg-load('14/remove.svg', color: #007fab);
   }
   ```
 
