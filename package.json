@@ -36,7 +36,7 @@
     "@zendeskgarden/react-grid": "8.39.0",
     "@zendeskgarden/react-theming": "8.39.0",
     "@zendeskgarden/react-typography": "8.39.0",
-    "@zendeskgarden/scripts": "1.2.0",
+    "@zendeskgarden/scripts": "1.2.1",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
     "envalid": "7.2.1",
