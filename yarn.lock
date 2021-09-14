@@ -5168,10 +5168,10 @@
     prism-react-renderer "^1.1.1"
     prop-types "^15.5.7"
 
-"@zendeskgarden/scripts@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/scripts/-/scripts-1.2.0.tgz#ef17686381cb6a6dff002471404b14358b891747"
-  integrity sha512-tP6uGHhHF3kRufg0SFrkEOfqEoZ9Mr1PfI9UcA0CZm7UFHur/ELFmZ6wDZNpnV/M64Lbw6Aj/toRxJ+V1K8P7Q==
+"@zendeskgarden/scripts@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/scripts/-/scripts-1.2.1.tgz#4ba48ee82ffc03c7cc92d25271061f2a9a44e9c8"
+  integrity sha512-ZQclDm3c7H0hxMY+qgFoleFE6SxA1tEyBNVtkiYgYlM34BYeJA/rx53Ld+WlWPR522m1grnp5ZbrPWXElwLmUg==
   dependencies:
     "@octokit/rest" "18.9.1"
     chalk "4.1.2"
