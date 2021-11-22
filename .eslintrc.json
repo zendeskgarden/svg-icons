@@ -4,5 +4,11 @@
     "@zendeskgarden/eslint-config/plugins/notice",
     "@zendeskgarden/eslint-config/plugins/react",
     "prettier"
-  ]
+  ],
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  }
 }
