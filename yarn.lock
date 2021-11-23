@@ -64,7 +64,7 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
-"@babel/eslint-parser@^7.16.3":
+"@babel/eslint-parser@7.16.3":
   version "7.16.3"
   resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.16.3.tgz#2a6b1702f3f5aea48e00cea5a5bcc241c437e459"
   integrity sha512-iB4ElZT0jAt7PKVaeVulOECdGe6UnmA/O0P9jlF5g5GBOwDVbna8AXhHRu4s27xQf6OkveyA8iTDv1jHdDejgQ==
@@ -828,12 +828,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/plugin-transform-react-display-name@^7.16.0":
+"@babel/plugin-transform-react-jsx-development@7.16.0":
   version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-display-name/-/plugin-transform-react-display-name-7.16.0.tgz#9a0ad8aa8e8790883a7bd2736f66229a58125676"
-  integrity sha512-FJFdJAqaCpndL+pIf0aeD/qlQwT7QXOvR6Cc8JPvNhKJBi2zc/DPc4g05Y3fbD/0iWAMQFGij4+Xw+4L/BMpTg==
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-development/-/plugin-transform-react-jsx-development-7.16.0.tgz#1cb52874678d23ab11d0d16488d54730807303ef"
+  integrity sha512-qq65iSqBRq0Hr3wq57YG2AmW0H6wgTnIzpffTphrUWUgLCOK+zf1f7G0vuOiXrp7dU1qq+fQBoqZ3wCDAkhFzw==
   dependencies:
-    "@babel/helper-plugin-utils" "^7.14.5"
+    "@babel/plugin-transform-react-jsx" "^7.16.0"
 
 "@babel/plugin-transform-react-jsx-development@^7.12.17":
   version "7.12.17"
@@ -841,13 +841,6 @@
   integrity sha512-BPjYV86SVuOaudFhsJR1zjgxxOhJDt6JHNoD48DxWEIxUCAMjV1ys6DYw4SDYZh0b1QsS2vfIA9t/ZsQGsDOUQ==
   dependencies:
     "@babel/plugin-transform-react-jsx" "^7.12.17"
-
-"@babel/plugin-transform-react-jsx-development@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-development/-/plugin-transform-react-jsx-development-7.16.0.tgz#1cb52874678d23ab11d0d16488d54730807303ef"
-  integrity sha512-qq65iSqBRq0Hr3wq57YG2AmW0H6wgTnIzpffTphrUWUgLCOK+zf1f7G0vuOiXrp7dU1qq+fQBoqZ3wCDAkhFzw==
-  dependencies:
-    "@babel/plugin-transform-react-jsx" "^7.16.0"
 
 "@babel/plugin-transform-react-jsx@^7.12.12", "@babel/plugin-transform-react-jsx@^7.12.17", "@babel/plugin-transform-react-jsx@^7.13.12":
   version "7.13.12"
@@ -878,14 +871,6 @@
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.10.4"
     "@babel/helper-plugin-utils" "^7.10.4"
-
-"@babel/plugin-transform-react-pure-annotations@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-pure-annotations/-/plugin-transform-react-pure-annotations-7.16.0.tgz#23db6ddf558d8abde41b8ad9d59f48ad5532ccab"
-  integrity sha512-NC/Bj2MG+t8Ef5Pdpo34Ay74X4Rt804h5y81PwOpfPtmAK3i6CizmQqwyBQzIepz1Yt8wNr2Z2L7Lu3qBMfZMA==
-  dependencies:
-    "@babel/helper-annotate-as-pure" "^7.16.0"
-    "@babel/helper-plugin-utils" "^7.14.5"
 
 "@babel/plugin-transform-regenerator@^7.14.5":
   version "7.14.5"
@@ -1070,18 +1055,6 @@
     "@babel/plugin-transform-react-jsx" "^7.13.12"
     "@babel/plugin-transform-react-jsx-development" "^7.12.17"
     "@babel/plugin-transform-react-pure-annotations" "^7.12.1"
-
-"@babel/preset-react@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.16.0.tgz#f71d3e8dff5218478011df037fad52660ee6d82a"
-  integrity sha512-d31IFW2bLRB28uL1WoElyro8RH5l6531XfxMtCeCmp6RVAF1uTfxxUA0LH1tXl+psZdwfmIbwoG4U5VwgbhtLw==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.14.5"
-    "@babel/helper-validator-option" "^7.14.5"
-    "@babel/plugin-transform-react-display-name" "^7.16.0"
-    "@babel/plugin-transform-react-jsx" "^7.16.0"
-    "@babel/plugin-transform-react-jsx-development" "^7.16.0"
-    "@babel/plugin-transform-react-pure-annotations" "^7.16.0"
 
 "@babel/preset-typescript@^7.12.7":
   version "7.13.0"
@@ -3757,10 +3730,9 @@
     "@babel/runtime" "^7.8.4"
     "@reach/auto-id" "^0.16.0"
 
-"@zendeskgarden/eslint-config@26.0.0":
+"@zendeskgarden/eslint-config@../eslint-config/zendeskgarden-eslint-config-v26.0.0.tgz":
   version "26.0.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-26.0.0.tgz#9be1679678e532bc3f3dafecbc4526e15850df28"
-  integrity sha512-0TV7DpIDT6yTqxxjO5juCEpzyCOigeazHVvxIqB9SHA3/1KI8stHU4clWUUn5loDvdqTVvhnNjloBiTuWqXmVA==
+  resolved "../eslint-config/zendeskgarden-eslint-config-v26.0.0.tgz#c1ca09572a5466f1afa19f04be77c70476e489c2"
 
 "@zendeskgarden/react-grid@8.45.0":
   version "8.45.0"
