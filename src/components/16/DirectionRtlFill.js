@@ -1,0 +1,15 @@
+import * as React from 'react';
+
+function SvgDirectionRtlFill(props) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
+      <path
+        fill="currentColor"
+        d="M11.5 0H9v10.5c0 .28.22.5.5.5s.5-.22.5-.5V1h1v9.5c0 .28.22.5.5.5s.5-.22.5-.5V.5c0-.28-.22-.5-.5-.5zM5 4c0 2.21 1.79 4 4 4V0C6.79 0 5 1.79 5 4zM4 15.5v-6c0-.45-.54-.67-.85-.35L.5 11.79a.996.996 0 000 1.41l2.65 2.65c.31.32.85.1.85-.35z"
+      />
+      <path fill="none" stroke="currentColor" strokeLinecap="round" d="M1.5 12.5h14" />
+    </svg>
+  );
+}
+
+export default SvgDirectionRtlFill;

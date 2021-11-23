@@ -1,0 +1,11 @@
+import * as React from 'react';
+
+function SvgDashStroke(props) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 12 12" {...props}>
+      <path stroke="currentColor" strokeLinecap="round" d="M3 6.5h6" />
+    </svg>
+  );
+}
+
+export default SvgDashStroke;

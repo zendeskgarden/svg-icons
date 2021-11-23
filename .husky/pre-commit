@@ -1,4 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn lint && yarn format
+yarn format:react -d src/components/12 src/12 \
+  && yarn format:react -d src/components/16 src/16 \
+  && yarn format:react -d src/components/26 src/26 \
+  && yarn format \
+  && yarn lint:fix
