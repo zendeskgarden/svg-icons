@@ -80,7 +80,7 @@ vary depending on the particular needs of your application.
 
   ```css
   .icon {
-    background-image: svg-load('14/remove.svg', color: #007fab);
+    background-image: svg-load('16/remove.svg', color: #007fab);
   }
   ```
 
@@ -89,7 +89,7 @@ vary depending on the particular needs of your application.
 
   ```css
   .icon {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23007FAB' ...");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' color='%23007FAB' ...");
   }
   ```
 
