@@ -282,6 +282,8 @@ export const SVGs = [
   'zd-svg-icon-12-panels-fill',
   'zd-svg-icon-12-panels-stroke',
   'zd-svg-icon-12-paperclip',
+  'zd-svg-icon-12-parentheses-fill',
+  'zd-svg-icon-12-parentheses-stroke',
   'zd-svg-icon-12-pause-fill',
   'zd-svg-icon-12-pause-stroke',
   'zd-svg-icon-12-pencil-fill',
