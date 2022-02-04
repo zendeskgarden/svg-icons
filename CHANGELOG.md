@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.31.0](https://github.com/zendeskgarden/svg-icons/compare/v6.30.2...v6.31.0) (2022-02-04)
+
+
+### Features
+
+* add new parentheses and pin icons ([#261](https://github.com/zendeskgarden/svg-icons/issues/261)) ([e2c40f4](https://github.com/zendeskgarden/svg-icons/commit/e2c40f4251fef428284ccb0598b124842bc2b9ea))
+
 ### [6.30.2](https://github.com/zendeskgarden/svg-icons/compare/v6.30.1...v6.30.2) (2021-05-03)
 
 ### [6.30.1](https://github.com/zendeskgarden/svg-icons/compare/v6.30.0...v6.30.1) (2021-03-31)
