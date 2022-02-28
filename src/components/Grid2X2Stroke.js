@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgGrid2X2Stroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M1 1v5h5V1H1zm5 8a1 1 0 011 1v5a1 1 0 01-1 1H1a1 1 0 01-1-1v-5a1 1 0 011-1h5zm9 0a1 1 0 011 1v5a1 1 0 01-1 1h-5a1 1 0 01-1-1v-5a1 1 0 011-1h5zm-9 1H1v5h5v-5zm9 0h-5v5h5v-5zM6 0a1 1 0 011 1v5a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h5zm9 0a1 1 0 011 1v5a1 1 0 01-1 1h-5a1 1 0 01-1-1V1a1 1 0 011-1h5zm0 1h-5v5h5V1z"
-      />
-    </svg>
-  );
-}
+const SvgGrid2X2Stroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M1 1v3h3V1H1zm3 6a1 1 0 011 1v3a1 1 0 01-1 1H1a1 1 0 01-1-1V8a1 1 0 011-1h3zm7 0a1 1 0 011 1v3a1 1 0 01-1 1H8a1 1 0 01-1-1V8a1 1 0 011-1h3zM4 8H1v3h3V8zm7 0H8v3h3V8zM4 0a1 1 0 011 1v3a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h3zm7 0a1 1 0 011 1v3a1 1 0 01-1 1H8a1 1 0 01-1-1V1a1 1 0 011-1h3zm0 1H8v3h3V1z"
+    />
+  </svg>
+);
 
 export default SvgGrid2X2Stroke;

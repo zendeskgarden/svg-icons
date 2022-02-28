@@ -1,20 +1,25 @@
 import * as React from 'react';
 
-function SvgMicrophoneOnFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <g fill="currentColor">
-        <rect width={6} height={12} x={5} rx={3} ry={3} />
-        <path d="M7 13h2v3H7z" />
-      </g>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        d="M3.5 6.5V9a4.5 4.5 0 009 0V6.5"
-      />
-    </svg>
-  );
-}
+const SvgMicrophoneOnFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <g fill="currentColor">
+      <path d="M5 9.5h2V12H5z" />
+      <rect width={4} height={8} x={4} rx={2} ry={2} />
+    </g>
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M9.5 5.5V6A3.5 3.5 0 016 9.5 3.5 3.5 0 012.5 6v-.5"
+    />
+  </svg>
+);
 
 export default SvgMicrophoneOnFill;

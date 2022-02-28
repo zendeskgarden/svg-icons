@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgEyeFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <g fill="currentColor">
-        <path d="M15.83 7.42C15.1 6.38 12.38 3 8 3S.9 6.38.17 7.42a.99.99 0 000 1.16C.9 9.62 3.62 13 8 13s7.1-3.38 7.83-4.42a.99.99 0 000-1.16zM8 11c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
-        <circle cx={8} cy={8} r={2} />
-      </g>
-    </svg>
-  );
-}
+const SvgEyeFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <g fill="currentColor">
+      <circle cx={6} cy={6} r={1.5} />
+      <path d="M11.79 5.34C11.08 4.33 9.1 2 6 2S.92 4.33.21 5.34c-.28.4-.28.93 0 1.32C.92 7.67 2.9 10 6 10s5.08-2.33 5.79-3.34c.28-.39.28-.93 0-1.32zM6 8.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+    </g>
+  </svg>
+);
 
 export default SvgEyeFill;

@@ -1,21 +1,25 @@
 import * as React from 'react';
 
-function SvgNewWindowFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeWidth={1.25}
-        d="M14.5 10.5V14c0 .28-.22.5-.5.5H2c-.28 0-.5-.22-.5-.5V2c0-.28.22-.5.5-.5h3.5M8 8l4-4"
-      />
-      <path
-        fill="currentColor"
-        d="M15 7.29V2c0-.55-.45-1-1-1H8.71a.5.5 0 00-.36.85l5.79 5.79c.32.32.86.1.86-.35z"
-      />
-    </svg>
-  );
-}
+const SvgNewWindowFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M10.5 8.5V10c0 .28-.22.5-.5.5H2c-.28 0-.5-.22-.5-.5V2c0-.28.22-.5.5-.5h1.5M6 6l4-4"
+    />
+    <path
+      fill="currentColor"
+      d="M10.5 6.5a.47.47 0 01-.35-.15l-4.5-4.5a.474.474 0 01-.11-.54C5.62 1.12 5.8 1 6 1h4c.55 0 1 .45 1 1v4c0 .2-.12.38-.31.46-.06.03-.13.04-.19.04z"
+    />
+  </svg>
+);
 
 export default SvgNewWindowFill;

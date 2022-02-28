@@ -1,17 +1,22 @@
 import * as React from 'react';
 
-function SvgEyeStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <g fill="none" stroke="currentColor">
-        <circle cx={8} cy={8} r={2.5} />
-        <path
-          strokeLinecap="round"
-          d="M15.42 8.29c.12-.18.12-.4 0-.58-.7-1-3.28-4.21-7.42-4.21S1.28 6.71.58 7.71c-.12.18-.12.4 0 .58.7 1 3.28 4.21 7.42 4.21s6.72-3.21 7.42-4.21z"
-        />
-      </g>
-    </svg>
-  );
-}
+const SvgEyeStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <g fill="none" stroke="currentColor">
+      <circle cx={6} cy={6} r={1.5} />
+      <path
+        strokeLinejoin="round"
+        d="M11.38 6.37c.16-.22.16-.52 0-.75-.63-.9-2.5-3.12-5.38-3.12S1.25 4.72.62 5.63c-.16.22-.16.52 0 .75.63.9 2.5 3.12 5.38 3.12s4.75-2.22 5.38-3.13z"
+      />
+    </g>
+  </svg>
+);
 
 export default SvgEyeStroke;

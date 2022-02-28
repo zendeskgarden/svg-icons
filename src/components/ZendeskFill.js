@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgZendeskFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M14.667 0C15.403 0 16 .597 16 1.333v13.334c0 .736-.597 1.333-1.333 1.333H1.333A1.333 1.333 0 010 14.667V1.333C0 .597.597 0 1.333 0h13.334zM7.615 6.348L3 11.5h4.615V6.348zm3.077 3.02c-1.214 0-2.217.878-2.302 1.98l-.005.152H13c0-1.173-1.038-2.132-2.308-2.132zM13 4.5H8.385v5.152L13 4.5zm-5.385 0H3c0 1.173 1.038 2.132 2.308 2.132 1.214 0 2.217-.878 2.302-1.98l.005-.152z"
-      />
-    </svg>
-  );
-}
+const SvgZendeskFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M11 0a1 1 0 011 1v10a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h10zM5.692 4.584L2 9h3.692V4.584zm2.462 2.589A1.842 1.842 0 006.308 9H10c0-1.005-.83-1.827-1.846-1.827zM10 3H6.308v4.416L10 3zM5.692 3H2c0 1.005.83 1.827 1.846 1.827A1.842 1.842 0 005.692 3z"
+    />
+  </svg>
+);
 
 export default SvgZendeskFill;

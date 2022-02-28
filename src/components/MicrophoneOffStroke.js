@@ -1,17 +1,22 @@
 import * as React from 'react';
 
-function SvgMicrophoneOffStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        d="M5.5 7.5V3C5.5 1.6 6.6.5 8 .5s2.5 1.1 2.5 2.5m0 5.5V9c0 1.4-1.1 2.5-2.5 2.5m-6.5 3l13-13M5.9 13c.6.3 1.3.5 2.1.5 2.5 0 4.5-2 4.5-4.5V6.5m-9 0v2.9"
-      />
-      <path fill="currentColor" d="M7 13h2v3H7z" />
-    </svg>
-  );
-}
+const SvgMicrophoneOffStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M9.5 5.5V6A3.504 3.504 0 016 9.5a3.369 3.369 0 01-.9-.12M2.5 5.5V6a3.369 3.369 0 00.12.9m-1.102 3.582l8.98-8.98M7.36 6.62a1.409 1.409 0 01-.74.74M4.5 5V2a1.5 1.5 0 013 0"
+    />
+    <path fill="currentColor" d="M5 9.5h2V12H5z" />
+  </svg>
+);
 
 export default SvgMicrophoneOffStroke;

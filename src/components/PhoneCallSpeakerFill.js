@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgPhoneCallSpeakerFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M10.293 10.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-1.232 1.232a3.5 3.5 0 01-4.95 0L1.061 8.475a3.5 3.5 0 010-4.95l1.232-1.232a1 1 0 011.414 0l2 2a1 1 0 010 1.414L4.414 7 9 11.586l1.293-1.293zM8.5 5.5a1 1 0 110-2c2.212 0 4 1.788 4 4a1 1 0 11-2 0c0-1.108-.892-2-2-2zm0-3.5a1 1 0 110-2A7.5 7.5 0 0116 7.5a1 1 0 11-2 0A5.5 5.5 0 008.5 2z"
-      />
-    </svg>
-  );
-}
+const SvgPhoneCallSpeakerFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M2.707 1.293l2 2a1 1 0 010 1.414L4.414 5 7 7.586l.293-.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-.232.232a3.5 3.5 0 01-4.95 0L1.061 6.475a3.5 3.5 0 010-4.95l.232-.232a1 1 0 011.414 0zM2 2l-.232.232a2.5 2.5 0 000 3.536l4.464 4.464a2.5 2.5 0 003.536 0L10 10 8 8 7 9 3 5l1-1-2-2zm4.5 1a.5.5 0 110-1c1.953 0 3.53 1.58 3.53 3.53a.5.5 0 01-1 0C9.03 4.132 7.9 3 6.5 3zm.23-2a.5.5 0 110-1A5.27 5.27 0 0112 5.27a.5.5 0 11-1 0A4.27 4.27 0 006.73 1z"
+    />
+  </svg>
+);
 
 export default SvgPhoneCallSpeakerFill;

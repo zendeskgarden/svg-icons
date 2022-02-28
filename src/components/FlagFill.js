@@ -1,15 +1,20 @@
 import * as React from 'react';
 
-function SvgFlagFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path fill="none" stroke="currentColor" strokeLinecap="round" d="M2.5 15.5V.5" />
-      <path
-        fill="currentColor"
-        d="M13.29 9H4V1h9.29c.41 0 .77.24.92.62s.07.8-.22 1.09L11.71 5 14 7.29A1.002 1.002 0 0113.29 9z"
-      />
-    </svg>
-  );
-}
+const SvgFlagFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path fill="none" stroke="currentColor" strokeLinecap="round" d="M1.5 11.5V.5" />
+    <path
+      fill="currentColor"
+      d="M10.79 7H3V1h7.79c.45 0 .67.54.35.85L9 4l2.15 2.15a.5.5 0 01-.36.85z"
+    />
+  </svg>
+);
 
 export default SvgFlagFill;

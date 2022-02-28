@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgEmailStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M15 2a1 1 0 011 1v10a1 1 0 01-1 1H1a1 1 0 01-1-1V3a1 1 0 011-1h14zm0 1.707l-6.285 6.295a1 1 0 01-1.419.002L1 3.707v8.585l3.146-3.146a.5.5 0 11.708.708L1.706 13h12.587l-3.147-3.146a.5.5 0 01.708-.708L15 12.293V3.707zM14.292 3H1.707l6.298 6.298L14.292 3z"
-      />
-    </svg>
-  );
-}
+const SvgEmailStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M11 1a1 1 0 011 1v8a1 1 0 01-1 1H1a1 1 0 01-1-1V2a1 1 0 011-1h10zm0 1.707L6.715 7.002a1 1 0 01-1.419.002L1 2.707v6.585l2.146-2.146a.5.5 0 11.708.708L1.706 10h8.587L8.146 7.854a.5.5 0 11.708-.708L11 9.293V2.707zM10.293 2H1.707l4.298 4.298L10.293 2z"
+    />
+  </svg>
+);
 
 export default SvgEmailStroke;

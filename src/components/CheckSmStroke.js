@@ -1,18 +1,23 @@
 import * as React from 'react';
 
-function SvgCheckSmStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={1.25}
-        d="M3 9l3 3 7-7"
-      />
-    </svg>
-  );
-}
+const SvgCheckSmStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.25}
+      d="M3 6l2 2 4-4"
+    />
+  </svg>
+);
 
 export default SvgCheckSmStroke;

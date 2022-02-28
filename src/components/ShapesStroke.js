@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgShapesStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M6 9a1 1 0 011 1v5a1 1 0 01-1 1H1a1 1 0 01-1-1v-5a1 1 0 011-1h5zm6.25-.5a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5zM6 10H1v5h5v-5zm6.25-.5a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5zM8.857.486l3 5A1 1 0 0111 7H5a1 1 0 01-.857-1.514l3-5a1 1 0 011.714 0zM8 1L5 6h6L8 1z"
-      />
-    </svg>
-  );
-}
+const SvgShapesStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M4 7a1 1 0 011 1v3a1 1 0 01-1 1H1a1 1 0 01-1-1V8a1 1 0 011-1h3zm5.25-.5a2.75 2.75 0 110 5.5 2.75 2.75 0 010-5.5zM4 8H1v3h3V8zm5.25-.5a1.75 1.75 0 100 3.5 1.75 1.75 0 000-3.5zM6.832.445l2 3A1 1 0 018 5H4a1 1 0 01-.832-1.555l2-3a1 1 0 011.664 0zM6 1L4 4h4L6 1z"
+    />
+  </svg>
+);
 
 export default SvgShapesStroke;

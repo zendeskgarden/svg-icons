@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgBoldFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M7.5 0C9.952 0 12 2.048 12 4.5a4.483 4.483 0 01-1.27 3.108C12.078 8.39 13 9.855 13 11.5c0 2.452-2.048 4.5-4.5 4.5H4a1 1 0 01-1-1V1a1 1 0 011-1h3.5zM5 14h3.5c1.348 0 2.5-1.152 2.5-2.5S9.848 9 8.5 9H5v5zM7.5 2H5v5h2.5C8.848 7 10 5.848 10 4.5S8.848 2 7.5 2z"
-      />
-    </svg>
-  );
-}
+const SvgBoldFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M5.9 0c1.96 0 3.6 1.554 3.6 3.5a3.42 3.42 0 01-.86 2.265A3.453 3.453 0 0110 8.5c0 1.946-1.64 3.5-3.6 3.5H3a1 1 0 01-1-1V1a1 1 0 011-1h2.9zM4 10h2.4C7.279 10 8 9.317 8 8.5S7.279 7 6.4 7H4v3zm1.9-8H4v3h1.9c.879 0 1.6-.683 1.6-1.5S6.779 2 5.9 2z"
+    />
+  </svg>
+);
 
 export default SvgBoldFill;

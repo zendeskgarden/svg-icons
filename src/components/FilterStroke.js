@@ -1,15 +1,20 @@
 import * as React from 'react';
 
-function SvgFilterStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        d="M1.35 2.35L6.5 7.5v7.07c0 .4.45.64.78.42l2-1.33c.14-.09.22-.25.22-.42V7.5l5.15-5.15a.5.5 0 00-.35-.85H1.71a.5.5 0 00-.36.85z"
-      />
-    </svg>
-  );
-}
+const SvgFilterStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M.78 1.35L4.5 5v5.69c0 .37.39.61.72.45l2-1c.17-.09.28-.26.28-.45V5l3.72-3.65a.5.5 0 00-.35-.85H1.14a.5.5 0 00-.36.85z"
+    />
+  </svg>
+);
 
 export default SvgFilterStroke;

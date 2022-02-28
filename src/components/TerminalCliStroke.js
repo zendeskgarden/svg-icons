@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgTerminalCliStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M1 1h14a1 1 0 011 1v12a1 1 0 01-1 1H1a1 1 0 01-1-1V2a1 1 0 011-1zm6.5 11a.5.5 0 110-1h5a.5.5 0 110 1h-5zM3.146 5.354a.5.5 0 11.708-.708L6.457 7.25a.999.999 0 01.003 1.397l-2.6 2.7a.5.5 0 11-.72-.694L5.743 7.95 3.146 5.354zM1 2v12h14V2H1z"
-      />
-    </svg>
-  );
-}
+const SvgTerminalCliStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M1 1h10a1 1 0 011 1v8a1 1 0 01-1 1H1a1 1 0 01-1-1V2a1 1 0 011-1zm4.5 8a.5.5 0 010-1h4a.5.5 0 010 1h-4zM2.146 3.854a.5.5 0 11.708-.708L4.957 5.25a.999.999 0 01.005 1.395l-2.1 2.2a.5.5 0 11-.724-.69L4.243 5.95 2.146 3.854zM1 2v8h10V2H1z"
+    />
+  </svg>
+);
 
 export default SvgTerminalCliStroke;

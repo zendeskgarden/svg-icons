@@ -1,21 +1,17 @@
 import * as React from 'react';
 
-function SvgDecimalFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <ellipse
-        cx={9.5}
-        cy={8}
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeWidth={2}
-        rx={5.5}
-        ry={7}
-      />
-      <circle cx={1.5} cy={14.5} r={1.5} fill="currentColor" />
-    </svg>
-  );
-}
+const SvgDecimalFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <ellipse cx={7.5} cy={6} fill="none" stroke="currentColor" strokeWidth={2} rx={3.5} ry={5} />
+    <circle cx={1.5} cy={10.5} r={1.5} fill="currentColor" />
+  </svg>
+);
 
 export default SvgDecimalFill;

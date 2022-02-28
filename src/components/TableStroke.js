@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgTableStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M15 0a1 1 0 011 1v14a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h14zM5 12H1v3h4v-3zm5 0H6v3h4v-3zm5 0h-4v3h4v-3zM5 8H1v3h4V8zm5 0H6v3h4V8zm5 0h-4v3h4V8zM5 4H1v3h4V4zm5 0H6v3h4V4zm5 0h-4v3h4V4zm0-3H1v2h14V1z"
-      />
-    </svg>
-  );
-}
+const SvgTableStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M11 0a1 1 0 011 1v10a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h10zM3 9H1v2h2V9zm3 0H4v2h2V9zm5 0H7v2h4V9zM3 6H1v2h2V6zm3 0H4v2h2V6zm5 0H7v2h4V6zM3 3H1v2h2V3zm3 0H4v2h2V3zm5 0H7v2h4V3zm0-2H1v1h10V1z"
+    />
+  </svg>
+);
 
 export default SvgTableStroke;

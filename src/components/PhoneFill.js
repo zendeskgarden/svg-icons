@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgPhoneFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M10 10.586l1.293-1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-1.232 1.232a3.5 3.5 0 01-4.95 0L1.061 6.475a3.5 3.5 0 010-4.95L2.293.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414L5.414 6 10 10.586z"
-      />
-    </svg>
-  );
-}
+const SvgPhoneFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M8.293 7.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-.232.232a3.5 3.5 0 01-4.95 0L1.061 5.475a3.5 3.5 0 010-4.95l.232-.232a1 1 0 011.414 0l2 2a1 1 0 010 1.414L4.414 4 8 7.586l.293-.293z"
+    />
+  </svg>
+);
 
 export default SvgPhoneFill;

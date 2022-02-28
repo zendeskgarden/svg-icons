@@ -1,20 +1,25 @@
 import * as React from 'react';
 
-function SvgMicrophoneOffFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M7 13h2v3H7zm.28-1.09c.54.14 1.13.13 1.76-.1 1.2-.44 1.95-1.64 1.95-2.92v-.56c0-.45-.54-.67-.85-.35l-3.09 3.09c-.28.27-.14.74.23.84zm3.68-9.26A3.005 3.005 0 007.36.06c-1.4.29-2.37 1.61-2.37 3.05v4.56c0 .45.54.67.85.35l4.97-4.97c.11-.1.17-.25.15-.4zM1.5 15a.47.47 0 01-.35-.15c-.2-.2-.2-.51 0-.71l13-13c.2-.2.51-.2.71 0s.2.51 0 .71l-13 13c-.1.1-.23.15-.36.15z"
-      />
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        d="M5.94 13c.62.32 1.32.5 2.06.5 2.49 0 4.5-2.01 4.5-4.5V6.5m-9 0V9c0 .15.01.29.02.44"
-      />
-    </svg>
-  );
-}
+const SvgMicrophoneOffFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M7.94 6.43a.355.355 0 01-.02.1 1.971 1.971 0 01-1.39 1.39.355.355 0 01-.1.02.25.25 0 01-.2-.4l.05-.05 1.24-1.24a.241.241 0 01.17-.07.248.248 0 01.25.25zM8 2v.02a.582.582 0 01-.04.2.516.516 0 01-.08.126c-.033.036-3.03 3.024-3.03 3.024A.5.5 0 014 5.02V2.11A2.076 2.076 0 015.82.01a1.943 1.943 0 011.59.58A1.955 1.955 0 018 2zM5 9.5h2V12H5z"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M2.5 5.5V6a3.369 3.369 0 00.12.9M9.5 5.5V6A3.504 3.504 0 016 9.5a3.369 3.369 0 01-.9-.12m-3.582 1.102l8.98-8.98"
+    />
+  </svg>
+);
 
 export default SvgMicrophoneOffFill;

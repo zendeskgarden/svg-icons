@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgPlayCircleFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm2.79 8.71l-3.94 3.94a.5.5 0 01-.85-.36V3.71c0-.45.54-.67.85-.35l3.94 3.94c.39.38.39 1.02 0 1.41z"
-      />
-    </svg>
-  );
-}
+const SvgPlayCircleFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M6 0a6 6 0 106 6 6.005 6.005 0 00-6-6zm2.47 6.4L4.8 9.15a.5.5 0 01-.8-.4v-5.5a.5.5 0 01.8-.4L8.47 5.6a.508.508 0 010 .8z"
+    />
+  </svg>
+);
 
 export default SvgPlayCircleFill;

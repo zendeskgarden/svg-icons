@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgCursorArrowStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M11.217 10.51l4.637 4.636a.5.5 0 01-.708.708l-4.636-4.637-2.116 4.23a1 1 0 01-1.801-.026l-6.5-14C-.299.576.576-.299 1.421.093l14 6.5a1 1 0 01.026 1.801l-4.23 2.116zM7.5 15l2.5-5 5-2.5L1 1l6.5 14z"
-      />
-    </svg>
-  );
-}
+const SvgCursorArrowStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M7.584 8.291l-1.148 3.06c-.313.836-1.482.873-1.848.06l-4.5-10C-.29.57.571-.29 1.41.087l10 4.5c.814.366.777 1.535-.059 1.848l-3.06 1.148 3.563 3.562a.5.5 0 01-.708.708L7.584 8.29zM5.5 11L7 7l4-1.5L1 1l4.5 10z"
+    />
+  </svg>
+);
 
 export default SvgCursorArrowStroke;

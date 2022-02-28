@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgHistoryFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M8 0a8 8 0 11-8 8 .5.5 0 011 0 7 7 0 107-7c-1.752 0-3.25.644-4.45 1.842l1.304 1.304a.5.5 0 01-.268.847L4.5 5h-3a.5.5 0 01-.492-.41L1 4.5v-3a.5.5 0 01.788-.41l.066.056.988.99C4.222.755 5.97 0 8 0zm-.5 4.5a.5.5 0 01.492.41L8 5v3.359l2.812 2.25a.5.5 0 01.128.628l-.05.075a.5.5 0 01-.627.128l-.075-.05-3-2.4a.5.5 0 01-.18-.3L7 8.6V5a.5.5 0 01.5-.5z"
-      />
-    </svg>
-  );
-}
+const SvgHistoryFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M6 0a6 6 0 11-6 6 .5.5 0 011 0 5 5 0 105-5c-1.24 0-2.333.418-3.356 1.436l.71.71A.5.5 0 013 4H1a.5.5 0 01-.5-.5v-2a.5.5 0 01.854-.354l.584.583C3.153.521 4.496 0 6 0zm-.5 3a.5.5 0 01.492.41L6 3.5v2.793l1.854 1.853a.5.5 0 01.057.638l-.057.07a.5.5 0 01-.638.057l-.07-.057-2-2a.5.5 0 01-.14-.275L5 6.5v-3a.5.5 0 01.5-.5z"
+    />
+  </svg>
+);
 
 export default SvgHistoryFill;

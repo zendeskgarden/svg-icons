@@ -1,16 +1,21 @@
 import * as React from 'react';
 
-function SvgCircleStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        d="M1.74 3.86c.56-.84 1.28-1.56 2.12-2.12M.65 9.51C.55 9.02.5 8.52.5 8c0-.51.05-1.01.15-1.5m3.21 7.75a7.474 7.474 0 01-2.11-2.12m7.76 3.22c-.49.1-.99.15-1.51.15-.51 0-1.02-.05-1.5-.15m7.76-3.21c-.56.84-1.28 1.56-2.12 2.12m3.21-7.76c.1.48.15.99.15 1.5s-.05 1.02-.15 1.5m-3.22-7.76c.84.56 1.57 1.28 2.13 2.12M6.5.65C6.98.55 7.49.5 8 .5s1.02.05 1.5.15"
-      />
-    </svg>
-  );
-}
+const SvgCircleStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M1.41 2.97c.41-.62.94-1.15 1.56-1.56M.61 7.11C.54 6.75.5 6.38.5 6c0-.38.04-.74.11-1.1m2.35 5.69c-.61-.41-1.14-.94-1.55-1.55m5.7 2.35c-.36.07-.73.11-1.11.11a5.7 5.7 0 01-1.1-.11m5.69-2.36c-.41.62-.94 1.15-1.56 1.56m2.36-5.69c.07.36.11.72.11 1.1 0 .38-.04.74-.11 1.1M9.03 1.41c.62.41 1.15.94 1.56 1.56M4.9.61C5.26.54 5.62.5 6 .5s.74.04 1.1.11"
+    />
+  </svg>
+);
 
 export default SvgCircleStroke;

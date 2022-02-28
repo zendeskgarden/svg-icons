@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgSmileSlightFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M8 0a8 8 0 108 8 8 8 0 00-8-8zm2 5a1 1 0 11-1 1 1 1 0 011-1zM6 5a1 1 0 11-1 1 1 1 0 011-1zm4.74 6.08a7.22 7.22 0 01-5.48 0 .63.63 0 01.48-1.16 5.9 5.9 0 004.52 0 .63.63 0 11.48 1.16z"
-      />
-    </svg>
-  );
-}
+const SvgSmileSlightFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M6 0a6 6 0 106 6 6 6 0 00-6-6zM3 5a1 1 0 111 1 1 1 0 01-1-1zm5.11 3.45a5.51 5.51 0 01-4.22 0 .62.62 0 01-.34-.81.63.63 0 01.82-.34 4.31 4.31 0 003.26 0 .63.63 0 01.82.34.62.62 0 01-.34.81zM8 6a1 1 0 111-1 1 1 0 01-1 1z"
+    />
+  </svg>
+);
 
 export default SvgSmileSlightFill;

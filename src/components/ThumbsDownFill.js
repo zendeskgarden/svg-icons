@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgThumbsDownFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <g fill="currentColor">
-        <path d="M8 16a1.94 1.94 0 01-2-2v-4H1.5A1.5 1.5 0 010 8.5C.25 2.54 1 0 2.5 0H11a1 1 0 011 1v8.1a1 1 0 01-.58.95c-.47.16-1.42.82-1.42 4A1.94 1.94 0 018 16z" />
-        <rect width={3} height={10} x={13} rx={1} ry={1} />
-      </g>
-    </svg>
-  );
-}
+const SvgThumbsDownFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <g fill="currentColor">
+      <path d="M5.5 12A1.46 1.46 0 014 10.5V8H1.23A1.24 1.24 0 010 6.77C.2 2 .77 0 2 0h5a1 1 0 011 1v6.5a.5.5 0 01-.28.45S7 8.43 7 10.5A1.46 1.46 0 015.5 12z" />
+      <rect width={3} height={8} x={9} rx={1} ry={1} />
+    </g>
+  </svg>
+);
 
 export default SvgThumbsDownFill;

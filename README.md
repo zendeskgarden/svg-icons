@@ -41,6 +41,24 @@ Once installed, SVG icons may be accessed in a variety of ways. The
 following list demonstrates several possibilities, however usage will
 vary depending on the particular needs of your application.
 
+- **React**
+
+  All of the icons are converted into React component and can be used as-is without the need for a webpack loader.
+
+  ```js
+  import ZendeskIcon from '@zendeskgarden/svg-icons/src/components/Zendesk';
+
+  class ZendeskButton extends React.Component {
+    render() {
+      return (
+        <button>
+          <ZendeskIcon />
+        </button>
+      );
+    }
+  }
+  ```
+
 - **JavaScript**
 
   In the following snippet, a source SVG is loaded just like any other

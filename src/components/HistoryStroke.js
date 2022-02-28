@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgHistoryStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M8 0a8 8 0 11-8 8 .5.5 0 011 0 7 7 0 107-7C5.749 1 3.915 2.063 2.597 4H4.5a.5.5 0 01.492.41L5 4.5a.5.5 0 01-.41.492L4.5 5h-3a.5.5 0 01-.492-.41L1 4.5v-3a.5.5 0 01.992-.09L2 1.5v1.615C3.482 1.118 5.53 0 8 0zm-.5 4.5a.5.5 0 01.492.41L8 5v3.359l2.812 2.25a.5.5 0 01.128.628l-.05.075a.5.5 0 01-.627.128l-.075-.05-3-2.4a.5.5 0 01-.18-.3L7 8.6V5a.5.5 0 01.5-.5z"
-      />
-    </svg>
-  );
-}
+const SvgHistoryStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M6 0a6 6 0 11-6 6 .5.5 0 011 0 5 5 0 105-5c-1.448 0-2.695.57-3.865 2H3a.5.5 0 01.492.41l.008.09a.5.5 0 01-.41.492L3 4H1a.5.5 0 01-.492-.41L.5 3.5v-2a.5.5 0 01.992-.09l.008.09v.7C2.828.657 4.313 0 6 0zm-.5 3a.5.5 0 01.492.41L6 3.5v2.793l1.854 1.853a.5.5 0 01.057.638l-.057.07a.5.5 0 01-.638.057l-.07-.057-2-2a.5.5 0 01-.14-.275L5 6.5v-3a.5.5 0 01.5-.5z"
+    />
+  </svg>
+);
 
 export default SvgHistoryStroke;

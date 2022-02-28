@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgArrowTrendingFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M15.5 3a.5.5 0 01.492.41L16 3.5v4a.5.5 0 01-.788.41l-.066-.056-1.292-1.293-4.147 4.146a1 1 0 01-1.32.083l-.094-.083L6 8.415l-4.293 4.292a1 1 0 01-1.32.083l-.094-.083a1 1 0 01-.083-1.32l.083-.094 5-5a1 1 0 011.32-.083l.094.083L9 8.585l3.439-3.439-1.293-1.292a.5.5 0 01.268-.847L11.5 3h4z"
-      />
-    </svg>
-  );
-}
+const SvgArrowTrendingFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M11.501 2a.5.5 0 01.492.41L12 2.5v3a.5.5 0 01-.788.41l-.066-.056-.793-.794-3.147 3.147a1 1 0 01-1.32.083l-.094-.083L4.5 6.915 1.707 9.707a1 1 0 01-1.32.083l-.094-.083a1 1 0 01-.083-1.32l.083-.094 3.5-3.5a1 1 0 011.32-.083l.094.083L6.5 6.085l2.439-2.44-.792-.791a.5.5 0 01.268-.847L8.501 2h3z"
+    />
+  </svg>
+);
 
 export default SvgArrowTrendingFill;

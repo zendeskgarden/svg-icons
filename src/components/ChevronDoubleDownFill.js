@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgChevronDoubleDownFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M13.78 8.375a1 1 0 01-.062 1.321l-.093.085-5 4a1 1 0 01-1.147.072l-.103-.072-5-4a1 1 0 011.147-1.634l.103.072L8 11.72l4.375-3.5a1 1 0 011.406.156zm0-6a1 1 0 01-.062 1.321l-.093.085-5 4a1 1 0 01-1.147.072l-.103-.072-5-4a1 1 0 011.147-1.634l.103.072L8 5.72l4.375-3.5a1 1 0 011.406.156z"
-      />
-    </svg>
-  );
-}
+const SvgChevronDoubleDownFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M5.387 5.79l-.094-.083-4-4A1 1 0 012.613.21l.094.083L6 3.585 9.293.293a1 1 0 011.32-.083l.094.083a1 1 0 01.083 1.32l-.083.094-4 4a1 1 0 01-1.32.083zm0 6l-.094-.083-4-4a1 1 0 011.32-1.497l.094.083L6 9.585l3.293-3.292a1 1 0 011.32-.083l.094.083a1 1 0 01.083 1.32l-.083.094-4 4a1 1 0 01-1.32.083z"
+    />
+  </svg>
+);
 
 export default SvgChevronDoubleDownFill;

@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgSpeechBubbleConversationFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M9 0H3.16C2.03 0 .93.56.38 1.54A2.97 2.97 0 001 5.22v3.07c0 .45.54.67.85.35L4.5 6h4.38c1.45 0 2.78-.98 3.06-2.4C12.31 1.68 10.85 0 9 0zm4 7H7.12c-1.45 0-2.79.98-3.06 2.4A3.004 3.004 0 007 13h4.5l2.65 2.65a.5.5 0 00.85-.35v-3.07c.63-.56 1-1.37 1-2.22A3.01 3.01 0 0013 7z"
-      />
-    </svg>
-  );
-}
+const SvgSpeechBubbleConversationFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M1 6.29V3.72a1.985 1.985 0 01-.91-2.3C.35.55 1.22 0 2.12 0h3.41C6.88 0 7.8.68 7.96 1.66 8.18 2.91 7.21 4 6 4H4.5L1.85 6.65A.5.5 0 011 6.29zM7.5 9H6.11c-1 0-1.92-.68-2.08-1.66C3.82 6.09 4.79 5 6 5h3.88c.91 0 1.78.55 2.04 1.42.28.93-.14 1.86-.91 2.31v2.57c0 .45-.54.67-.85.35L7.5 9z"
+    />
+  </svg>
+);
 
 export default SvgSpeechBubbleConversationFill;

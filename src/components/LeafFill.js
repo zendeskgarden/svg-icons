@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgLeafFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M7 8.293l-2.854 2.853a.5.5 0 00.708.708L7.707 9H11a.5.5 0 100-1H8.707l3.147-3.146a.5.5 0 00-.708-.708L8 7.293V5a.5.5 0 00-1 0v3.293zM3.707 13L.854 15.854a.5.5 0 01-.708-.708L3 12.293V7.167C3 3.209 7.5 0 15.5 0a.5.5 0 01.5.5c0 8-3.209 12.5-7.167 12.5H3.707z"
-      />
-    </svg>
-  );
-}
+const SvgLeafFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M2.707 10L.854 11.854a.5.5 0 01-.708-.708L2 9.293V5.5C2 2.462 5.5 0 11.5 0a.5.5 0 01.5.5C12 6.497 9.538 10 6.5 10H2.707zM5 6.293L3.146 8.146a.5.5 0 10.708.708L5.707 7H7.5a.5.5 0 000-1h-.793l2.147-2.146a.5.5 0 10-.708-.708L6 5.293V4.5a.5.5 0 00-1 0v1.793z"
+    />
+  </svg>
+);
 
 export default SvgLeafFill;

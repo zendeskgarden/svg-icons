@@ -1,5 +1,6 @@
 module.exports = {
-  icon: true,
+  // icon: true,
   index: false,
+  // ignoreExisting: true,
   template: require('./svgrTemplate.js')
 };

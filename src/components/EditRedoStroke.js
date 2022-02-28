@@ -1,16 +1,21 @@
 import * as React from 'react';
 
-function SvgEditRedoStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        d="M.5 11.2C.5 7 4 3.5 8.2 3.5c2.7 0 5.2 1.4 6.8 3.6m.5-4.1v4c0 .3-.2.5-.5.5h-4"
-      />
-    </svg>
-  );
-}
+const SvgEditRedoStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M.5 8.2C.5 5 3.1 2.4 6.3 2.4 9 2.5 9.9 3.8 11 5m-2.5.5H11c.3 0 .5-.2.5-.5V2.5"
+    />
+  </svg>
+);
 
 export default SvgEditRedoStroke;

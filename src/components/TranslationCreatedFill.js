@@ -1,21 +1,26 @@
 import * as React from 'react';
 
-function SvgTranslationCreatedFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M8 0H1C.45 0 0 .45 0 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1zM6.5 9c-.83 0-1.51-.28-2.07-.68-.54.41-1.17.68-1.93.68-.28 0-.5-.22-.5-.5s.22-.5.5-.5c.44 0 .83-.14 1.18-.37-.78-.89-1.13-1.9-1.15-1.97-.09-.26.05-.55.31-.63.26-.09.55.05.63.31.01.02.31.88.95 1.62.77-.92 1.22-2.21 1.44-2.96H2.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5H4v-.5c0-.28.22-.5.5-.5s.5.22.5.5V3h1.5c.15 0 .29.07.39.18.09.12.13.27.1.42-.03.14-.51 2.46-1.81 4.01.37.23.81.39 1.32.39.28 0 .5.22.5.5s-.22.5-.5.5z"
-      />
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M9.5 12.5l2 2 4-4"
-      />
-    </svg>
-  );
-}
+const SvgTranslationCreatedFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M6 0H1C.45 0 0 .45 0 1v7c0 .55.45 1 1 1h5c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1zM4.67 6.03A.501.501 0 014.5 7c-.06 0-.11-.01-.17-.03a3.51 3.51 0 01-.9-.5c-.21.18-.44.34-.71.48a.505.505 0 01-.67-.23.506.506 0 01.23-.67c.16-.08.31-.18.44-.29-.6-.8-.71-1.64-.72-1.7-.03-.27.17-.52.44-.56.27-.04.52.16.56.44 0 .04.08.51.38 1.01.38-.68.53-1.46.58-1.95H2.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5H3c0-.28.22-.5.5-.5s.5.22.5.5h.5c.28 0 .5.22.5.5 0 .1-.02 1.85-.92 3.21.17.13.36.24.59.32z"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M8 10l1 1 2.5-2.5"
+    />
+  </svg>
+);
 
 export default SvgTranslationCreatedFill;

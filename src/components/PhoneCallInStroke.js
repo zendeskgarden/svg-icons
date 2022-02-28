@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgPhoneCallInStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M9.999 5.997h5.5a.5.5 0 110 1h-6a.5.5 0 01-.5-.5V.5a.5.5 0 011 0v5.497zM3.707 2.293l2 2a1 1 0 010 1.414L4.414 7 9 11.586l1.293-1.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-1.232 1.232a3.5 3.5 0 01-4.95 0L1.061 8.475a3.5 3.5 0 010-4.95l1.232-1.232a1 1 0 011.414 0zM3 3L1.768 4.232a2.5 2.5 0 000 3.536l6.464 6.464a2.5 2.5 0 003.536 0L13 13l-2-2-2 2-6-6 2-2-2-2z"
-      />
-    </svg>
-  );
-}
+const SvgPhoneCallInStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M2.707 1.293l2 2a1 1 0 010 1.414L4.414 5 7 7.586l.293-.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-.232.232a3.5 3.5 0 01-4.95 0L1.061 6.475a3.5 3.5 0 010-4.95l.232-.232a1 1 0 011.414 0zM2 2l-.232.232a2.5 2.5 0 000 3.536l4.464 4.464a2.5 2.5 0 003.536 0L10 10 8 8 7 9 3 5l1-1-2-2zm5.5-2a.5.5 0 01.492.41L8 .5V4h3.5a.5.5 0 01.492.41L12 4.5a.5.5 0 01-.41.492L11.5 5h-4a.5.5 0 01-.492-.41L7 4.5v-4a.5.5 0 01.5-.5z"
+    />
+  </svg>
+);
 
 export default SvgPhoneCallInStroke;

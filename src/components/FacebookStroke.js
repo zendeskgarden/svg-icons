@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgFacebookStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 00-1.196 13.898v-4.726H4.825V8.06h1.98V6.652c0-2.328 1.128-3.35 3.054-3.35.922 0 1.41.068 1.64.1v1.844h-1.313c-.818 0-1.103.78-1.103 1.657V8.06h2.396l-.326 2.113h-2.07v4.745A7.002 7.002 0 008 1z"
-      />
-    </svg>
-  );
-}
+const SvgFacebookStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M6 0a6 6 0 110 12A6 6 0 016 0zm0 1a5 5 0 00-.897 9.92V7.63H3.62V6.043h1.484V4.989c0-1.746.847-2.513 2.29-2.513.693 0 1.058.051 1.231.075v1.384H7.64c-.613 0-.827.584-.827 1.242v.867H8.61l-.244 1.585H6.812v3.305A5.001 5.001 0 006 1z"
+    />
+  </svg>
+);
 
 export default SvgFacebookStroke;

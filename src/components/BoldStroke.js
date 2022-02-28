@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgBoldStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M7 1c2.176 0 4 1.824 4 4 0 1.315-.666 2.501-1.673 3.234C10.869 8.792 12 10.287 12 12c0 2.176-1.824 4-4 4H3.5a.5.5 0 01-.5-.5v-14a.5.5 0 01.5-.5H7zM4 15h4c1.624 0 3-1.376 3-3S9.624 9 8 9H4v6zM7 2H4v6h3c1.624 0 3-1.376 3-3S8.624 2 7 2z"
-      />
-    </svg>
-  );
-}
+const SvgBoldStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M5.4 1c1.69 0 3.1 1.336 3.1 3 0 .95-.46 1.794-1.17 2.342C8.317 6.842 9 7.842 9 9c0 1.664-1.41 3-3.1 3H2.5a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h2.9zM3 11h2.9C7.05 11 8 10.1 8 9s-.95-2-2.1-2H3v4zm2.4-9H3v4h2.4c1.15 0 2.1-.9 2.1-2s-.95-2-2.1-2z"
+    />
+  </svg>
+);
 
 export default SvgBoldStroke;

@@ -1,15 +1,20 @@
 import * as React from 'react';
 
-function SvgAdjustStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <g fill="none" stroke="currentColor">
-        <circle cx={4.5} cy={6.5} r={2} />
-        <circle cx={11.5} cy={9.5} r={2} />
-        <path strokeLinecap="round" d="M4.5.5v2m0 8v5m7-15v5m0 8v2" />
-      </g>
-    </svg>
-  );
-}
+const SvgAdjustStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <g fill="none" stroke="currentColor">
+      <circle cx={8.5} cy={7} r={1.5} />
+      <circle cx={3.5} cy={5} r={1.5} />
+      <path strokeLinecap="round" d="M3.5.5v1m0 7v3m5-11v3m0 7v1" />
+    </g>
+  </svg>
+);
 
 export default SvgAdjustStroke;

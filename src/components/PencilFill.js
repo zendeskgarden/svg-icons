@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgPencilFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M10.04 2.75l-9.9 9.9A.5.5 0 000 13v2.5c0 .28.22.5.5.5H3c.13 0 .26-.05.35-.15l9.9-9.9-3.21-3.2zm5.46-.46L13.71.5a.996.996 0 00-1.41 0l-1.54 1.54 3.21 3.21 1.54-1.54c.38-.39.38-1.03-.01-1.42z"
-      />
-    </svg>
-  );
-}
+const SvgPencilFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M6.7 2.59L.15 9.15A.47.47 0 000 9.5v2c0 .28.22.5.5.5h2c.13 0 .26-.05.35-.15L9.41 5.3 6.7 2.59zm4.8-.8L10.21.5A.996.996 0 008.8.5L7.6 1.7l2.71 2.71 1.2-1.2c.38-.39.38-1.03-.01-1.42z"
+    />
+  </svg>
+);
 
 export default SvgPencilFill;

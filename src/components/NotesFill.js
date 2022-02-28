@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgNotesFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M12.13 8.37a.47.47 0 01-.33.14l-3.93.14a.5.5 0 01-.52-.52l.14-3.93a.47.47 0 01.14-.33L10.5 1h-9a.5.5 0 00-.5.5v13a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9zm-.94-.94L9 7.5a.51.51 0 01-.5-.5l.07-2.16a.54.54 0 01.16-.35L13 .15a.52.52 0 01.73 0l2.08 2.08a.52.52 0 010 .73l-4.27 4.31a.54.54 0 01-.35.16z"
-      />
-    </svg>
-  );
-}
+const SvgNotesFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M9.46 6.24a.48.48 0 01-.32.15L6 6.56A.51.51 0 015.44 6l.17-3.17a.48.48 0 01.15-.32L7.29 1H1.5a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h9a.5.5 0 00.5-.5V4.71zm-1.04-.82L7 5.5a.48.48 0 01-.5-.5l.08-1.42a.48.48 0 01.13-.32L9.84.14a.46.46 0 01.67 0l1.35 1.35a.46.46 0 010 .67L8.74 5.29a.48.48 0 01-.32.13z"
+    />
+  </svg>
+);
 
 export default SvgNotesFill;

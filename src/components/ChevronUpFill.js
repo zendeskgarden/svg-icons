@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgChevronUpFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M3.625 10.78a1 1 0 01-1.343-1.476l.093-.085 5-4a1 1 0 011.147-.072l.103.072 5 4a1 1 0 01-1.147 1.634l-.103-.072L8 7.28l-4.375 3.5z"
-      />
-    </svg>
-  );
-}
+const SvgChevronUpFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M10.707 8.707a1 1 0 01-1.32.083l-.094-.083L6 5.415 2.707 8.707a1 1 0 01-1.32.083l-.094-.083a1 1 0 01-.083-1.32l.083-.094 4-4a1 1 0 011.32-.083l.094.083 4 4a1 1 0 010 1.414z"
+    />
+  </svg>
+);
 
 export default SvgChevronUpFill;

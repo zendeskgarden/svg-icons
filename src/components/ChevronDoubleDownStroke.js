@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgChevronDoubleDownStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M13.39 8.188a.5.5 0 01-.013.64l-.065.062-5 4a.5.5 0 01-.542.054l-.082-.054-5-4a.5.5 0 01.55-.83l.074.05L8 11.859l4.688-3.75a.5.5 0 01.702.079zm0-5a.5.5 0 01-.013.64l-.065.062-5 4a.5.5 0 01-.542.054l-.082-.054-5-4a.5.5 0 01.55-.83l.074.05L8 6.859l4.688-3.75a.5.5 0 01.702.079z"
-      />
-    </svg>
-  );
-}
+const SvgChevronDoubleDownStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M5.716 5.911l-.07-.057-4-4a.5.5 0 01.638-.765l.07.057L6 4.793l3.646-3.647a.5.5 0 01.638-.057l.07.057a.5.5 0 01.057.638l-.057.07-4 4a.5.5 0 01-.638.057zm0 5l-.07-.057-4-4a.5.5 0 01.638-.765l.07.057L6 9.793l3.646-3.647a.5.5 0 01.638-.057l.07.057a.5.5 0 01.057.638l-.057.07-4 4a.5.5 0 01-.638.057z"
+    />
+  </svg>
+);
 
 export default SvgChevronDoubleDownStroke;

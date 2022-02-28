@@ -1,19 +1,24 @@
 import * as React from 'react';
 
-function SvgSpeechBubbleLightningBoltStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        d="M1 .5h14c.28 0 .5.22.5.5v10c0 .28-.22.5-.5.5H8l-3.65 3.65a.5.5 0 01-.85-.35v-3.3H1c-.28 0-.5-.22-.5-.5V1C.5.72.72.5 1 .5z"
-      />
-      <path
-        fill="currentColor"
-        d="M10.03 6H8.52l1.96-3.72c.06-.15-.01-.28-.17-.28H7.39c-.16 0-.34.13-.4.28l-1.46 3.4c-.07.16 0 .32.16.32H7l-1.42 4.07c-.11.29-.03.54.34.21l4.13-3.89c.23-.23.22-.39-.02-.39z"
-      />
-    </svg>
-  );
-}
+const SvgSpeechBubbleLightningBoltStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M1 .5h10c.28 0 .5.22.5.5v7c0 .28-.22.5-.5.5H6l-2.65 2.65a.5.5 0 01-.85-.35V8.5H1C.72 8.5.5 8.28.5 8V1C.5.72.72.5 1 .5z"
+    />
+    <path
+      fill="currentColor"
+      d="M7.87 4H6.83l1.03-1.8c.04-.11-.01-.2-.11-.2H5.72c-.1 0-.23.09-.28.2l-.96 2.58c-.05.11 0 .22.11.22h.91L4.48 7.57c-.08.2-.02.37.23.15l3.17-3.45c.17-.16.16-.27-.01-.27z"
+    />
+  </svg>
+);
 
 export default SvgSpeechBubbleLightningBoltStroke;

@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgCutleryFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M4 4V.5a.5.5 0 011 0V4h1V.5a.5.5 0 011 0v7a2.5 2.5 0 01-2 2.45v5.55a.5.5 0 11-1 0V9.95A2.5 2.5 0 012 7.5v-7a.5.5 0 011 0V4h1zm6 7a1 1 0 01-1-1V4a4 4 0 014-4 1 1 0 011 1v14c0 1.333-2 1.333-2 0v-4h-2z"
-      />
-    </svg>
-  );
-}
+const SvgCutleryFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M1 3h1V.5a.5.5 0 011 0V3h1V.5a.5.5 0 011 0v5a2.5 2.5 0 01-2 2.45v3.55a.5.5 0 11-1 0V7.95A2.5 2.5 0 010 5.5v-5a.5.5 0 111 0V3zm6.5 5a.5.5 0 01-.5-.5v-4A3.5 3.5 0 0110.5 0a.5.5 0 01.5.5v11a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V8H7.5z"
+    />
+  </svg>
+);
 
 export default SvgCutleryFill;

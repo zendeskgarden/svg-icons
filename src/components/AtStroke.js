@@ -1,16 +1,21 @@
 import * as React from 'react';
 
-function SvgAtStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        d="M11.5 4.5V8h0A3.5 3.5 0 018 11.5h0A3.5 3.5 0 014.5 8h0A3.5 3.5 0 018 4.5h0A3.5 3.5 0 0111.5 8h0v1.5a2 2 0 002 2h0a2 2 0 002-2V8h0A7.5 7.5 0 008 .5h0A7.5 7.5 0 00.5 8h0A7.5 7.5 0 008 15.5h3.41"
-      />
-    </svg>
-  );
-}
+const SvgAtStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M8.5 3.5V6h0A2.5 2.5 0 016 8.5h0A2.5 2.5 0 013.5 6h0A2.5 2.5 0 016 3.5h0A2.5 2.5 0 018.5 6h0v1A1.5 1.5 0 0010 8.5h0A1.5 1.5 0 0011.5 7V6h0A5.5 5.5 0 006 .5h0A5.5 5.5 0 00.5 6h0A5.5 5.5 0 006 11.5h2.5"
+    />
+  </svg>
+);
 
 export default SvgAtStroke;

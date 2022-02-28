@@ -1,16 +1,21 @@
 import * as React from 'react';
 
-function SvgUploadStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        d="M8.5 14.5V9m2.5 5.5c2.49 0 4.5-2.01 4.5-4.5S13.49 5.5 11 5.5c-.21 0-.42.03-.62.06-.43-1.75-2-3.06-3.88-3.06-2.21 0-4 1.79-4 4 0 .44.09.85.22 1.25A3.49 3.49 0 00.5 11c0 1.93 1.57 3.5 3.5 3.5h2M6 11l2.15-2.15c.2-.2.51-.2.71 0L11 11"
-      />
-    </svg>
-  );
-}
+const SvgUploadStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M4.5 8l1.6-1.6c.2-.2.5-.2.7 0L8.5 8m-2 2.5v-4m2 4c1.7-.1 3-1.5 3-3.2C11.5 5.5 10 4 8.2 4h-.3c-.3-1.4-1.6-2.5-3.1-2.5C3 1.5 1.5 3 1.5 4.8c0 .4.1.8.2 1.1C1 6.3.5 7.1.5 8c0 1.4 1.1 2.5 2.5 2.5h1.5"
+    />
+  </svg>
+);
 
 export default SvgUploadStroke;

@@ -1,17 +1,22 @@
 import * as React from 'react';
 
-function SvgThumbsUpStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <g fill="none" stroke="currentColor">
-        <path
-          strokeLinejoin="round"
-          d="M14.5 6.5a1 1 0 011 1c-.1 2.4-.4 8-2 8H5a.47.47 0 01-.5-.5V6.9a.55.55 0 01.3-.5c.6-.2 1.7-1 1.7-4.4a1.5 1.5 0 013 0v4.5z"
-        />
-        <rect width={2} height={9} x={0.5} y={6.5} rx={0.5} ry={0.5} />
-      </g>
-    </svg>
-  );
-}
+const SvgThumbsUpStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <g fill="none" stroke="currentColor">
+      <path
+        strokeLinejoin="round"
+        d="M10.77 4.5a.73.73 0 01.73.73C11.43 7 11.21 11.5 10 11.5H5a.5.5 0 01-.5-.5V4.5s1-.5 1-3a1 1 0 012 0v3z"
+      />
+      <rect width={2} height={7} x={0.5} y={4.5} rx={0.5} ry={0.5} />
+    </g>
+  </svg>
+);
 
 export default SvgThumbsUpStroke;

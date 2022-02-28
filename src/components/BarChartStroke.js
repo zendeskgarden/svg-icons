@@ -1,11 +1,16 @@
 import * as React from 'react';
 
-function SvgBarChartStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path stroke="currentColor" strokeLinecap="round" strokeWidth={2} d="M8 6v8m-6-4v4M14 2v12" />
-    </svg>
-  );
-}
+const SvgBarChartStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path stroke="currentColor" strokeLinecap="round" strokeWidth={2} d="M10 2v8M6 5v5M2 8v2" />
+  </svg>
+);
 
 export default SvgBarChartStroke;

@@ -1,16 +1,21 @@
 import * as React from 'react';
 
-function SvgMinimizeStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        d="M.5 4.5H4c.3 0 .5-.2.5-.5V.5m-4 11H4c.3 0 .5.2.5.5v3.5m11-11H12c-.3 0-.5-.2-.5-.5V.5m4 11H12c-.3 0-.5.2-.5.5v3.5M.5.5L4 4M15.5.5L12 4M.5 15.5L4 12m11.5 3.5L12 12"
-      />
-    </svg>
-  );
-}
+const SvgMinimizeStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M8.5 11.5V9c0-.3.2-.5.5-.5h2.5m-8 3V9c0-.3-.2-.5-.5-.5H.5m3-8V3c0 .3-.2.5-.5.5H.5m8-3V3c0 .3.2.5.5.5h2.5M.5.5L3 3M11.5.5L9 3M.5 11.5L3 9m8.5 2.5L9 9"
+    />
+  </svg>
+);
 
 export default SvgMinimizeStroke;

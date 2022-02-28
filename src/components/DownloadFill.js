@@ -1,15 +1,20 @@
 import * as React from 'react';
 
-function SvgDownloadFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path fill="none" stroke="currentColor" strokeLinecap="round" d="M8 12V.5m-6.5 15h13" />
-      <path
-        fill="currentColor"
-        d="M12.24 8.84l-3.5 3.85c-.4.44-1.08.44-1.48 0l-3.5-3.85A.504.504 0 014.13 8h7.74c.43 0 .66.52.37.84z"
-      />
-    </svg>
-  );
-}
+const SvgDownloadFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path fill="none" stroke="currentColor" strokeLinecap="round" d="M1.5 11.5h9M6 8.5v-8" />
+    <path
+      fill="currentColor"
+      d="M6 9.29c-.26 0-.51-.09-.71-.29L2.15 5.85a.474.474 0 01-.11-.54c.08-.19.26-.31.46-.31h7c.2 0 .38.12.46.31s.04.4-.11.54L6.71 9c-.2.2-.45.29-.71.29z"
+    />
+  </svg>
+);
 
 export default SvgDownloadFill;

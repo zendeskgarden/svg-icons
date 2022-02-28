@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgClockOutFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M13.854 10.146l2 2a.5.5 0 010 .708l-2 2A.5.5 0 0113 14.5v-1.501L8.5 13l-.164-.005A2.5 2.5 0 016 10.5a.5.5 0 111 0 1.5 1.5 0 001.356 1.493L8.5 12l4.5-.001V10.5a.5.5 0 01.854-.354zM6 0a6 6 0 013.318 11H8.5a.5.5 0 01-.5-.5 1.5 1.5 0 00-3 0c0 .522.114 1.017.319 1.462A6 6 0 016 0zm.5 2l-.09.008a.5.5 0 00-.402.402L6 2.5V6H3.5l-.09.008a.5.5 0 000 .984L3.5 7h3l.09-.008a.5.5 0 00.402-.402L7 6.5v-4l-.008-.09A.5.5 0 006.5 2z"
-      />
-    </svg>
-  );
-}
+const SvgClockOutFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M9.788 7.09l.066.056 2 2a.5.5 0 01.057.638l-.057.07-2 2a.5.5 0 01-.847-.268L9 11.5V10h-.5A2.5 2.5 0 016 7.5a.5.5 0 011 0 1.5 1.5 0 001.356 1.493L8.5 9H9V7.5c0-.386.405-.605.717-.452l.07.043zM4.5 0a4.5 4.5 0 014.244 6H6a1 1 0 00-.993.883L5 7v1.972A4.5 4.5 0 114.5 0zm0 2l-.09.008a.5.5 0 00-.402.402L4 2.5V4H2.5l-.09.008a.5.5 0 000 .984L2.5 5h2l.09-.008a.5.5 0 00.402-.402L5 4.5v-2l-.008-.09A.5.5 0 004.5 2z"
+    />
+  </svg>
+);
 
 export default SvgClockOutFill;

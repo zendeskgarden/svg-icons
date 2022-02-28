@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgCarFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M12 13H4v1.5a1.5 1.5 0 01-3 0v-1.585A1.5 1.5 0 010 11.5v-5a1.5 1.5 0 011.145-1.458L3.035.314A.5.5 0 013.5 0h9a.5.5 0 01.464.314l1.891 4.728A1.5 1.5 0 0116 6.5v5a1.5 1.5 0 01-1 1.415V14.5a1.5 1.5 0 01-3 0V13zM5 9a1 1 0 10-2 0 1 1 0 002 0zm7-1a1 1 0 100 2 1 1 0 000-2zM2.239 5H13.76l-1.6-4H3.84l-1.6 4z"
-      />
-    </svg>
-  );
-}
+const SvgCarFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M1.11 4L2.015.379A.5.5 0 012.5 0h7a.5.5 0 01.485.379L10.89 4H11a1 1 0 011 1v4a1 1 0 01-1 1v1a1 1 0 01-2 0v-1H3v1a1 1 0 01-2 0v-1a1 1 0 01-1-1V5a1 1 0 011-1h.11zM3 6a1 1 0 100 2 1 1 0 000-2zm6 0a1 1 0 100 2 1 1 0 000-2zM2.89 1l-.75 3h7.72l-.75-3H2.89z"
+    />
+  </svg>
+);
 
 export default SvgCarFill;

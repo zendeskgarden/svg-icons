@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgAltTextStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M3 4a2 2 0 011.995 1.85L5 6v5.5a.5.5 0 01-.992.09L4 11.5V9H2v2.5a.5.5 0 01-.992.09L1 11.5V6a2 2 0 012-2zm4.5 0a.5.5 0 01.492.41L8 4.5v6.499L9.5 11a.5.5 0 01.492.41l.008.09a.5.5 0 01-.41.492L9.5 12h-2a.5.5 0 01-.492-.41L7 11.5v-7a.5.5 0 01.5-.5zm7 0a.5.5 0 01.09.992L14.5 5H13v6.5a.5.5 0 01-.992.09L12 11.5V5h-1.5a.5.5 0 01-.09-.992L10.5 4h4zM3 5a1 1 0 00-.993.883L2 6v2h2V6a1 1 0 00-1-1z"
-      />
-    </svg>
-  );
-}
+const SvgAltTextStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M2.5 3a1.5 1.5 0 011.493 1.356L4 4.5v4a.5.5 0 01-.992.09L3 8.5V7H2v1.5a.5.5 0 01-.992.09L1 8.5v-4A1.5 1.5 0 012.5 3zm3 0a.5.5 0 01.492.41L6 3.5v4.499L7.5 8a.5.5 0 01.492.41L8 8.5a.5.5 0 01-.41.492L7.5 9h-2a.5.5 0 01-.492-.41L5 8.5v-5a.5.5 0 01.5-.5zm5 0a.5.5 0 01.09.992L10.5 4H10v4.5a.5.5 0 01-.992.09L9 8.5V4h-.5a.5.5 0 01-.09-.992L8.5 3h2zm-8 1a.5.5 0 00-.492.41L2 4.5V6h1V4.5a.5.5 0 00-.5-.5z"
+    />
+  </svg>
+);
 
 export default SvgAltTextStroke;

@@ -1,17 +1,26 @@
 import * as React from 'react';
 
-function SvgUserListFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <g fill="currentColor">
-        <circle cx={5} cy={5} r={3} />
-        <path d="M9.47 14H.53a.5.5 0 01-.5-.55 5 5 0 019.94 0 .5.5 0 01-.5.55z" />
-        <rect width={7} height={2} x={9} y={3} rx={1} ry={1} />
-        <rect width={7} height={2} x={9} y={7} rx={1} ry={1} />
-        <rect width={5} height={2} x={11} y={11} rx={1} ry={1} />
-      </g>
-    </svg>
-  );
-}
+const SvgUserListFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <g fill="currentColor">
+      <circle cx={4} cy={3.5} r={2.5} />
+      <path d="M7.46 11H.54a.5.5 0 01-.5-.57 4 4 0 017.92 0 .5.5 0 01-.5.57z" />
+    </g>
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeWidth={2}
+      d="M9 3h2M9 6h2m-1 3h1"
+    />
+  </svg>
+);
 
 export default SvgUserListFill;

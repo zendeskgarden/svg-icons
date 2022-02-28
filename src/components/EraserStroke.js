@@ -1,22 +1,21 @@
 import * as React from 'react';
 
-function SvgEraserStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <g fill="none" stroke="currentColor">
-        <rect
-          width={14.142}
-          height={7.071}
-          x={0.929}
-          y={4.465}
-          rx={0.5}
-          ry={0.5}
-          transform="rotate(-45 8 8)"
-        />
-        <path strokeLinecap="round" d="M5.577 5.577l4.673 4.673M8.5 15.5h7" />
-      </g>
-    </svg>
-  );
-}
+const SvgEraserStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      d="M.9 8.4l2.8 2.8c.2.2.5.2.7 0l6.8-6.8c.2-.2.2-.5 0-.7L8.4.9c-.2-.2-.5-.2-.7 0L.9 7.6c-.2.2-.2.6 0 .8zm3.6-3.9l3 3m-1 4h5"
+    />
+  </svg>
+);
 
 export default SvgEraserStroke;

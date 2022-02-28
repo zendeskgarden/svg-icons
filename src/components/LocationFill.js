@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgLocationFill(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M8 0a6.4 6.4 0 00-6.5 6.31c0 2.35 1 3.58 2.37 5.29 1.13 1.5 2.57 2.93 3.76 4.24a.5.5 0 00.73 0c1.19-1.31 2.64-2.74 3.76-4.24 1.34-1.71 2.38-2.94 2.38-5.29A6.71 6.71 0 008 0zm0 9a2.5 2.5 0 112.5-2.5A2.5 2.5 0 018 9z"
-      />
-    </svg>
-  );
-}
+const SvgLocationFill = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M6 0a4.88 4.88 0 00-5 4.76c0 1.77.8 2.69 1.82 4 .9 1.13 1.93 2.15 2.82 3.1a.48.48 0 00.72 0c.9-1 2-2 2.81-3.1.94-1.27 1.83-2.23 1.83-4A5.11 5.11 0 006 0zm0 7a2 2 0 112-2 2 2 0 01-2 2z"
+    />
+  </svg>
+);
 
 export default SvgLocationFill;

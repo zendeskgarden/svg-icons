@@ -1,14 +1,19 @@
 import * as React from 'react';
 
-function SvgTerminalWindowStroke(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" {...props}>
-      <path
-        fill="currentColor"
-        d="M15 0a1 1 0 011 1v14a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h14zm-2.5 12a.5.5 0 110 1h-5a.5.5 0 110-1h5zM3.854 6.146l2.648 2.649a1 1 0 010 1.42l-2.65 2.64a.5.5 0 01-.705-.71l2.65-2.64-2.65-2.651a.5.5 0 11.707-.708zM15 4H1v11h14V4zm0-3H1v2h14V1z"
-      />
-    </svg>
-  );
-}
+const SvgTerminalWindowStroke = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={12}
+    focusable="false"
+    viewBox="0 0 12 12"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M11 0a1 1 0 011 1v10a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h10zM5.5 10a.5.5 0 010-1h4a.5.5 0 010 1h-4zM2.146 4.854a.5.5 0 11.708-.708l2.148 2.149a1 1 0 010 1.42l-2.15 2.14a.5.5 0 11-.705-.71l2.15-2.14-2.15-2.151zM11 3H1v8h10V3zm0-2H1v1h10V1z"
+    />
+  </svg>
+);
 
 export default SvgTerminalWindowStroke;
