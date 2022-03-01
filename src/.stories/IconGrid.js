@@ -11,20 +11,36 @@ import Icon from './Icon';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const IconGrid = ({ color, columns, fill, size, svgs }) => (
+const IconGrid = ({ color, columns, fill, size, svgs, iconComponents }) => (
   <Grid>
     <Row>
-      {svgs.map(id => (
-        <Col key={id} md={12 / columns} style={{ marginBottom: 20 }} textAlign="center">
-          <Icon color={color} fill={fill} id={id} size={size} />
-          <br />
-          <Ellipsis title={id}>
-            <Code size="small" style={{ whiteSpace: 'nowrap' }}>
-              {id.substring(15)}
-            </Code>
-          </Ellipsis>
-        </Col>
-      ))}
+      {svgs &&
+        svgs.map(id => (
+          <Col key={id} md={12 / columns} style={{ marginBottom: 20 }} textAlign="center">
+            <Icon color={color} fill={fill} id={id} size={size} />
+            <br />
+            <Ellipsis title={id}>
+              <Code size="small" style={{ whiteSpace: 'nowrap' }}>
+                {id.substring(15)}
+              </Code>
+            </Ellipsis>
+          </Col>
+        ))}
+      {iconComponents &&
+        Object.keys(iconComponents).map(iconKey => {
+          const Icon = iconComponents[iconKey];
+          return (
+            <Col key={iconKey} md={12 / 4} style={{ marginBottom: 20 }} textAlign="center">
+              <Icon width={size} height={size} style={{ color, fill, fontSize: size }} />
+              <br />
+              <Ellipsis title={iconKey}>
+                <Code size="small" style={{ whiteSpace: 'nowrap' }}>
+                  {iconKey}
+                </Code>
+              </Ellipsis>
+            </Col>
+          );
+        })}
     </Row>
   </Grid>
 );
@@ -34,7 +50,8 @@ IconGrid.propTypes = {
   columns: PropTypes.number,
   fill: PropTypes.string,
   size: PropTypes.number,
-  svgs: PropTypes.array
+  svgs: PropTypes.array,
+  iconComponents: PropTypes.object
 };
 
 IconGrid.defaultProps = {

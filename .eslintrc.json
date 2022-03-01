@@ -5,6 +5,7 @@
     "@zendeskgarden/eslint-config/plugins/react",
     "prettier"
   ],
+  "ignorePatterns": ["node_modules/", "demo/"],
   "parserOptions": {
     "requireConfigFile": false,
     "babelOptions": {
