@@ -6,16 +6,16 @@
  */
 
 const config = require('./config');
-const file = require('gulp-file');
 const fs = require('fs');
-const gulp = require('gulp');
 const path = require('path');
+const gulp = require('gulp');
 const svgSprite = require('gulp-svg-sprite');
-const through2 = require('through2');
-const { transform } = require('@svgr/core');
+const file = require('gulp-file');
 const rename = require('gulp-rename');
 const flatten = require('gulp-flatten');
-
+const through2 = require('through2');
+const { transform } = require('@svgr/core');
+const svgoConfig = require('../svgo.config')
 /**
  * Convert the given directory of SVG files to an array of SVG IDs.
  *
@@ -125,15 +125,22 @@ gulp.task('dist/sprite', () => {
 });
 
 const transformToComponent = svgCode =>
-  transform.sync(
-    svgCode,
-    {
-      plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
-      index: false,
-      svgoConfig: './svgo.config.js',
-      prettierConfig: './.prettierrc'
-    },
-    { componentName: 'ReactIcon' }
+  `/**
+* Copyright Zendesk, Inc.
+*
+* Use of this source code is governed under the Apache License, Version 2.0
+* found at http://www.apache.org/licenses/LICENSE-2.0.
+*/\n`.concat(
+    transform.sync(
+      svgCode,
+      {
+        plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
+        index: false,
+        svgoConfig: svgoConfig,
+        prettierConfig: './.prettierrc'
+      },
+      { componentName: 'ReactIcon' }
+    )
   );
 
 const toCamelCase = text => {
