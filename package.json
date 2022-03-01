@@ -38,6 +38,7 @@
     "@svgr/core": "^6.2.1",
     "@svgr/plugin-jsx": "^6.2.1",
     "@svgr/plugin-prettier": "^6.1.2",
+    "@svgr/plugin-svgo": "^6.2.0",
     "@zendeskgarden/eslint-config": "27.0.0",
     "@zendeskgarden/react-grid": "8.47.1",
     "@zendeskgarden/react-theming": "8.47.1",

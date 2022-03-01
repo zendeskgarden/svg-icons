@@ -15,7 +15,8 @@ const rename = require('gulp-rename');
 const flatten = require('gulp-flatten');
 const through2 = require('through2');
 const { transform } = require('@svgr/core');
-const svgoConfig = require('../svgo.config')
+const svgoConfig = require('../svgo.config');
+
 /**
  * Convert the given directory of SVG files to an array of SVG IDs.
  *
@@ -136,7 +137,7 @@ const transformToComponent = svgCode =>
       {
         plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
         index: false,
-        svgoConfig: svgoConfig,
+        svgoConfig,
         prettierConfig: './.prettierrc'
       },
       { componentName: 'ReactIcon' }

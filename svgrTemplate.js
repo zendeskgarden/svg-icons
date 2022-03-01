@@ -22,6 +22,5 @@ const ${variables.componentName} = (${variables.props}) => (
 );
  
 ${variables.exports};
-`
-}
-;
+`;
+};
