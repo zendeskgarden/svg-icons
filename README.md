@@ -43,7 +43,7 @@ vary depending on the particular needs of your application.
 
 - **React**
 
-  All of the icons are converted into React component and can be used as-is without the need for a webpack loader.
+All of the icons are converted into React component and can be used as-is without the need for an SVG build step (webpack loader).
 
   ```js
   import ZendeskIcon from '@zendeskgarden/svg-icons/src/components/Zendesk';
