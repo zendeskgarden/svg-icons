@@ -9,6 +9,7 @@ import IconGrid from './IconGrid';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { SVGs } from './16px';
+import * as IconComponents from '../../dist/components/16';
 
 export default {
   title: '16 px'
@@ -42,3 +43,13 @@ Icons.propTypes = {
   fill: PropTypes.string,
   size: PropTypes.number
 };
+
+export const Components = ({ color, fill, size }) => (
+  <IconGrid color={color} fill={fill} size={size} iconComponents={IconComponents} />
+);
+
+Components.args = { ...Icons.args };
+
+Components.argTypes = { ...Icons.argTypes };
+
+Components.propTypes = { ...Icons.propTypes };

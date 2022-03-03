@@ -45,19 +45,19 @@ vary depending on the particular needs of your application.
 
 All of the icons are converted into React component and can be used as-is without the need for an SVG build step (webpack loader).
 
-  ```js
-  import ZendeskIcon from '@zendeskgarden/svg-icons/src/components/Zendesk';
+```js
+import { ZendeskIcon } from '@zendeskgarden/svg-icons/dist/components/26';
 
-  class ZendeskButton extends React.Component {
-    render() {
-      return (
-        <button>
-          <ZendeskIcon />
-        </button>
-      );
-    }
+class ZendeskButton extends React.Component {
+  render() {
+    return (
+      <button>
+        <ZendeskIcon />
+      </button>
+    );
   }
-  ```
+}
+```
 
 - **JavaScript**
 

@@ -13,6 +13,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { SVGs } from './26px';
 import styled from 'styled-components';
+import * as IconComponents from '../../dist/components/26';
 
 export default {
   title: '26 px'
@@ -62,6 +63,23 @@ Icons.propTypes = {
   fill: PropTypes.string,
   size: PropTypes.number
 };
+const filterIcons = (iconComponents, filterFn) =>
+  Object.fromEntries(Object.entries(iconComponents).filter(filterFn));
+
+export const Components = ({ color, fill, size }) => (
+  <IconGrid
+    color={color}
+    fill={fill}
+    size={size}
+    iconComponents={filterIcons(IconComponents, ([key]) => !key.includes('Wordmark'))}
+  />
+);
+
+Components.args = { ...Icons.args };
+
+Components.argTypes = { ...Icons.argTypes };
+
+Components.propTypes = { ...Icons.propTypes };
 
 export const Wordmarks = ({ color, fill, size }) => (
   <IconGrid
@@ -95,6 +113,27 @@ const StyledSpan = styled.span`
   margin-left: 0.92em;
   font-size: ${props => props.size}px;
 `;
+
+export const WordmarksComponents = ({ color, fill, size }) => (
+  <IconGrid
+    color={color}
+    fill={fill}
+    size={size}
+    iconComponents={filterIcons(IconComponents, ([key]) => key.includes('Wordmark'))}
+  />
+);
+
+WordmarksComponents.args = {
+  ...Wordmarks.args
+};
+
+WordmarksComponents.argTypes = {
+  ...Wordmarks.argTypes
+};
+
+WordmarksComponents.propTypes = {
+  ...Wordmarks.propTypes
+};
 
 export const WordmarkLayouts = ({ color, fill, size }) => (
   <Grid>

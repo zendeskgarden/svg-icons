@@ -12,7 +12,6 @@ const gulp = require('gulp');
 const svgSprite = require('gulp-svg-sprite');
 const file = require('gulp-file');
 const rename = require('gulp-rename');
-const flatten = require('gulp-flatten');
 const through2 = require('through2');
 const { transform } = require('@svgr/core');
 const svgoConfig = require('../svgo.config');
@@ -67,7 +66,7 @@ function toIndexFile(source) {
   const componentNames = [];
 
   files.forEach(_file => {
-    if (_file.endsWith('.js')) {
+    if (_file.endsWith('.js') && !_file.endsWith('index.js')) {
       const basename = path.basename(_file, '.js');
 
       componentNames.push(basename);
@@ -80,11 +79,10 @@ function toIndexFile(source) {
  * Use of this source code is governed under the Apache License, Version 2.0
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
-${componentNames
-  .map(name => `import ${sanitizeCamelCase(name)} from '../../${source}/${name}'`)
-  .join('\n')}
 
-export const IconComponents = {
+${componentNames.map(name => `import ${sanitizeCamelCase(name)} from './${name}'`).join('\n')}
+
+export {
   ${componentNames.map(sanitizeCamelCase).join(',\n  ')}
 }
 `;
@@ -108,16 +106,7 @@ gulp.task('stories/26px', () => {
   return file('26px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
 
-gulp.task('stories/components', () => {
-  const indexJS = toIndexFile('dist/components');
-
-  return file('components.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
-});
-
-gulp.task(
-  'stories',
-  gulp.parallel('stories/12px', 'stories/16px', 'stories/26px', 'stories/components')
-);
+gulp.task('stories', gulp.parallel('stories/12px', 'stories/16px', 'stories/26px'));
 
 const source = path.join('src', '**', '*.svg');
 
@@ -125,13 +114,13 @@ gulp.task('dist/sprite', () => {
   return gulp.src(source).pipe(svgSprite(config)).pipe(gulp.dest('dist'));
 });
 
-const transformToComponent = svgCode =>
+const transformToComponent = (svgCode, name) =>
   `/**
-* Copyright Zendesk, Inc.
-*
-* Use of this source code is governed under the Apache License, Version 2.0
-* found at http://www.apache.org/licenses/LICENSE-2.0.
-*/
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */\n
 `.concat(
     transform.sync(
       svgCode,
@@ -141,7 +130,7 @@ const transformToComponent = svgCode =>
         svgoConfig,
         prettierConfig: './.prettierrc'
       },
-      { componentName: 'ReactIcon' }
+      { componentName: sanitizeCamelCase(name) }
     )
   );
 
@@ -152,7 +141,7 @@ const toCamelCase = text => {
     .replace(/-/gu, '');
 };
 
-gulp.task('dist/components', () => {
+gulp.task('components/generate', () => {
   return gulp
     .src(source)
     .pipe(
@@ -165,16 +154,31 @@ gulp.task('dist/components', () => {
     .pipe(
       through2.obj((svgFile, _, cb) => {
         if (svgFile.isBuffer()) {
-          const reactCode = transformToComponent(svgFile.contents.toString(), svgFile.name);
+          const reactCode = transformToComponent(svgFile.contents.toString(), svgFile.stem);
 
           svgFile.contents = Buffer.from(reactCode);
         }
         cb(null, svgFile);
       })
     )
-    .pipe(flatten())
     .pipe(gulp.dest('dist/components/', { overwrite: true }));
 });
+
+const generageIndexFile = folderName => cb => {
+  file('index.js', toIndexFile(folderName), { src: true }).pipe(gulp.dest(folderName));
+  cb();
+};
+
+gulp.task(
+  'component/index',
+  gulp.series(
+    generageIndexFile('dist/components/12'),
+    generageIndexFile('dist/components/16'),
+    generageIndexFile('dist/components/26')
+  )
+);
+
+gulp.task('dist/components', gulp.series('components/generate', 'component/index'));
 
 gulp.task('dist', gulp.parallel('dist/sprite', 'dist/components'));
 
