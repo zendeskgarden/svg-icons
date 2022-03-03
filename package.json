@@ -20,7 +20,6 @@
     "format": "prettier-package-json --write && prettier --loglevel warn ./ --write && yarn format:optimize src --recursive --quiet",
     "format:optimize": "svgo",
     "lint": "yarn lint:js && yarn lint:svg",
-    "lint:fix": "yarn lint:js --fix && yarn lint:svg",
     "lint:js": "eslint ./ ./.storybook",
     "lint:svg": "svglint src/**/*.svg",
     "prepare": "husky install && yarn build",
