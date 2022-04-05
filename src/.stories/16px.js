@@ -54,6 +54,8 @@ export const SVGs = [
   'zd-svg-icon-16-building-stroke',
   'zd-svg-icon-16-calendar-fill',
   'zd-svg-icon-16-calendar-stroke',
+  'zd-svg-icon-16-camera-fill',
+  'zd-svg-icon-16-camera-stroke',
   'zd-svg-icon-16-car-fill',
   'zd-svg-icon-16-car-stroke',
   'zd-svg-icon-16-center-fill',
