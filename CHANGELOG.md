@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.32.0](https://github.com/zendeskgarden/svg-icons/compare/v6.31.1...v6.32.0) (2022-04-11)
+
+
+### Features
+
+* add camera icons ([#267](https://github.com/zendeskgarden/svg-icons/issues/267)) ([6bad619](https://github.com/zendeskgarden/svg-icons/commit/6bad619a8ec57e5398e842cfbc356ba88f1e6d9c))
+
 ### [6.31.1](https://github.com/zendeskgarden/svg-icons/compare/v6.31.0...v6.31.1) (2022-02-04)
 
 
