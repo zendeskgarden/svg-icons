@@ -378,6 +378,8 @@ export const SVGs = [
   'zd-svg-icon-12-thumbs-down-stroke',
   'zd-svg-icon-12-thumbs-up-fill',
   'zd-svg-icon-12-thumbs-up-stroke',
+  'zd-svg-icon-12-transfers-only-fill',
+  'zd-svg-icon-12-transfers-only-stroke',
   'zd-svg-icon-12-translation-created-fill',
   'zd-svg-icon-12-translation-created-stroke',
   'zd-svg-icon-12-translation-deleted-fill',
