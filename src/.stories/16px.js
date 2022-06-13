@@ -25,6 +25,8 @@ export const SVGs = [
   'zd-svg-icon-16-alt-text-fill',
   'zd-svg-icon-16-alt-text-stroke',
   'zd-svg-icon-16-arrow-left-fill',
+  'zd-svg-icon-16-arrow-left-sm-fill',
+  'zd-svg-icon-16-arrow-left-sm-stroke',
   'zd-svg-icon-16-arrow-left-stroke',
   'zd-svg-icon-16-arrow-left-up-fill',
   'zd-svg-icon-16-arrow-left-up-stroke',
