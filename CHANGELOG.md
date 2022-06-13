@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.33.0](https://github.com/zendeskgarden/svg-icons/compare/v6.32.0...v6.33.0) (2022-06-13)
+
+
+### Features
+
+* **arrow-left-sm:** add 12px and 16px icons ([#274](https://github.com/zendeskgarden/svg-icons/issues/274)) ([bdab0be](https://github.com/zendeskgarden/svg-icons/commit/bdab0be2647607cc80abd1b4059038ebb5cc3bb9))
+
 ## [6.32.0](https://github.com/zendeskgarden/svg-icons/compare/v6.31.1...v6.32.0) (2022-04-11)
 
 
