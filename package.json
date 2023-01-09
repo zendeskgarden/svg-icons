@@ -33,6 +33,8 @@
     "@babel/eslint-parser": "7.19.1",
     "@babel/preset-react": "7.18.6",
     "@storybook/addon-essentials": "6.5.15",
+    "@storybook/builder-webpack5": "6.5.15",
+    "@storybook/manager-webpack5": "6.5.15",
     "@storybook/react": "6.5.15",
     "@zendeskgarden/eslint-config": "30.0.0",
     "@zendeskgarden/react-grid": "8.62.0",
