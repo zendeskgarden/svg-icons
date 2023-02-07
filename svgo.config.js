@@ -13,6 +13,24 @@ module.exports = {
   multipass: true,
   plugins: [
     {
+      name: 'preset-default',
+      params: {
+        overrides: {
+          removeViewBox: false,
+          convertPathData: false,
+          convertColors: {
+            currentColor: 'red'
+          },
+          removeUnknownsAndDefaults: {
+            unknownAttrs: false
+          },
+          inlineStyles: {
+            onlyMatchedOnce: false
+          }
+        }
+      }
+    },
+    {
       name: 'addAttributesToSVGElement',
       params: {
         attributes: [
@@ -25,34 +43,10 @@ module.exports = {
       }
     },
     {
-      name: 'convertColors',
-      params: {
-        currentColor: 'red'
-      }
-    },
-    {
-      name: 'inlineStyles',
-      params: {
-        onlyMatchedOnce: false
-      }
-    },
-    {
       name: 'removeAttrs',
       params: {
         attrs: '(baseProfile|class|clip-rule|id|stroke-miterlimit|version)'
       }
-    },
-    { name: 'removeTitle' },
-    {
-      name: 'removeViewBox',
-      active: false
-    },
-    {
-      name: 'removeUnknownsAndDefaults',
-      params: {
-        unknownAttrs: false
-      }
-    },
-    { name: 'sortAttrs' }
+    }
   ]
 };
