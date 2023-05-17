@@ -41,7 +41,6 @@
     "@zendeskgarden/react-theming": "8.63.2",
     "@zendeskgarden/react-typography": "8.63.2",
     "@zendeskgarden/scripts": "1.4.0",
-    "@babel/eslint-parser": "7.11.0",
     "envalid": "7.3.1",
     "eslint": "8.36.0",
     "eslint-config-prettier": "8.7.0",
