@@ -15,7 +15,7 @@ module.exports = {
     transform: [
       {
         svgo: {
-          plugins: [{ removeXMLNS: true }]
+          plugins: ['removeXMLNS']
         }
       }
     ]
