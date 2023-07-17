@@ -36,7 +36,7 @@
     "@storybook/builder-webpack5": "6.5.16",
     "@storybook/manager-webpack5": "6.5.16",
     "@storybook/react": "6.5.16",
-    "@zendeskgarden/eslint-config": "32.0.0",
+    "@zendeskgarden/eslint-config": "33.0.0",
     "@zendeskgarden/react-grid": "8.67.0",
     "@zendeskgarden/react-theming": "8.67.0",
     "@zendeskgarden/react-typography": "8.67.0",

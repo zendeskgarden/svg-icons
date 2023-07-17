@@ -4285,10 +4285,10 @@
     "@babel/runtime" "^7.8.4"
     "@reach/auto-id" "^0.18.0"
 
-"@zendeskgarden/eslint-config@32.0.0":
-  version "32.0.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-32.0.0.tgz#a4e49f091e44a26b13aec8ed0d63262eb47bbd1b"
-  integrity sha512-U38bQxo0b7iUob3rQ1CdrrJ45ZkNYLfrBXoSbSqJglsqZE+oRjBcbYHEH8tVdbhk/BlMPQF1O1i2SSta5Ate9g==
+"@zendeskgarden/eslint-config@33.0.0":
+  version "33.0.0"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-33.0.0.tgz#ec10fdb90b8559b1171f7717f0dd8538051e06cd"
+  integrity sha512-6eCSYKijZ9mRbTWYruZxn+xXFDNZ+2q6f0xagW/oReH6qhHARXqH+LQRAfachXQ/CyJqLcRN9TQoAz7JhVteaw==
 
 "@zendeskgarden/react-buttons@^8.67.0":
   version "8.67.0"
