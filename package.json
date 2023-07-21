@@ -17,7 +17,7 @@
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
     "build:demo": "storybook build -o demo",
-    "format": "prettier-package-json --write && prettier --loglevel warn ./ --write && yarn format:optimize src --recursive --quiet",
+    "format": "prettier-package-json --write && prettier --log-level warn ./ --write && yarn format:optimize src --recursive --quiet",
     "format:optimize": "svgo",
     "lint": "yarn lint:js && yarn lint:svg",
     "lint:js": "eslint ./ ./.storybook --ignore-path .gitignore",
