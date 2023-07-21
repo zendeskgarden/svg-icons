@@ -28,6 +28,9 @@
     "test": "yarn format && yarn lint && git diff --quiet",
     "watch": "yarn build watch"
   },
+  "resolutions": {
+    "wrap-ansi": "7.0.0"
+  },
   "devDependencies": {
     "@babel/core": "7.22.9",
     "@babel/eslint-parser": "7.22.9",
