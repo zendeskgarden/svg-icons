@@ -40,7 +40,7 @@
     "@zendeskgarden/react-grid": "8.69.3",
     "@zendeskgarden/react-theming": "8.69.3",
     "@zendeskgarden/react-typography": "8.69.3",
-    "@zendeskgarden/scripts": "1.4.1",
+    "@zendeskgarden/scripts": "1.4.3",
     "envalid": "7.3.1",
     "eslint": "8.45.0",
     "eslint-config-prettier": "8.8.0",
