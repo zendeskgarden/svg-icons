@@ -7,10 +7,19 @@
 
 module.exports = {
   stories: ['../src/.stories/*.stories.mdx', '../src/.stories/*.stories.js'],
-  addons: [{ name: '@storybook/addon-essentials', options: { actions: false } }],
-  core: {
-    builder: 'webpack5'
+  staticDirs: ['../dist'],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {}
   },
+  addons: [
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        actions: false
+      }
+    }
+  ],
   webpackFinal: config => {
     config.output.hashFunction = 'xxhash64';
 
