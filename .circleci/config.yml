@@ -24,9 +24,7 @@ jobs:
     <<: *executor
     steps:
       - checkout
-      - run: yarn global add node-gyp
       - node/install-packages:
-          pkg-manager: yarn
           cache-version: '{{ .Environment.CACHE_VERSION }}'
       - persist_to_workspace:
           root: *workspace_root
@@ -36,7 +34,7 @@ jobs:
     <<: *executor
     steps:
       - *attach_workspace
-      - run: yarn test
+      - run: npm test
 
   deploy:
     <<: *executor
@@ -44,7 +42,7 @@ jobs:
       NODE_DEBUG: gh-pages
     steps:
       - *attach_workspace
-      - run: yarn build:demo
+      - run: npm run build:demo
       - run: scripts/deploy.mjs
 
   publish:
@@ -52,7 +50,7 @@ jobs:
     steps:
       - *attach_workspace
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-      - run: yarn publish --ignore-scripts
+      - run: npm publish
 
 workflows:
   main:

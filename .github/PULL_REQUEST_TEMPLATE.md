@@ -21,6 +21,6 @@
 
 * [ ] :ok_hand: SVG updates are Garden Designer approved (add the
   designer as a reviewer)
-* [ ] :globe_with_meridians: SVG demo is up-to-date (`yarn start`)
+* [ ] :globe_with_meridians: SVG demo is up-to-date (`npm start`)
 * [ ] :black_medium_small_square: Renders as expected in "dark" mode
 * [ ] :white_large_square: Renders as expected @ 2x scale
