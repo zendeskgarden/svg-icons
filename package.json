@@ -17,16 +17,16 @@
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
     "build:demo": "storybook build -o demo",
-    "format": "prettier-package-json --write && prettier --log-level warn ./ --write && yarn format:optimize src --recursive --quiet",
+    "format": "prettier-package-json --write && prettier --log-level warn ./ --write && npm run format:optimize -- src --recursive --quiet",
     "format:optimize": "svgo",
-    "lint": "yarn lint:js && yarn lint:svg",
+    "lint": "npm run lint:js && npm run lint:svg",
     "lint:js": "eslint ./ ./.storybook --ignore-path .gitignore",
     "lint:svg": "svglint src/**/*.svg",
-    "prepare": "husky install && yarn build",
-    "start": "yarn build && storybook dev -p 6006",
+    "prepare": "husky install && npm run build",
+    "start": "npm run build && storybook dev -p 6006",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
-    "test": "yarn format && yarn lint && git diff --quiet",
-    "watch": "yarn build watch"
+    "test": "npm run format && npm run lint && git diff --quiet",
+    "watch": "npm run build -- watch"
   },
   "devDependencies": {
     "@babel/core": "7.22.20",

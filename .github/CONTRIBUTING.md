@@ -22,19 +22,19 @@ All changes are recorded in the [changelog](../CHANGELOG.md) file.
 
 ## Development Workflow
 
-Before you start, be sure [yarn](https://yarnpkg.com/en/) is installed
-on your system. After you clone this repo, run `yarn` to install
-dependencies needed for development. After installation, the following
-commands are available:
+Before you start, be sure [npm](https://www.npmjs.com/package/npm) is installed
+on your system. After you clone this repo, run `npm install` to install
+dependencies needed for development. After installation, the following commands
+are available:
 
-- `yarn start` to launch the SVG icon demo server with live reload
+- `npm start` to launch the SVG icon demo server with live reload
   – source files will be watched for changes.
-- `yarn test` to run package tests.
-- `yarn lint` to enforce consistent code conventions. Note this is run
+- `npm test` to run package tests.
+- `npm run lint` to enforce consistent code conventions. Note this is run
   as a git `pre-commit` hook.
-- `yarn format` to optimize SVGs and enforce code style with opinionated
+- `npm run format` to optimize SVGs and enforce code style with opinionated
   formats. Note this is run as a git `pre-commit` hook.
-- `yarn build` to rebuild the SVG spritemap symbol distribution and
+- `npm run build` to rebuild the SVG spritemap symbol distribution and
   update SVG demo pages. The build runs as part of the initial install.
 
 ## Pull Request Workflow
@@ -79,7 +79,7 @@ Get SVG designs from Illustrator (not Sketch). Ensure all visible
 1. Ensure specific shapes are represented by the best possible SVG
    elements (i.e. prefer `<circle>` vs. a `<path>` in the shape of a
    circle).
-1. Run `yarn format` to optimize SVGs via
+1. Run `npm run format` to optimize SVGs via
    [svgo](https://www.npmjs.com/package/svgo).
 1. Edit the optimized SVG source file.
    1. Swap out any leftover `<defs>` and `<use>` elements, eliminating
