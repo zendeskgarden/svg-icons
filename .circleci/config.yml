@@ -24,6 +24,7 @@ jobs:
     <<: *executor
     steps:
       - checkout
+      - run: yarn global add node-gyp
       - node/install-packages:
           pkg-manager: yarn
           cache-version: '{{ .Environment.CACHE_VERSION }}'
