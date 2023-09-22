@@ -60,7 +60,7 @@
     "react-dom": "18.2.0",
     "standard-version": "9.5.0",
     "storybook": "7.4.4",
-    "styled-components": "6.0.8",
+    "styled-components": "5.3.11",
     "svg4everybody": "2.1.9",
     "svglint": "2.4.0",
     "svgo": "3.0.2",
