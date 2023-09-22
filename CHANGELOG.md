@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.34.0](https://github.com/zendeskgarden/svg-icons/compare/v6.33.0...v6.34.0) (2023-09-22)
+
+
+### Features
+
+* added new document-search and eye-hide icons ([#314](https://github.com/zendeskgarden/svg-icons/issues/314)) ([4a6356d](https://github.com/zendeskgarden/svg-icons/commit/4a6356d390cc85d03908a0597f9411924b60e551))
+
 ## [6.33.0](https://github.com/zendeskgarden/svg-icons/compare/v6.32.0...v6.33.0) (2022-06-13)
 
 
