@@ -29,7 +29,7 @@
     "watch": "yarn build watch"
   },
   "resolutions": {
-    "wrap-ansi": "7.0.0"
+    "wrap-ansi": "8.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.22.20",
