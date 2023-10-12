@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/zendeskgarden/svg-icons/compare/v6.34.0...v7.0.0) (2023-10-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* applies an in-place update to the `twitter-*.svg` icons so that they now render the rebranded "X".
+
+### Features
+
+* update twitter (X) icons ([#316](https://github.com/zendeskgarden/svg-icons/issues/316)) ([732e52a](https://github.com/zendeskgarden/svg-icons/commit/732e52adba1d83ed5a8f952f0add06d4e96990c6))
+
 ## [6.34.0](https://github.com/zendeskgarden/svg-icons/compare/v6.33.0...v6.34.0) (2023-09-22)
 
 
