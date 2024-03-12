@@ -89,5 +89,6 @@ export const SVGs = [
   'zd-svg-icon-26-wordmark-talk',
   'zd-svg-icon-26-wordmark-zendesk',
   'zd-svg-icon-26-workflow',
+  'zd-svg-icon-26-workforce-management-fill',
   'zd-svg-icon-26-zendesk'
 ];

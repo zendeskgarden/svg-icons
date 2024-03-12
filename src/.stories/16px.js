@@ -424,6 +424,8 @@ export const SVGs = [
   'zd-svg-icon-16-wechat-stroke',
   'zd-svg-icon-16-whatsapp-fill',
   'zd-svg-icon-16-whatsapp-stroke',
+  'zd-svg-icon-16-workforce-management-fill',
+  'zd-svg-icon-16-workforce-management-stroke',
   'zd-svg-icon-16-wrap-left-fill',
   'zd-svg-icon-16-wrap-left-stroke',
   'zd-svg-icon-16-wrap-right-fill',
