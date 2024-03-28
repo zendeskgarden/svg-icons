@@ -19,7 +19,6 @@ module.exports = {
         actions: false
       }
     },
-    '@storybook/addon-mdx-gfm',
     '@storybook/addon-webpack5-compiler-swc'
   ],
   webpackFinal: config => {
