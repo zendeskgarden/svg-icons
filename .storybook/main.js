@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  stories: ['../src/.stories/*.stories.mdx', '../src/.stories/*.stories.js'],
+  stories: ['../src/.stories/*.mdx', '../src/.stories/*.stories.js'],
   staticDirs: ['../dist'],
   framework: {
     name: '@storybook/react-webpack5',
@@ -18,7 +18,8 @@ module.exports = {
       options: {
         actions: false
       }
-    }
+    },
+    '@storybook/addon-webpack5-compiler-swc'
   ],
   webpackFinal: config => {
     config.output.hashFunction = 'xxhash64';
