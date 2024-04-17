@@ -360,6 +360,8 @@ export const SVGs = [
   'zd-svg-icon-16-smiley-stroke',
   'zd-svg-icon-16-sort-fill',
   'zd-svg-icon-16-sort-stroke',
+  'zd-svg-icon-16-sparkle-fill',
+  'zd-svg-icon-16-sparkle-stroke',
   'zd-svg-icon-16-speech-bubble-conversation-fill',
   'zd-svg-icon-16-speech-bubble-conversation-stroke',
   'zd-svg-icon-16-speech-bubble-lightning-bolt-fill',
