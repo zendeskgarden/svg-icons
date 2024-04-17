@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.1.0](https://github.com/zendeskgarden/svg-icons/compare/v7.0.0...v7.1.0) (2024-04-17)
+
+
+### Features
+
+* add Sparkle icons ([#332](https://github.com/zendeskgarden/svg-icons/issues/332)) ([fd9e88a](https://github.com/zendeskgarden/svg-icons/commit/fd9e88a7b5d4ef5cbfd9439a89793571566fbac4))
+
 ## [7.0.0](https://github.com/zendeskgarden/svg-icons/compare/v6.34.0...v7.0.0) (2023-10-12)
 
 
