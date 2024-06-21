@@ -50,6 +50,8 @@ export const SVGs = [
   'zd-svg-icon-16-book-closed-stroke',
   'zd-svg-icon-16-book-open-fill',
   'zd-svg-icon-16-book-open-stroke',
+  'zd-svg-icon-16-bookmark-fill',
+  'zd-svg-icon-16-bookmark-stroke',
   'zd-svg-icon-16-box-3d-fill',
   'zd-svg-icon-16-box-3d-stroke',
   'zd-svg-icon-16-building-fill',
