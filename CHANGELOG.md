@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.2.0](https://github.com/zendeskgarden/svg-icons/compare/v7.1.1...v7.2.0) (2024-06-21)
+
+
+### Features
+
+* add bookmark icons ([#342](https://github.com/zendeskgarden/svg-icons/issues/342)) ([8f1cc78](https://github.com/zendeskgarden/svg-icons/commit/8f1cc78b7c0bbb0a190cb91c0fdead0498a4cb03))
+
 ### [7.1.1](https://github.com/zendeskgarden/svg-icons/compare/v7.1.0...v7.1.1) (2024-05-13)
 
 
