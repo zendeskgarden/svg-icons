@@ -44,7 +44,7 @@
     "@zendeskgarden/react-typography": "8.76.2",
     "@zendeskgarden/scripts": "2.1.0",
     "envalid": "8.0.0",
-    "eslint": "8.57.0",
+    "eslint": "9.7.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-n": "^17.7.0",
