@@ -20,7 +20,7 @@
     "format": "prettier-package-json --write && prettier --log-level warn ./ --write && npm run format:optimize -- src --recursive --quiet",
     "format:optimize": "svgo",
     "lint": "npm run lint:js && npm run lint:svg",
-    "lint:js": "eslint",
+    "lint:js": "eslint --max-warnings 0",
     "lint:svg": "svglint src/**/*.svg",
     "prepare": "husky && npm run build",
     "start": "npm run build && storybook dev -p 6006",
