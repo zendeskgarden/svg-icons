@@ -7,9 +7,9 @@
 
 const config = require('./config');
 const file = require('gulp-file');
-const fs = require('fs');
+const fs = require('node:fs');
 const gulp = require('gulp');
-const path = require('path');
+const path = require('node:path');
 const svgSprite = require('gulp-svg-sprite');
 
 /**

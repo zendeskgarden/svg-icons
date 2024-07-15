@@ -7,6 +7,7 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
+import { sharedPropTypes } from './common';
 
 const Icon = ({ color, fill, id, size }) => (
   <svg id={id} style={{ color, fill, fontSize: size }}>
@@ -15,10 +16,8 @@ const Icon = ({ color, fill, id, size }) => (
 );
 
 Icon.propTypes = {
-  color: PropTypes.string,
-  fill: PropTypes.string,
-  id: PropTypes.string,
-  size: PropTypes.number
+  ...sharedPropTypes,
+  id: PropTypes.string
 };
 
 export default Icon;

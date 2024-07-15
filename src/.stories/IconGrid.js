@@ -10,6 +10,7 @@ import { Col, Grid, Row } from '@zendeskgarden/react-grid';
 import Icon from './Icon';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { sharedPropTypes } from './common';
 
 const IconGrid = ({ color, columns, fill, size, svgs }) => (
   <Grid>
@@ -30,10 +31,8 @@ const IconGrid = ({ color, columns, fill, size, svgs }) => (
 );
 
 IconGrid.propTypes = {
-  color: PropTypes.string,
+  ...sharedPropTypes,
   columns: PropTypes.number,
-  fill: PropTypes.string,
-  size: PropTypes.number,
   svgs: PropTypes.array
 };
 

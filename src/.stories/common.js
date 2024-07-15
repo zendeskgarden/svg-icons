@@ -5,8 +5,8 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import { PropTypes } from 'prop-types';
 import IconGrid from './IconGrid';
+import { PropTypes } from 'prop-types';
 import React from 'react';
 import { SVGs } from './12px';
 
@@ -39,3 +39,5 @@ export const sharedPropTypes = {
   fill: PropTypes.string,
   size: PropTypes.number
 };
+
+IconsComponent.propTypes = sharedPropTypes;

@@ -6,14 +6,13 @@
  */
 
 import { Col, Grid, Row } from '@zendeskgarden/react-grid';
-import { PALETTE } from '@zendeskgarden/react-theming';
-import styled from 'styled-components';
+import { sharedArgTypes, sharedPropTypes } from './common';
 import Icon from './Icon';
 import IconGrid from './IconGrid';
-import PropTypes from 'prop-types';
+import { PALETTE } from '@zendeskgarden/react-theming';
 import React from 'react';
 import { SVGs } from './26px';
-import { sharedArgTypes, sharedPropTypes } from './common';
+import styled from 'styled-components';
 
 export default {
   title: '26 px'
