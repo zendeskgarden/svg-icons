@@ -5,14 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import IconGrid from './IconGrid';
 import { PropTypes } from 'prop-types';
-import React from 'react';
-import { SVGs } from './12px';
-
-export const IconsComponent = ({ color, fill, size }) => (
-  <IconGrid color={color} fill={fill} size={size} svgs={SVGs} />
-);
 
 export const sharedArgTypes = {
   color: {
@@ -39,5 +32,3 @@ export const sharedPropTypes = {
   fill: PropTypes.string,
   size: PropTypes.number
 };
-
-IconsComponent.propTypes = sharedPropTypes;

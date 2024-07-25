@@ -31,9 +31,7 @@ const argTypes = {
   }
 };
 
-const propTypes = {
-  ...sharedPropTypes
-};
+const propTypes = sharedPropTypes;
 
 export const Icons = {
   render: ({ color, fill, size }) => (
