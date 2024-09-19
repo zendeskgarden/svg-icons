@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.3.0](https://github.com/zendeskgarden/svg-icons/compare/v7.2.0...v7.3.0) (2024-09-19)
+
+
+### Features
+
+* add `sun` and `moon` icons ([#353](https://github.com/zendeskgarden/svg-icons/issues/353)) ([1916feb](https://github.com/zendeskgarden/svg-icons/commit/1916feb7343490d9ef00fd205cfdf1f50be30653))
+
 ## [7.2.0](https://github.com/zendeskgarden/svg-icons/compare/v7.1.1...v7.2.0) (2024-06-21)
 
 
