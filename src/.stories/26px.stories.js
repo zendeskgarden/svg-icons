@@ -5,8 +5,8 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import { Col, Grid, Row } from '@zendeskgarden/react-grid';
 import { sharedArgTypes, sharedPropTypes } from './common';
+import { Grid } from '@zendeskgarden/react-grid';
 import Icon from './Icon';
 import IconGrid from './IconGrid';
 import { PALETTE } from '@zendeskgarden/react-theming';
@@ -18,7 +18,7 @@ export default {
   title: '26 px'
 };
 
-const args = { fill: PALETTE.kale[700], size: 26 };
+const args = { fill: PALETTE.kale[900], size: 26 };
 
 const argTypes = {
   ...sharedArgTypes,
@@ -77,8 +77,8 @@ export const WordmarkLayouts = {
   render: ({ color, fill, size }) => (
     <Grid>
       {Object.keys(PALETTE.product).map(product => (
-        <Row key={product}>
-          <Col md={6} style={{ marginBottom: 20 }}>
+        <Grid.Row key={product}>
+          <Grid.Col md={6} style={{ marginBottom: 20 }}>
             <Icon
               color={color || PALETTE.product[product]}
               fill={fill}
@@ -88,17 +88,17 @@ export const WordmarkLayouts = {
             <StyledSpan size={size}>
               <Icon color={color} id={`zd-svg-icon-26-wordmark-${product}`} />
             </StyledSpan>
-          </Col>
-          <Col md={6} style={{ marginBottom: 20 }}>
+          </Grid.Col>
+          <Grid.Col md={6} style={{ marginBottom: 20 }}>
             <Icon color={color} id="zd-svg-icon-26-wordmark-zendesk" size={size} />
             <span style={{ display: 'inline-block', marginLeft: '.22em', fontSize: size }}>
               <Icon color={color} id={`zd-svg-icon-26-wordmark-${product}`} />
             </span>
-          </Col>
-        </Row>
+          </Grid.Col>
+        </Grid.Row>
       ))}
-      <Row>
-        <Col md={6} style={{ marginBottom: 20 }}>
+      <Grid.Row>
+        <Grid.Col md={6} style={{ marginBottom: 20 }}>
           <Icon
             color={color || PALETTE.product.talk}
             fill={fill}
@@ -108,18 +108,18 @@ export const WordmarkLayouts = {
           <StyledSpan size={size}>
             <Icon color={color} id="zd-svg-icon-26-wordmark-sunshine" />
           </StyledSpan>
-        </Col>
-        <Col md={6} style={{ marginBottom: 20 }}>
+        </Grid.Col>
+        <Grid.Col md={6} style={{ marginBottom: 20 }}>
           <Icon color={color} id="zd-svg-icon-26-wordmark-zendesk" size={size} />
           <span style={{ display: 'inline-block', marginLeft: '.22em', fontSize: size }}>
             <Icon color={color} id="zd-svg-icon-26-wordmark-sunshine" />
           </span>
-        </Col>
-      </Row>
-      <Row>
-        <Col md={6} style={{ marginBottom: 20 }}>
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Col md={6} style={{ marginBottom: 20 }}>
           <Icon
-            color={color || PALETTE.green[400]}
+            color={color || PALETTE.green[500]}
             fill={fill}
             id="zd-svg-icon-26-garden"
             size={size}
@@ -127,18 +127,18 @@ export const WordmarkLayouts = {
           <StyledSpan size={size}>
             <Icon color={color} id="zd-svg-icon-26-wordmark-garden" />
           </StyledSpan>
-        </Col>
-        <Col md={6} style={{ marginBottom: 20 }}>
+        </Grid.Col>
+        <Grid.Col md={6} style={{ marginBottom: 20 }}>
           <Icon color={color} id="zd-svg-icon-26-wordmark-zendesk" size={size} />
           <span style={{ display: 'inline-block', marginLeft: '.22em', fontSize: size }}>
             <Icon color={color} id="zd-svg-icon-26-wordmark-garden" />
           </span>
-        </Col>
-      </Row>
-      <Row>
-        <Col md={6} style={{ marginBottom: 20 }}>
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Col md={6} style={{ marginBottom: 20 }}>
           <Icon
-            color={color || PALETTE.kale[700]}
+            color={color || PALETTE.kale[900]}
             fill={fill}
             id="zd-svg-icon-26-zendesk"
             size={size}
@@ -150,14 +150,14 @@ export const WordmarkLayouts = {
             &nbsp;
             <Icon color={color} id="zd-svg-icon-26-wordmark-capital-suite" />
           </StyledSpan>
-        </Col>
-        <Col md={6} style={{ marginBottom: 20 }}>
+        </Grid.Col>
+        <Grid.Col md={6} style={{ marginBottom: 20 }}>
           <Icon color={color} id="zd-svg-icon-26-wordmark-capital-zendesk" size={size} />
           <span style={{ display: 'inline-block', marginLeft: '.22em', fontSize: size }}>
             <Icon color={color} id="zd-svg-icon-26-wordmark-capital-suite" />
           </span>
-        </Col>
-      </Row>
+        </Grid.Col>
+      </Grid.Row>
     </Grid>
   ),
   args,

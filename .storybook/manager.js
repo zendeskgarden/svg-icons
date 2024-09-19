@@ -15,7 +15,7 @@ addons.setConfig({
     brandTitle: 'Zendesk Garden SVG Icons',
     brandUrl: 'https://github.com/zendeskgarden/svg-icons',
     brandImage: null,
-    colorSecondary: DEFAULT_THEME.palette.blue[600],
+    colorSecondary: DEFAULT_THEME.palette.blue[700],
     fontBase: DEFAULT_THEME.fonts.system,
     fontCode: DEFAULT_THEME.fonts.mono
   })

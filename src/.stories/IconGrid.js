@@ -6,7 +6,7 @@
  */
 
 import { Code, Ellipsis } from '@zendeskgarden/react-typography';
-import { Col, Grid, Row } from '@zendeskgarden/react-grid';
+import { Grid } from '@zendeskgarden/react-grid';
 import Icon from './Icon';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -14,9 +14,9 @@ import { sharedPropTypes } from './common';
 
 const IconGrid = ({ color, columns, fill, size, svgs }) => (
   <Grid>
-    <Row>
+    <Grid.Row>
       {svgs.map(id => (
-        <Col key={id} md={12 / columns} style={{ marginBottom: 20 }} textAlign="center">
+        <Grid.Col key={id} md={12 / columns} style={{ marginBottom: 20 }} textAlign="center">
           <Icon color={color} fill={fill} id={id} size={size} />
           <br />
           <Ellipsis title={id}>
@@ -24,9 +24,9 @@ const IconGrid = ({ color, columns, fill, size, svgs }) => (
               {id.substring(15)}
             </Code>
           </Ellipsis>
-        </Col>
+        </Grid.Col>
       ))}
-    </Row>
+    </Grid.Row>
   </Grid>
 );
 
