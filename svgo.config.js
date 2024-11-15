@@ -19,7 +19,7 @@ module.exports = {
           removeViewBox: false,
           convertPathData: false,
           convertColors: {
-            currentColor: 'red'
+            currentColor: true
           },
           removeUnknownsAndDefaults: {
             unknownAttrs: false

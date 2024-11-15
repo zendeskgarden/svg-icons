@@ -17,8 +17,8 @@
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
     "build:demo": "storybook build -o demo",
-    "format": "prettier-package-json --write && prettier --log-level warn ./ --write && npm run format:optimize -- src --recursive --quiet",
-    "format:optimize": "svgo",
+    "format": "prettier-package-json --write && prettier --log-level warn ./ --write && npm run format:optimize -- --quiet",
+    "format:optimize": "svgo src --recursive",
     "lint": "npm run lint:js && npm run lint:svg",
     "lint:js": "eslint --max-warnings 0",
     "lint:svg": "svglint src/**/*.svg",
