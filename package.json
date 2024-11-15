@@ -41,7 +41,7 @@
     "@zendeskgarden/react-grid": "9.0.0-next.26",
     "@zendeskgarden/react-theming": "9.0.0-next.26",
     "@zendeskgarden/react-typography": "9.0.0-next.26",
-    "@zendeskgarden/scripts": "2.4.2",
+    "@zendeskgarden/scripts": "2.4.3",
     "commit-and-tag-version": "12.5.0",
     "envalid": "8.0.0",
     "eslint": "9.10.0",
