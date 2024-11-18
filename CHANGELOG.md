@@ -1,6 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [7.4.0](https://github.com/zendeskgarden/svg-icons/compare/v7.3.0...v7.4.0) (2024-11-18)
+
+
+### Features
+
+* add new 26px tray icons ([#354](https://github.com/zendeskgarden/svg-icons/issues/354)) ([b308e5a](https://github.com/zendeskgarden/svg-icons/commit/b308e5a3c861a40b4f64b4243af5f2e31e167f21))
 
 ## [7.3.0](https://github.com/zendeskgarden/svg-icons/compare/v7.2.0...v7.3.0) (2024-09-19)
 
