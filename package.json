@@ -32,7 +32,7 @@
     "@babel/core": "7.26.0",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
-    "@storybook/addon-essentials": "8.4.4",
+    "@storybook/addon-essentials": "8.4.5",
     "@storybook/addon-webpack5-compiler-swc": "1.0.5",
     "@storybook/addons": "7.6.17",
     "@storybook/react": "8.4.4",
