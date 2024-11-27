@@ -1,4 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12">
-  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M3 3V1m6 2V1"/>
-  <path fill="currentColor" d="M11 2v1c0 1.1-.9 2-2 2s-2-.9-2-2V2H5v1c0 1.1-.9 2-2 2s-2-.9-2-2V2c-.6 0-1 .4-1 1v8c0 .6.4 1 1 1h10c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1z"/>
+  <path fill="currentColor" d="M2 1a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0V1Zm6 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0V1ZM5 2h2v1a2 2 0 1 0 4 0V2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1v1a2 2 0 1 0 4 0V2Zm2 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-2 2a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-4 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm7-1a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"/>
 </svg>

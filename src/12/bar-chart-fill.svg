@@ -1,7 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12">
-  <g fill="currentColor">
-    <rect width="3" height="4" y="7" rx="1" ry="1"/>
-    <rect width="3" height="7" x="4" y="4" rx="1" ry="1"/>
-    <rect width="3" height="10" x="8" y="1" rx="1" ry="1"/>
-  </g>
+  <path fill="currentColor" d="M9 0a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H9ZM5 3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H5ZM1 6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H1Z"/>
 </svg>

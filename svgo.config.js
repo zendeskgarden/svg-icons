@@ -47,6 +47,23 @@ module.exports = {
       params: {
         attrs: '(baseProfile|class|clip-rule|id|stroke-miterlimit|version)'
       }
+    },
+    {
+      name: 'removeAttributesBySelector',
+      params: {
+        selectors: [
+          {
+            selector: 'svg',
+            attributes: ['fill']
+          }
+        ]
+      }
+    },
+    {
+      name: 'mergePaths',
+      params: {
+        force: true
+      }
     }
   ]
 };
