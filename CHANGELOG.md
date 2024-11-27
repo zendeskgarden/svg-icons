@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.5.0](https://github.com/zendeskgarden/svg-icons/compare/v7.4.0...v7.5.0) (2024-11-27)
+
+
+### Features
+
+* add new and update existing icons ([#372](https://github.com/zendeskgarden/svg-icons/issues/372)) ([b720d2f](https://github.com/zendeskgarden/svg-icons/commit/b720d2f96b2e81f774972fcf17ccd98ecb377eb8))
+
 ## [7.4.0](https://github.com/zendeskgarden/svg-icons/compare/v7.3.0...v7.4.0) (2024-11-18)
 
 
