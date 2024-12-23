@@ -44,7 +44,7 @@
     "@zendeskgarden/scripts": "2.4.3",
     "commit-and-tag-version": "12.5.0",
     "envalid": "8.0.0",
-    "eslint": "9.16.0",
+    "eslint": "9.17.0",
     "eslint-config-prettier": "9.1.0",
     "gulp": "5.0.0",
     "gulp-file": "0.4.0",
