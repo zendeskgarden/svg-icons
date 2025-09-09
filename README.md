@@ -48,13 +48,13 @@ vary depending on the particular needs of your application.
   caching as any other JS asset.
 
   ```js
-  import ZendeskIcon from '@zendeskgarden/svg-icons/src/26/zendesk.svg';
+  import Icon from '@zendeskgarden/svg-icons/src/16/star-stroke.svg';
 
-  class ZendeskButton extends React.Component {
+  class StarButton extends React.Component {
     render() {
       return (
         <button>
-          <ZendeskIcon />
+          <Icon />
         </button>
       );
     }

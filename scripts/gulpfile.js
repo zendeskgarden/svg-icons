@@ -60,13 +60,7 @@ gulp.task('stories/16px', () => {
   return file('16px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
 
-gulp.task('stories/26px', () => {
-  const indexJS = toJS('src/26');
-
-  return file('26px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
-});
-
-gulp.task('stories', gulp.parallel('stories/12px', 'stories/16px', 'stories/26px'));
+gulp.task('stories', gulp.parallel('stories/12px', 'stories/16px'));
 
 const source = path.join('src', '**', '*.svg');
 
