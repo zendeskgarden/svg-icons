@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [8.0.0](https://github.com/zendeskgarden/svg-icons/compare/v7.6.0...v8.0.0) (2025-09-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove 26px icon set (#413)
+
+* remove 26px icon set ([#413](https://github.com/zendeskgarden/svg-icons/issues/413)) ([af80c25](https://github.com/zendeskgarden/svg-icons/commit/af80c25d4c528bd8cf9ff7e2503fee6152c08569))
+
 ## [7.6.0](https://github.com/zendeskgarden/svg-icons/compare/v7.5.0...v7.6.0) (2025-01-24)
 
 
