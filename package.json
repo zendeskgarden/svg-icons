@@ -45,7 +45,7 @@
     "commit-and-tag-version": "12.6.0",
     "envalid": "8.1.0",
     "eslint": "9.38.0",
-    "eslint-config-prettier": "9.1.2",
+    "eslint-config-prettier": "10.1.8",
     "gulp": "5.0.1",
     "gulp-file": "0.4.0",
     "gulp-svg-sprite": "2.0.3",
