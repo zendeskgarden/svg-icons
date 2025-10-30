@@ -8,19 +8,9 @@
 module.exports = {
   stories: ['../src/.stories/*.mdx', '../src/.stories/*.stories.js'],
   staticDirs: ['../dist'],
-  framework: {
-    name: '@storybook/react-webpack5',
-    options: {}
-  },
-  addons: [
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        actions: false
-      }
-    },
-    '@storybook/addon-webpack5-compiler-swc'
-  ],
+  framework: { name: '@storybook/react-webpack5', options: {} },
+  addons: ['@storybook/addon-webpack5-compiler-swc', '@storybook/addon-docs'],
+  features: { actions: false, interactions: false },
   webpackFinal: config => {
     config.output.hashFunction = 'xxhash64';
 
