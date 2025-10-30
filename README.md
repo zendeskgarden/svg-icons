@@ -67,7 +67,6 @@ vary depending on the particular needs of your application.
   Components](https://github.com/zendeskgarden/css-components) utilize
   the [postcss-inline-svg](https://github.com/TrySound/postcss-inline-svg)
   plugin to compile SVGs into CSS.
-
   1. Configure the plugin:
 
   ```json
