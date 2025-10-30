@@ -6,64 +6,32 @@
  */
 
 module.exports = {
-  js2svg: {
-    pretty: true,
-    indent: 2
-  },
+  js2svg: { pretty: true, indent: 2 },
   multipass: true,
   plugins: [
     {
       name: 'preset-default',
       params: {
         overrides: {
-          removeViewBox: false,
           convertPathData: false,
-          convertColors: {
-            currentColor: true
-          },
-          removeUnknownsAndDefaults: {
-            unknownAttrs: false
-          },
-          inlineStyles: {
-            onlyMatchedOnce: false
-          }
+          convertColors: { currentColor: true },
+          removeUnknownsAndDefaults: { unknownAttrs: false },
+          inlineStyles: { onlyMatchedOnce: false }
         }
       }
     },
     {
       name: 'addAttributesToSVGElement',
-      params: {
-        attributes: [
-          {
-            focusable: false
-          },
-          'height',
-          'width'
-        ]
-      }
+      params: { attributes: [{ focusable: false }, 'height', 'width'] }
     },
     {
       name: 'removeAttrs',
-      params: {
-        attrs: '(baseProfile|class|clip-rule|id|stroke-miterlimit|version)'
-      }
+      params: { attrs: '(baseProfile|class|clip-rule|id|stroke-miterlimit|version)' }
     },
     {
       name: 'removeAttributesBySelector',
-      params: {
-        selectors: [
-          {
-            selector: 'svg',
-            attributes: ['fill']
-          }
-        ]
-      }
+      params: { selectors: [{ selector: 'svg', attributes: ['fill'] }] }
     },
-    {
-      name: 'mergePaths',
-      params: {
-        force: true
-      }
-    }
+    { name: 'mergePaths', params: { force: true } }
   ]
 };
