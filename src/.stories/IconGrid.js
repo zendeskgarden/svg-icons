@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { sharedPropTypes } from './common';
 
-const IconGrid = ({ color, columns, fill, size, svgs }) => (
+const IconGrid = ({ color, columns = 4, fill, size, svgs }) => (
   <Grid>
     <Grid.Row>
       {svgs.map(id => (
@@ -34,10 +34,6 @@ IconGrid.propTypes = {
   ...sharedPropTypes,
   columns: PropTypes.number,
   svgs: PropTypes.array
-};
-
-IconGrid.defaultProps = {
-  columns: 4
 };
 
 export default IconGrid;

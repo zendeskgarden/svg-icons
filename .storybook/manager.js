@@ -6,8 +6,8 @@
  */
 
 import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
-import { addons } from '@storybook/addons';
-import { create } from '@storybook/theming/create';
+import { addons } from 'storybook/manager-api';
+import { create } from 'storybook/theming';
 
 addons.setConfig({
   panelPosition: 'right',
