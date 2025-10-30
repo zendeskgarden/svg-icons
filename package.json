@@ -69,5 +69,10 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "overrides": {
+    "vite": {
+      "rollup": "npm:@rollup/wasm-node"
+    }
   }
 }
