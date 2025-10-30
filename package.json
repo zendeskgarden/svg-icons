@@ -58,7 +58,7 @@
     "storybook": "8.6.14",
     "styled-components": "6.1.19",
     "svg4everybody": "2.1.9",
-    "svglint": "3.1.0",
+    "svglint": "4.1.2",
     "svgo": "3.3.2",
     "typescript": "5.9.3",
     "webpack": "5.102.1"
