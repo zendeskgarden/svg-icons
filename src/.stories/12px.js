@@ -212,6 +212,8 @@ export const SVGs = [
   'zd-svg-icon-12-heading-fill',
   'zd-svg-icon-12-heading-stroke',
   'zd-svg-icon-12-headset-fill',
+  'zd-svg-icon-12-headset-sparkle-fill',
+  'zd-svg-icon-12-headset-sparkle-stroke',
   'zd-svg-icon-12-headset-stroke',
   'zd-svg-icon-12-heart-fill',
   'zd-svg-icon-12-heart-stroke',
