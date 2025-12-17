@@ -21,14 +21,27 @@ npm install @zendeskgarden/svg-icons
 The package contains a `src` folder with individual SVG icons along with
 a combined "spritemap" `dist` of SVG symbols.
 
+## Bundling & Configuration
+
+This library delivers icons as raw SVG files. To consume them directly as React components or import them in your JavaScript, your build environment must be configured to transform SVG assets.
+
+While many modern frameworks handle this automatically, custom setups may require specific plugins.
+
+**Vite**
+Vite does not import SVGs as React components by default. You will likely need to configure a plugin such as [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) to enable this behavior.
+
+**Webpack**
+If you are using a custom Webpack configuration, ensure you have a loader installed that can handle SVG files, such as [@svgr/webpack](https://www.npmjs.com/package/@svgr/webpack).
+
 ## Usage
 
 Garden SVGs come in two flavors – monochrome and two-tone. The primary
 fill/stroke will always be specified as `currentColor`. This means CSS
 text `color` style will cascade to the icon. Two-tone icons can receive
-a secondary color via the `fill` style property. In the following
-example, the top arrow of the "sort" icon will be blue; the bottom arrow
-will be red (see _spritemap_ below for more re: SVG `use` with an
+a secondary color via the `fill` style property.
+
+In the following example, the top arrow of the "sort" icon will be blue; the bottom arrow
+will be red (see [_Spritemap_](#spritemap) below for more re: SVG `use` with an
 external source).
 
 ```html
@@ -37,85 +50,73 @@ external source).
 </svg>
 ```
 
-Once installed, SVG icons may be accessed in a variety of ways. The
-following list demonstrates several possibilities, however usage will
-vary depending on the particular needs of your application.
+Once installed and configured, SVG icons may be accessed in a variety of ways depending on your application needs.
 
-- **JavaScript**
+### React / JavaScript
 
-  In the following snippet, a source SVG is loaded just like any other
-  JS module. SVGs loaded in this manner will benefit from the same
-  caching as any other JS asset.
+In the following snippet, a source SVG is imported directly as a component.
+_Note: This usage relies on the bundler configuration described above._
 
-  ```js
-  import Icon from '@zendeskgarden/svg-icons/src/16/star-stroke.svg';
+```jsx
+import React from 'react';
+import Icon from '@zendeskgarden/svg-icons/src/16/star-stroke.svg';
 
-  class StarButton extends React.Component {
-    render() {
-      return (
-        <button>
-          <Icon />
-        </button>
-      );
-    }
-  }
-  ```
+const StarButton = () => (
+  <button>
+    <Icon />
+  </button>
+);
 
-- **PostCSS**
+export default StarButton;
+```
 
-  Several Garden [CSS
-  Components](https://github.com/zendeskgarden/css-components) utilize
-  the [postcss-inline-svg](https://github.com/TrySound/postcss-inline-svg)
-  plugin to compile SVGs into CSS.
-  1. Configure the plugin:
+### Spritemap
 
-  ```json
-  "postcss-inline-svg": {
-    "path": "node_modules/@zendeskgarden/svg-icons/src"
-  }
-  ```
+The main distribution from the npm package is an SVG "spritemap"
+containing all source icons as `<symbol>` elements. Once that file is
+hosted, any icon may be externally referenced using its unique ID.
 
-  2. Load an SVG in your source CSS:
+```html
+<svg>
+  <use xlink:href="/path/to/index.svg#zd-svg-icon-16-chevron-down-stroke">
+</svg>
+```
 
-  ```css
-  .icon {
-    background-image: svg-load('16/remove.svg', color: #007fab);
-  }
-  ```
+By referencing the external resource, you take advantage of the
+browser cache. Subsequent `<use xlink:href>` will leverage the cached
+SVG spritemap. Note you may need a polyfill like
+[svg4everybody](https://github.com/jonathantneal/svg4everybody) to
+support legacy browsers that can't handle external SVG content.
 
-  3. Build via postcss to inline the SVG into your destination CSS as a
-     data URI:
+### PostCSS
 
-  ```css
-  .icon {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' color='%23007FAB' ...");
-  }
-  ```
+Several Garden [CSS Components](https://github.com/zendeskgarden/css-components) utilize
+the [postcss-inline-svg](https://github.com/TrySound/postcss-inline-svg)
+plugin to compile SVGs into CSS.
 
-- **Spritemap**
+1. **Configure the plugin:**
 
-  The main distribution from the npm package is an SVG "spritemap"
-  containing all source icons as `<symbol>` elements. Once that file is
-  hosted, any icon may be externally referenced using its unique ID.
+   ```json
+   "postcss-inline-svg": {
+     "path": "node_modules/@zendeskgarden/svg-icons/src"
+   }
+   ```
 
-  ```html
-  <svg>
-    <use xlink:href="/path/to/index.svg#zd-svg-icon-16-chevron-down-stroke">
-  </svg>
-  ```
+2. **Load an SVG in your source CSS:**
 
-  By referencing the external resource, you take advantage of the
-  browser cache. Subsequent `<use xlink:href>` will leverage the cached
-  SVG spritemap. Note you'll need to use a polyfill like
-  [svg4everybody](https://github.com/jonathantneal/svg4everybody) to
-  compensate for browsers (IE9-11) that can't handle external SVG content.
+   ```css
+   .icon {
+     background-image: svg-load('16/remove.svg', color: #007fab);
+   }
+   ```
 
-- **Build pipeline**
+3. **Build via PostCSS** to inline the SVG into your destination CSS as a data URI:
 
-  There are numerous plugins for handling SVG files via an asset bundler
-  (webpack, gulp, grunt, etc.). Search
-  [npm](https://www.npmjs.com/search?q=svg) and select one that fits your
-  needs.
+   ```css
+   .icon {
+     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' width='16' height='16' viewBox='0 0 16 16' color='%23007FAB' ...");
+   }
+   ```
 
 ## Contribution
 
@@ -134,6 +135,6 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
-Copyright 2021 Zendesk
+Copyright 2025 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)
