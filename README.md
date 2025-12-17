@@ -21,18 +21,6 @@ npm install @zendeskgarden/svg-icons
 The package contains a `src` folder with individual SVG icons along with
 a combined "spritemap" `dist` of SVG symbols.
 
-## Bundling & Configuration
-
-This library delivers icons as raw SVG files. To consume them directly as React components or import them in your JavaScript, your build environment must be configured to transform SVG assets.
-
-While many modern frameworks handle this automatically, custom setups may require specific plugins.
-
-**Vite**
-Vite does not import SVGs as React components by default. You will likely need to configure a plugin such as [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) to enable this behavior.
-
-**Webpack**
-If you are using a custom Webpack configuration, ensure you have a loader installed that can handle SVG files, such as [@svgr/webpack](https://www.npmjs.com/package/@svgr/webpack).
-
 ## Usage
 
 Garden SVGs come in two flavors – monochrome and two-tone. The primary
@@ -51,6 +39,16 @@ external source).
 ```
 
 Once installed and configured, SVG icons may be accessed in a variety of ways depending on your application needs.
+
+### Bundling & configuration
+
+This library delivers icons as raw SVG files. To consume them directly as React components or import them in your JavaScript, your build environment must be configured to transform SVG assets. While many modern frameworks handle this automatically, custom setups may require specific plugins.
+
+**Vite**
+Vite does not import SVGs as React components by default. You will likely need to configure a plugin such as [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) to enable this behavior.
+
+**Webpack**
+If you are using a custom Webpack configuration, ensure you have a loader installed that can handle SVG files, such as [@svgr/webpack](https://www.npmjs.com/package/@svgr/webpack).
 
 ### React / JavaScript
 
