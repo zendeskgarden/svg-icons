@@ -53,7 +53,8 @@ If you are using a custom Webpack configuration, ensure you have a loader instal
 ### React / JavaScript
 
 In the following snippet, a source SVG is imported directly as a component.
-_Note: This usage relies on the bundler configuration described above._
+
+_Note: This example is for users using `@svgr/webpack`. See bundler configuration details described above._
 
 ```jsx
 import React from 'react';
