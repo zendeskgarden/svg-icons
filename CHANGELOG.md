@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [8.2.0](https://github.com/zendeskgarden/svg-icons/compare/v8.1.0...v8.2.0) (2026-03-06)
+
+
+### Features
+
+* add new rocket icons ([#431](https://github.com/zendeskgarden/svg-icons/issues/431)) ([0564259](https://github.com/zendeskgarden/svg-icons/commit/056425978fbe8e1dae4b2a52e2885c6e4b79e008))
+
 ## [8.1.0](https://github.com/zendeskgarden/svg-icons/compare/v8.0.0...v8.1.0) (2025-11-17)
 
 
