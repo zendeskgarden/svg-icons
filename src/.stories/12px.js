@@ -358,6 +358,8 @@ export const SVGs = [
   'zd-svg-icon-12-record-stroke',
   'zd-svg-icon-12-reload-fill',
   'zd-svg-icon-12-reload-stroke',
+  'zd-svg-icon-12-rocket-fill',
+  'zd-svg-icon-12-rocket-stroke',
   'zd-svg-icon-12-sandbox-fill',
   'zd-svg-icon-12-sandbox-stroke',
   'zd-svg-icon-12-search-fill',
