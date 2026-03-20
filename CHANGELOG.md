@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [8.3.0](https://github.com/zendeskgarden/svg-icons/compare/v8.2.0...v8.3.0) (2026-03-20)
+
+
+### Features
+
+* add new `arrow-up-box` and `video` icons ([#433](https://github.com/zendeskgarden/svg-icons/issues/433)) ([9db9176](https://github.com/zendeskgarden/svg-icons/commit/9db91761028c2638a0108a69d22efc198f17c13d))
+
 ## [8.2.0](https://github.com/zendeskgarden/svg-icons/compare/v8.1.0...v8.2.0) (2026-03-06)
 
 
