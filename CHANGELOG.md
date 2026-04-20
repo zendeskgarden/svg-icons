@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [8.4.0](https://github.com/zendeskgarden/svg-icons/compare/v8.3.0...v8.4.0) (2026-04-20)
+
+
+### Features
+
+* add `banknote` icon variants (12px and 16px) ([#434](https://github.com/zendeskgarden/svg-icons/issues/434)) ([9a6c02f](https://github.com/zendeskgarden/svg-icons/commit/9a6c02febff7ba3411d4e71e93199bcdda6abdb5))
+
 ## [8.3.0](https://github.com/zendeskgarden/svg-icons/compare/v8.2.0...v8.3.0) (2026-03-20)
 
 
