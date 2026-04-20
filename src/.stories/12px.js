@@ -42,6 +42,8 @@ export const SVGs = [
   'zd-svg-icon-12-asterisk-stroke',
   'zd-svg-icon-12-at-fill',
   'zd-svg-icon-12-at-stroke',
+  'zd-svg-icon-12-banknote-fill',
+  'zd-svg-icon-12-banknote-stroke',
   'zd-svg-icon-12-bar-chart-fill',
   'zd-svg-icon-12-bar-chart-stroke',
   'zd-svg-icon-12-basketball-fill',
