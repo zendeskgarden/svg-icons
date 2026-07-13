@@ -58,7 +58,7 @@
     "svg4everybody": "2.1.9",
     "svglint": "4.2.1",
     "svgo": "4.0.1",
-    "typescript": "5.9.3",
+    "typescript": "7.0.2",
     "webpack": "5.102.1"
   },
   "keywords": [
