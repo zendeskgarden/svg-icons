@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.28.5",
-    "@babel/preset-env": "7.28.5",
-    "@babel/preset-react": "7.28.5",
+    "@babel/preset-env": "8.0.2",
+    "@babel/preset-react": "8.0.1",
     "@storybook/addon-docs": "10.0.2",
     "@storybook/addon-webpack5-compiler-swc": "4.0.1",
     "@storybook/react-webpack5": "10.0.2",
