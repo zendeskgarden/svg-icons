@@ -35,7 +35,7 @@
     "@storybook/addon-docs": "10.0.2",
     "@storybook/addon-webpack5-compiler-swc": "4.0.1",
     "@storybook/react-webpack5": "10.0.2",
-    "@zendeskgarden/eslint-config": "47.0.0",
+    "@zendeskgarden/eslint-config": "48.0.1",
     "@zendeskgarden/react-grid": "9.12.0",
     "@zendeskgarden/react-theming": "9.12.0",
     "@zendeskgarden/react-typography": "9.12.0",
