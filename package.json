@@ -64,6 +64,9 @@
     "svg",
     "zendesk"
   ],
+  "engines": {
+    "node": ">=22"
+  },
   "publishConfig": {
     "access": "public"
   }
