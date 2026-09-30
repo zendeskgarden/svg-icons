@@ -10,4 +10,17 @@ import noticePlugin from '@zendeskgarden/eslint-config/plugins/notice.js';
 import prettierConfig from 'eslint-config-prettier';
 import reactPlugin from '@zendeskgarden/eslint-config/plugins/react.js';
 
-export default [...config, noticePlugin, reactPlugin, prettierConfig];
+export default [
+  ...config,
+  noticePlugin,
+  reactPlugin,
+  prettierConfig,
+  {
+    languageOptions: {
+      parserOptions: {
+        // the project no longer maintains a Babel configuration
+        requireConfigFile: false
+      }
+    }
+  }
+];
