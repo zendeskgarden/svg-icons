@@ -11,8 +11,11 @@
   },
   "main": "dist/index.svg",
   "files": [
+    "codemods",
     "dist",
-    "src"
+    "src",
+    "!codemods/**/*.test.mjs",
+    "!codemods/**/__fixtures__"
   ],
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
@@ -25,7 +28,8 @@
     "prepare": "husky && npm run build",
     "start": "npm run build && storybook dev -p 6006",
     "tag": "node scripts/tag.mjs",
-    "test": "npm run format && npm run lint && npm run test:scripts && git diff --quiet",
+    "test": "npm run format && npm run lint && npm run test:scripts && npm run test:codemods && git diff --quiet",
+    "test:codemods": "node --test \"codemods/**/*.test.mjs\"",
     "test:scripts": "node --test \"scripts/**/*.test.mjs\"",
     "watch": "npm run build -- watch"
   },
@@ -46,6 +50,7 @@
     "gulp-file": "0.4.0",
     "gulp-svg-sprite": "2.0.3",
     "husky": "9.1.7",
+    "jscodeshift": "17.4.0",
     "prettier": "3.9.9",
     "prettier-package-json": "2.8.0",
     "prop-types": "15.8.1",
