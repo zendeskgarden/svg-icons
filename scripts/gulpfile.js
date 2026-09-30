@@ -20,15 +20,13 @@ const svgSprite = require('gulp-svg-sprite');
  * @returns {String} `Garden.svgIDs = [files-to-IDs];`
  */
 function toJS(source) {
-  const dimension = source.split(path.sep).pop();
   const toIds = _files => {
     const retVal = [];
 
     _files.forEach(_file => {
       if (_file.endsWith('.svg')) {
         const basename = path.basename(_file, '.svg');
-        const suffix = `${dimension}${config.shape.id.separator}${basename}`;
-        const id = config.shape.id.generator.replace(/%s/gu, suffix);
+        const id = config.shape.id.generator.replace(/%s/gu, basename);
 
         retVal.push(`'${id}'`);
       }
@@ -48,19 +46,11 @@ function toJS(source) {
 export const SVGs = [\n  ${toIds(files).join(',\n  ')}\n];\n`;
 }
 
-gulp.task('stories/12px', () => {
-  const indexJS = toJS('src/12');
+gulp.task('stories', () => {
+  const indexJS = toJS('src');
 
-  return file('12px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
+  return file('icons.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
 });
-
-gulp.task('stories/16px', () => {
-  const indexJS = toJS('src/16');
-
-  return file('16px.js', indexJS, { src: true }).pipe(gulp.dest('src/.stories'));
-});
-
-gulp.task('stories', gulp.parallel('stories/12px', 'stories/16px'));
 
 const source = path.join('src', '**', '*.svg');
 

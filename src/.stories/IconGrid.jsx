@@ -21,7 +21,7 @@ const IconGrid = ({ color, columns = 4, fill, size, svgs }) => (
           <br />
           <Ellipsis title={id}>
             <Code size="small" style={{ whiteSpace: 'nowrap' }}>
-              {id.substring(15)}
+              {id.substring('zd-svg-icon-'.length)}
             </Code>
           </Ellipsis>
         </Grid.Col>

@@ -8,21 +8,15 @@
 import { sharedArgTypes, sharedPropTypes } from './common';
 import IconGrid from './IconGrid';
 import React from 'react';
-import { SVGs } from './16px';
+import { SVGs } from './icons';
 
 export default {
-  title: '16 px'
+  title: 'Icons'
 };
 
 export const Icons = {
   render: ({ color, fill, size }) => <IconGrid color={color} fill={fill} size={size} svgs={SVGs} />,
-  args: { size: 16 },
-  argTypes: {
-    ...sharedArgTypes,
-    size: {
-      ...sharedArgTypes.size,
-      control: { ...sharedArgTypes.size.control, max: 64 }
-    }
-  },
+  args: { size: 20 },
+  argTypes: sharedArgTypes,
   propTypes: sharedPropTypes
 };
