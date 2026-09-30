@@ -1,4 +1,4 @@
-import "../_browser-chunks/chunk-MM7DTO55.js";
+import "../_browser-chunks/chunk-IMSF75WX.js";
 
 // src/manager/globals/globals.ts
 var globalsNameReferenceMap = {
@@ -7,9 +7,9 @@ var globalsNameReferenceMap = {
   "react-dom/client": "__REACT_DOM_CLIENT__",
   "@storybook/icons": "__STORYBOOK_ICONS__",
   "storybook/manager-api": "__STORYBOOK_API__",
-  "storybook/test": "__STORYBOOK_TEST__",
   "storybook/theming": "__STORYBOOK_THEMING__",
   "storybook/theming/create": "__STORYBOOK_THEMING_CREATE__",
+  "storybook/test": "__STORYBOOK_TEST__",
   "storybook/internal/channels": "__STORYBOOK_CHANNELS__",
   "storybook/internal/client-logger": "__STORYBOOK_CLIENT_LOGGER__",
   "storybook/internal/components": "__STORYBOOK_COMPONENTS__",
@@ -17,8 +17,7 @@ var globalsNameReferenceMap = {
   "storybook/internal/manager-errors": "__STORYBOOK_CORE_EVENTS_MANAGER_ERRORS__",
   "storybook/internal/router": "__STORYBOOK_ROUTER__",
   "storybook/internal/types": "__STORYBOOK_TYPES__"
-};
-var globalPackages = Object.keys(globalsNameReferenceMap);
+}, globalPackages = Object.keys(globalsNameReferenceMap);
 export {
   globalPackages,
   globalsNameReferenceMap
