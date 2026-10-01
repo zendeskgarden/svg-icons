@@ -17,7 +17,12 @@ const j = jscodeshift.withParser('tsx');
 const here = dirname(fileURLToPath(import.meta.url));
 const fixturesDir = join(here, '__fixtures__');
 
-for (const caseName of readdirSync(fixturesDir).sort()) {
+const caseNames = readdirSync(fixturesDir, { withFileTypes: true })
+  .filter(entry => entry.isDirectory())
+  .map(entry => entry.name)
+  .sort();
+
+for (const caseName of caseNames) {
   test(caseName, () => {
     const inputPath = join(fixturesDir, caseName, 'input.tsx');
     const input = readFileSync(inputPath, 'utf8');
@@ -38,7 +43,7 @@ test('every `map` target exists in `src/`', () => {
 });
 
 test('every v8 file name appears exactly once across `map` and `unmapped`', () => {
-  const names = JSON.parse(readFileSync(join(here, 'garden-v8-files.json'), 'utf8'));
+  const names = JSON.parse(readFileSync(join(fixturesDir, 'garden-v8-files.json'), 'utf8'));
   const nameSet = new Set(names);
 
   for (const name of names) {

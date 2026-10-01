@@ -15,7 +15,8 @@
     "dist",
     "src",
     "!codemods/**/*.test.mjs",
-    "!codemods/**/__fixtures__"
+    "!codemods/**/__fixtures__",
+    "!src/.stories"
   ],
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
