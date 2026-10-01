@@ -1,4 +1,4 @@
 import React from 'react';
-import SlackIcon from '@zendeskgarden/svg-icons/src/16/slack-fill.svg';
+import ClipboardCheckIcon from '@zendeskgarden/svg-icons/src/16/clipboard-check-fill.svg';
 
-export const Share = () => <SlackIcon />;
+export const Share = () => <ClipboardCheckIcon />;

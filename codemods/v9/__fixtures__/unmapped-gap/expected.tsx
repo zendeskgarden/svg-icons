@@ -1,4 +1,5 @@
 import React from 'react';
-import SlackIcon from '@zendeskgarden/svg-icons/src/16/slack-fill.svg';
+// TODO(svg-icons v9): no equivalent in the new icon set. Migrate this import manually.
+import ClipboardCheckIcon from '@zendeskgarden/svg-icons/src/16/clipboard-check-fill.svg';
 
-export const Share = () => <SlackIcon />;
+export const Share = () => <ClipboardCheckIcon />;

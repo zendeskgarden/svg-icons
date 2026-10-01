@@ -31,9 +31,10 @@
  *   its size has to be set explicitly.
  * - Merges stroke/fill pairs that collapse into a single v9 file into one
  *   import (the first identifier wins; references are renamed).
- * - Reports imports with no v9 equivalent and non-import references (string and
- *   template literals, `require()`, `import()`, sprite IDs) without touching
- *   them.
+ * - Flags imports with no v9 equivalent with a TODO comment and lists them in
+ *   the report; the import path is left unchanged.
+ * - Reports non-import references (string and template literals, `require()`,
+ *   `import()`, sprite IDs) without touching them.
  *
  * Non-goals:
  * - It does not rename local identifiers (`SearchIcon` stays `SearchIcon`).
@@ -42,8 +43,9 @@
  *   have to be migrated by hand with the same map.
  * - It does not set sizes.
  *
- * Unmapped imports are expected during rollout: they are left untouched,
- * reported on stdout, and the exit code stays 0.
+ * Unmapped imports are expected during rollout: the import path is left
+ * unchanged, the import gets a TODO comment and a report line, and the exit
+ * code stays 0.
  */
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -62,6 +64,8 @@ const STRING_TYPES = ['Literal', 'StringLiteral'];
 
 const TODO_12PX =
   ' TODO(svg-icons v9): this was a 12px icon; the new icon is 20px. Set its size explicitly.';
+const TODO_NO_EQUIVALENT =
+  ' TODO(svg-icons v9): no equivalent in the new icon set. Migrate this import manually.';
 
 /** Per-worker report, aggregated across the files this worker processes. */
 const report = {
@@ -153,6 +157,17 @@ export function transformSource({ source, filePath, j }) {
   const root = j(source);
   let changed = false;
 
+  /** Leave the import path unchanged, attach a TODO comment, and report it. */
+  const flagNoEquivalent = (importNode, sourceValue) => {
+    importNode.comments = [
+      ...(importNode.comments ?? []),
+      j.commentLine(TODO_NO_EQUIVALENT, true, false)
+    ];
+    report.noEquivalent.push({ file: filePath, source: sourceValue });
+    changed = true;
+    report.filesChanged.add(filePath);
+  };
+
   collectNonImportReferences(root, j, filePath);
 
   const gardenImports = root
@@ -168,7 +183,7 @@ export function transformSource({ source, filePath, j }) {
       // Imports from other size folders (`src/26/`) have no v9 equivalent. Flat
       // `src/` imports are already v9 and are ignored.
       if (/^\d+\//u.test(sourceValue.slice(SOURCE_BASE.length))) {
-        report.noEquivalent.push({ file: filePath, source: sourceValue });
+        flagNoEquivalent(importNode, sourceValue);
       }
 
       return;
@@ -178,7 +193,7 @@ export function transformSource({ source, filePath, j }) {
     const target = MAP[gardenFile];
 
     if (!target) {
-      report.noEquivalent.push({ file: filePath, source: sourceValue });
+      flagNoEquivalent(importNode, sourceValue);
       return;
     }
 
