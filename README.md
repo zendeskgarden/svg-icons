@@ -44,21 +44,30 @@ npx jscodeshift@17 --no-babel --parser=tsx --extensions=ts,tsx,js,jsx \
 
 The codemod:
 
-- rewrites `src/12/` and `src/16/` imports to their `src/` equivalent
+- rewrites `src/12/` and `src/16/` imports and re-exports (`export … from`)
+  to their `src/` equivalent
 - flags rewritten 12px imports with a TODO comment – the new icon is 20px,
   so set its size explicitly
 - merges stroke/fill pairs that collapse into a single file (for example
-  `x-stroke.svg` + `x-fill.svg` → `x.svg`) into one import; if you toggled
-  between the two for a selected state, that visual difference is gone
+  `x-stroke.svg` + `x-fill.svg` → `x.svg`) into one import, keeping the import
+  that already points at the new file; if you toggled between the two for a
+  selected state, that visual difference is gone
+- rewrites both imports and flags them with a TODO comment instead when a
+  merge could change behavior – for example a default import paired with an
+  SVGR `ReactComponent` import, or an icon listed in an `export { … }` block or
+  a shorthand object property
 - reports imports with no v9 equivalent and non-import references (string
   literals, `require()`, `import()`, and `zd-svg-icon-12-`/`zd-svg-icon-16-`
   sprite IDs) without touching them
 
 Note that rewritten 16px imports now render at 20px unless a size is set.
+jscodeshift runs files in parallel workers, so the report prints one block
+per worker.
 
-The codemod does not rename local identifiers, edit `package.json`, set
-sizes, or process `.mdx` and CSS files – PostCSS `svg-load('16/…')` calls
-have to be migrated by hand using `codemods/v9/codemod-map.json`.
+The codemod does not rename local identifiers (except references to a merged
+stroke/fill import), edit `package.json`, set sizes, or process `.mdx` and CSS
+files – PostCSS `svg-load('16/…')` calls have to be migrated by hand using
+`codemods/v9/codemod-map.json`.
 
 ### Naming
 
