@@ -57,7 +57,7 @@
     "svg4everybody": "2.1.9",
     "svglint": "4.2.1",
     "svgo": "4.1.0",
-    "typescript": "5.9.3",
+    "typescript": "7.0.2",
     "vite": "8.3.1"
   },
   "keywords": [
