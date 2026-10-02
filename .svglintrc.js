@@ -9,15 +9,13 @@ module.exports = {
   rules: {
     attr: [
       {
-        'fill-rule': false
-      },
-      {
         'rule::selector': 'circle',
         'stroke-linejoin': false
       },
       {
         'rule::selector': 'svg',
-        viewBox: /^0 0/u
+        viewBox: /^0 0/u,
+        fill: false
       }
     ],
     custom: [
