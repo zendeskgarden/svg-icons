@@ -20,6 +20,30 @@ version your contributions.
 
 All changes are recorded in the [changelog](../CHANGELOG.md) file.
 
+## Maintenance Releases
+
+Feature work targets the `main` branch. Hotfix pull requests for a maintained
+major release line target that line's branch: v8 fixes target `v8`, not
+`main`.
+
+Only maintainers create releases. `npm run tag` works on the `main` and `v8`
+branches only; on `v8` it also requires an 8.x package version. It runs
+[commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version),
+which creates the release commit and tag locally but does not push them. Push
+the release commit and its tag together:
+
+```sh
+git push origin <branch> --follow-tags
+```
+
+The release pipeline selects the npm dist-tag automatically:
+
+- Releases from `main` publish under `latest` (final versions) or `next`
+  (prereleases).
+- Releases from `v8` publish under `v8-latest` (final versions) or `v8-next`
+  (prereleases), so npm `latest` never moves back to v8.
+- Once v9 becomes `latest`, v8 releases never update the public demo site.
+
 ## Development Workflow
 
 Before you start, be sure [npm](https://www.npmjs.com/package/npm) is installed

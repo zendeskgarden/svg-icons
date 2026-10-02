@@ -20,6 +20,10 @@ import {
 import { dirname, resolve } from 'node:path';
 import envalid from 'envalid';
 import { fileURLToPath } from 'node:url';
+import { releaseChannel } from './release.mjs';
+
+/* Repeats the `deploy` tag filter in `.circleci/config.yml` on purpose. */
+const FINAL_RELEASE_TAG = /^v\d+\.\d+\.\d+$/u;
 
 envalid.cleanEnv(process.env, {
   GITHUB_TOKEN: envalid.str(),
@@ -27,15 +31,40 @@ envalid.cleanEnv(process.env, {
   NETLIFY_TOKEN: envalid.str()
 });
 
+const tag = process.env.CIRCLE_TAG ?? '';
+
 (async () => {
   try {
-    const branch = await githubBranch();
     const currentDir = dirname(fileURLToPath(import.meta.url));
     const dir = resolve(currentDir, '..', 'demo');
     let url;
 
-    if (branch === 'main') {
+    /* The public demo site tracks npm `latest`, so it deploys on final release tags only. */
+    if (tag) {
+      if (!FINAL_RELEASE_TAG.test(tag)) {
+        /* eslint-disable-next-line no-console */
+        console.log(`Skipping deploy: ${tag} is not a final release tag.`);
+
+        return;
+      }
+
+      const { deployDemo } = await releaseChannel();
+
+      if (!deployDemo) {
+        /* eslint-disable-next-line no-console */
+        console.log(`Skipping GitHub Pages deploy: ${tag} is older than npm latest.`);
+
+        return;
+      }
+
       url = await githubPages({ dir });
+    } else if ((await githubBranch()) === 'main') {
+      /* eslint-disable-next-line no-console */
+      console.log(
+        'Skipping GitHub Pages deploy: the demo site publishes on final release tags only.'
+      );
+
+      return;
     } else {
       const bandwidth = await netlifyBandwidth();
       const usage = await cmdDu(dir);
