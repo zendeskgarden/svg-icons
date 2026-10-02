@@ -8,7 +8,10 @@
 import { sharedArgTypes, sharedPropTypes } from './common';
 import IconGrid from './IconGrid';
 import React from 'react';
-import { SVGs } from './icons';
+
+const SVGs = Object.keys(import.meta.glob('../*.svg'))
+  .map(path => `zd-svg-icon-${path.split('/').pop().replace('.svg', '')}`)
+  .sort();
 
 export default {
   title: 'Icons'
