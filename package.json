@@ -21,6 +21,7 @@
   "scripts": {
     "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
     "build:demo": "storybook build -o demo",
+    "build:migration-doc": "node scripts/build-migration-doc.mjs",
     "format": "prettier-package-json --write && prettier --log-level warn ./ --write && npm run format:optimize -- --quiet",
     "format:optimize": "svgo src --recursive",
     "lint": "npm run lint:js && npm run lint:svg",
@@ -29,7 +30,7 @@
     "prepare": "husky && npm run build",
     "start": "npm run build && storybook dev -p 6006",
     "tag": "node scripts/tag.mjs",
-    "test": "npm run format && npm run lint && npm run test:scripts && npm run test:codemods && git diff --quiet",
+    "test": "npm run build:migration-doc && npm run format && npm run lint && npm run test:scripts && npm run test:codemods && git diff --quiet",
     "test:codemods": "node --test \"codemods/**/*.test.mjs\"",
     "test:scripts": "node --test \"scripts/**/*.test.mjs\"",
     "watch": "npm run build -- watch"

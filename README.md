@@ -32,7 +32,8 @@ Once installed and configured, SVG icons may be accessed in a variety of ways de
 
 Version 9 replaces the `src/12/` and `src/16/` folders with a flat set of
 20px icons at `src/<name>.svg`. Icon names have changed and sprite IDs are
-now `zd-svg-icon-<name>`.
+now `zd-svg-icon-<name>`. See [MIGRATION.md](MIGRATION.md) for the complete
+v8 → v9 name-change table, including the icons removed without a replacement.
 
 A [jscodeshift](https://www.npmjs.com/package/jscodeshift) codemod ships with
 the package and rewrites imports for you (Node 22+ required):
@@ -67,7 +68,8 @@ per worker.
 The codemod does not rename local identifiers (except references to a merged
 stroke/fill import), edit `package.json`, set sizes, or process `.mdx` and CSS
 files – PostCSS `svg-load('16/…')` calls have to be migrated by hand using
-`codemods/v9/codemod-map.json`.
+[MIGRATION.md](MIGRATION.md) (or `codemods/v9/codemod-map.json` for
+programmatic access).
 
 ### Naming
 
