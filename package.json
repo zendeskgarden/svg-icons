@@ -24,8 +24,9 @@
     "lint:svg": "svglint src/**/*.svg",
     "prepare": "husky && npm run build",
     "start": "npm run build && storybook dev -p 6006",
-    "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && commit-and-tag-version --no-verify --npmPublishHint 'true'",
-    "test": "npm run format && npm run lint && git diff --quiet",
+    "tag": "node scripts/tag.mjs",
+    "test": "npm run format && npm run lint && npm run test:scripts && git diff --quiet",
+    "test:scripts": "node --test \"scripts/**/*.test.mjs\"",
     "watch": "npm run build -- watch"
   },
   "devDependencies": {
@@ -50,6 +51,7 @@
     "prop-types": "15.8.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "semver": "7.8.5",
     "storybook": "10.6.1",
     "styled-components": "6.5.3",
     "svg4everybody": "2.1.9",

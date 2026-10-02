@@ -14,11 +14,6 @@ references:
     attach_workspace:
       at: *workspace_root
 
-  filters_tags: &filters_tags
-    filters:
-      tags:
-        only: /.*/
-
 jobs:
   build:
     <<: *executor
@@ -50,27 +45,40 @@ jobs:
     steps:
       - *attach_workspace
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-      - run: npm publish
+      # `scripts/release.mjs` prints `latest`, `next`, or
+      # `v<major>-latest`/`v<major>-next` for versions below npm `latest`, so an
+      # older-line hotfix never moves `latest` back.
+      - run: |
+          DIST_TAG=$(node scripts/release.mjs)
+          npm publish --tag "$DIST_TAG"
 
 workflows:
   main:
     jobs:
+      # Branch and tag pipelines both run the build and test jobs.
       - build:
-          <<: *filters_tags
+          filters: pipeline.git.branch or pipeline.git.tag
       - test:
           requires:
             - build
-          <<: *filters_tags
+          filters: pipeline.git.branch or pipeline.git.tag
+      # Netlify previews on branches; `main` never deploys from a branch push.
       - deploy:
+          name: deploy-preview
           requires:
             - test
           context: writer
+          filters: pipeline.git.branch and pipeline.git.branch != "main"
       - publish:
           requires:
             - test
           context: maintainer
-          filters:
-            tags:
-              only: /^v\d+\.\d+\.\d+(-\S*)?$/
-            branches:
-              ignore: /.*/
+          filters: pipeline.git.tag matches /^v\d+\.\d+\.\d+(-\S*)?$/
+      # The public demo site tracks npm `latest`: it deploys on final release
+      # tags only, after publication succeeds.
+      - deploy:
+          name: deploy-release
+          requires:
+            - publish
+          context: writer
+          filters: pipeline.git.tag matches /^v\d+\.\d+\.\d+$/
