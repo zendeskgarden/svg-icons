@@ -19,7 +19,7 @@
     "!src/.stories"
   ],
   "scripts": {
-    "build": "gulp --gulpfile scripts/gulpfile.js --cwd .",
+    "build": "node scripts/build.mjs",
     "build:demo": "storybook build -o demo",
     "build:migration-doc": "node scripts/build-migration-doc.mjs",
     "format": "prettier-package-json --write && prettier --log-level warn ./ --write && npm run format:optimize -- --quiet",
@@ -32,8 +32,7 @@
     "tag": "node scripts/tag.mjs",
     "test": "npm run build:migration-doc && npm run format && npm run lint && npm run test:scripts && npm run test:codemods && git diff --quiet",
     "test:codemods": "node --test \"codemods/**/*.test.mjs\"",
-    "test:scripts": "node --test \"scripts/**/*.test.mjs\"",
-    "watch": "npm run build -- watch"
+    "test:scripts": "node --test \"scripts/**/*.test.mjs\""
   },
   "devDependencies": {
     "@storybook/addon-docs": "10.6.1",
@@ -48,9 +47,6 @@
     "envalid": "8.2.0",
     "eslint": "10.11.0",
     "eslint-config-prettier": "10.1.8",
-    "gulp": "5.0.1",
-    "gulp-file": "0.4.0",
-    "gulp-svg-sprite": "2.0.3",
     "husky": "9.1.7",
     "jscodeshift": "17.4.0",
     "prettier": "3.9.9",
@@ -61,6 +57,7 @@
     "semver": "7.8.5",
     "storybook": "10.6.1",
     "styled-components": "6.5.3",
+    "svg-sprite": "2.0.2",
     "svg4everybody": "2.1.9",
     "svglint": "4.2.1",
     "svgo": "4.1.0",
