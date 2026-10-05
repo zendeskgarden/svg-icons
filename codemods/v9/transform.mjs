@@ -41,6 +41,8 @@
  *   the report; the import path is left unchanged.
  * - Reports non-import references (string and template literals, `require()`,
  *   `import()`, sprite IDs) without touching them.
+ * - Keeps the file's quote style: rewritten sources print with the dominant
+ *   quote of the file's import and export declarations.
  *
  * Non-goals:
  * - It does not rename local identifiers (`SearchIcon` stays `SearchIcon`),
@@ -290,6 +292,29 @@ function collectNonImportReferences(root, j, filePath) {
 }
 
 /**
+ * The dominant quote style among the file's module declaration sources, so
+ * rewritten imports keep the file's own style instead of forcing single
+ * quotes on double-quote codebases. recast reprints a changed `StringLiteral`
+ * with the `quote` option (it ignores `extra.raw`), and only changed nodes
+ * are reprinted, so matching the declarations' majority is enough.
+ */
+function quoteStyleOf(root, j) {
+  let single = 0;
+  let double = 0;
+
+  const declarations = SOURCE_DECLARATIONS.flatMap(type => root.find(j[type]).paths());
+
+  for (const path of declarations) {
+    const raw = path.node.source?.extra?.raw ?? path.node.source?.raw;
+
+    if (raw?.startsWith('"')) double += 1;
+    else if (raw?.startsWith("'")) single += 1;
+  }
+
+  return double > single ? 'double' : 'single';
+}
+
+/**
  * Transform one source string. Exported for the fixture tests; the jscodeshift
  * entry point is the default export below.
  */
@@ -406,7 +431,7 @@ export function transformSource({ source, filePath, j }) {
     report.filesChanged.add(filePath);
   }
 
-  return { code: changed ? root.toSource({ quote: 'single' }) : source, changed };
+  return { code: changed ? root.toSource({ quote: quoteStyleOf(root, j) }) : source, changed };
 }
 
 let reportHookRegistered = false;
