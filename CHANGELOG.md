@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [9.0.0-next.0](https://github.com/zendeskgarden/svg-icons/compare/v8.4.0...v9.0.0-next.0) (2026-10-05)
+
+### ⚠ BREAKING CHANGES
+
+* `src/12/` and `src/16/` are removed. Icons now live at
+  `src/<name>.svg`, sprite IDs are `zd-svg-icon-<name>`, and icon names have
+  changed. Run the codemod in `codemods/v9` to migrate imports (see README).
+
+### Features
+
+* replace 12px and 16px icons with a 20px icon set ([#445](https://github.com/zendeskgarden/svg-icons/issues/445)) ([7e53c40](https://github.com/zendeskgarden/svg-icons/commit/7e53c401e809041bd7108d11caaf006c6dbf277d))
+
 ## [8.4.0](https://github.com/zendeskgarden/svg-icons/compare/v8.3.0...v8.4.0) (2026-04-20)
 
 
