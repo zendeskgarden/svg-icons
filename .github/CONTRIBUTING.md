@@ -51,8 +51,9 @@ on your system. After you clone this repo, run `npm install` to install
 dependencies needed for development. After installation, the following commands
 are available:
 
-- `npm start` to build the spritemap and launch the SVG icon demo server
-  (Storybook reloads when icons change).
+- `npm start` to build the spritemap and launch the SVG icon demo server.
+  After editing icons, run `npm run build` and reload the demo to see the
+  updated sprite.
 - `npm test` to run package tests.
 - `npm run lint` to enforce consistent code conventions. Note this is run
   as a git `pre-commit` hook.
