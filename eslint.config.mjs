@@ -16,6 +16,10 @@ export default [
   reactPlugin,
   prettierConfig,
   {
+    // codemod fixtures are verbatim jscodeshift inputs/outputs, not product code
+    ignores: ['codemods/**/__fixtures__']
+  },
+  {
     languageOptions: {
       parserOptions: {
         // the project no longer maintains a Babel configuration

@@ -12,17 +12,25 @@ module.exports = {
     {
       name: 'preset-default',
       params: {
+        floatPrecision: 3,
         overrides: {
-          convertPathData: false,
           convertColors: { currentColor: true },
           removeUnknownsAndDefaults: { unknownAttrs: false },
-          inlineStyles: { onlyMatchedOnce: false }
+          inlineStyles: { onlyMatchedOnce: false },
+          moveElemsAttrsToGroup: false
         }
       }
     },
+    'convertStyleToAttrs',
+    'removeRasterImages',
+    'removeXlink',
+    {
+      name: 'cleanupListOfValues',
+      params: { floatPrecision: 3 }
+    },
     {
       name: 'addAttributesToSVGElement',
-      params: { attributes: [{ focusable: false }, 'height', 'width'] }
+      params: { attributes: [{ focusable: 'false' }] }
     },
     {
       name: 'removeAttrs',
@@ -32,6 +40,6 @@ module.exports = {
       name: 'removeAttributesBySelector',
       params: { selectors: [{ selector: 'svg', attributes: ['fill'] }] }
     },
-    { name: 'mergePaths', params: { force: true } }
+    'mergePaths'
   ]
 };

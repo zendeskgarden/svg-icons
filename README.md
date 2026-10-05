@@ -18,27 +18,64 @@ products. All source icons are optimized for size + readability.
 npm install @zendeskgarden/svg-icons
 ```
 
-The package contains a `src` folder with individual SVG icons along with
+The package contains a `src` folder with individual 20px SVG icons along with
 a combined "spritemap" `dist` of SVG symbols.
 
 ## Usage
 
-Garden SVGs come in two flavors – monochrome and two-tone. The primary
-fill/stroke will always be specified as `currentColor`. This means CSS
-text `color` style will cascade to the icon. Two-tone icons can receive
-a secondary color via the `fill` style property.
-
-In the following example, the top arrow of the "sort" icon will be blue; the bottom arrow
-will be red (see [_Spritemap_](#spritemap) below for more re: SVG `use` with an
-external source).
-
-```html
-<svg style="color: blue; fill: red;">
-  <use xlink:href="index.svg#zd-svg-icon-12-sort-fill">
-</svg>
-```
+Garden SVGs are monochrome. The fill will always be specified as
+`currentColor`. This means CSS text `color` style will cascade to the icon.
 
 Once installed and configured, SVG icons may be accessed in a variety of ways depending on your application needs.
+
+### Migrating from v8
+
+Version 9 replaces the `src/12/` and `src/16/` folders with a flat set of
+20px icons at `src/<name>.svg`. Icon names have changed and sprite IDs are
+now `zd-svg-icon-<name>`. See [MIGRATION.md](MIGRATION.md) for the complete
+v8 → v9 name-change table, including the icons removed without a replacement.
+
+A [jscodeshift](https://www.npmjs.com/package/jscodeshift) codemod ships with
+the package and rewrites imports for you (Node 22+ required):
+
+```sh
+npx jscodeshift@17 --no-babel --parser=tsx --extensions=ts,tsx,js,jsx \
+  -t node_modules/@zendeskgarden/svg-icons/codemods/v9/transform.mjs <paths>
+```
+
+The codemod:
+
+- rewrites `src/12/` and `src/16/` imports and re-exports (`export … from`)
+  to their `src/` equivalent
+- flags rewritten 12px imports with a TODO comment – the new icon is 20px,
+  so set its size explicitly
+- merges stroke/fill pairs that collapse into a single file (for example
+  `x-stroke.svg` + `x-fill.svg` → `x.svg`) into one import, keeping the import
+  that already points at the new file; if you toggled between the two for a
+  selected state, that visual difference is gone
+- rewrites both imports and flags them with a TODO comment instead when a
+  merge could change behavior – for example a default import paired with an
+  SVGR `ReactComponent` import, or an icon listed in an `export { … }` block or
+  a shorthand object property
+- reports imports with no v9 equivalent and non-import references (string
+  literals, `require()`, `import()`, and `zd-svg-icon-12-`/`zd-svg-icon-16-`
+  sprite IDs) without touching them
+
+Note that rewritten 16px imports now render at 20px unless a size is set.
+jscodeshift runs files in parallel workers, so the report prints one block
+per worker. Pipe the output through `tee` to keep it for review. The merged
+stroke/fill list is the set of files where two glyphs collapsed into one.
+
+The codemod does not rename local identifiers (except references to a merged
+stroke/fill import), edit `package.json`, set sizes, or process `.mdx` and CSS
+files – PostCSS `svg-load('16/…')` calls have to be migrated by hand using
+[MIGRATION.md](MIGRATION.md) (or `codemods/v9/codemod-map.json` for
+programmatic access).
+
+### Naming
+
+Icons that come in two styles use `-stroke` (outline) and `-fill` suffixes;
+single-style icons have no suffix.
 
 ### Bundling & configuration
 
@@ -58,7 +95,7 @@ _Note: This example is for users using `@svgr/webpack`. See bundler configuratio
 
 ```jsx
 import React from 'react';
-import Icon from '@zendeskgarden/svg-icons/src/16/star-stroke.svg';
+import Icon from '@zendeskgarden/svg-icons/src/star-stroke.svg';
 
 const StarButton = () => (
   <button>
@@ -77,7 +114,7 @@ hosted, any icon may be externally referenced using its unique ID.
 
 ```html
 <svg>
-  <use xlink:href="/path/to/index.svg#zd-svg-icon-16-chevron-down-stroke">
+  <use xlink:href="/path/to/index.svg#zd-svg-icon-chevron-down">
 </svg>
 ```
 
@@ -105,7 +142,7 @@ plugin to compile SVGs into CSS.
 
    ```css
    .icon {
-     background-image: svg-load('16/remove.svg', color: #007fab);
+     background-image: svg-load('x.svg', color: #007fab);
    }
    ```
 
@@ -113,7 +150,7 @@ plugin to compile SVGs into CSS.
 
    ```css
    .icon {
-     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' width='16' height='16' viewBox='0 0 16 16' color='%23007FAB' ...");
+     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' width='20' height='20' viewBox='0 0 20 20' color='%23007FAB' ...");
    }
    ```
 
