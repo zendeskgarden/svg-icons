@@ -63,7 +63,8 @@ The codemod:
 
 Note that rewritten 16px imports now render at 20px unless a size is set.
 jscodeshift runs files in parallel workers, so the report prints one block
-per worker.
+per worker. Pipe the output through `tee` to keep it for review. The merged
+stroke/fill list is the set of files where two glyphs collapsed into one.
 
 The codemod does not rename local identifiers (except references to a merged
 stroke/fill import), edit `package.json`, set sizes, or process `.mdx` and CSS
