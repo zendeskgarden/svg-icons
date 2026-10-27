@@ -55,7 +55,7 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "semver": "7.8.5",
-    "storybook": "10.6.1",
+    "storybook": "10.6.2",
     "styled-components": "6.5.3",
     "svg-sprite": "2.0.2",
     "svg4everybody": "2.1.9",
