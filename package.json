@@ -75,5 +75,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "overrides": {
+    "cacache": {
+      "tar": "7.5.22"
+    }
   }
 }
