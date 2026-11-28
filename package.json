@@ -35,34 +35,34 @@
     "test:scripts": "node --test \"scripts/**/*.test.mjs\""
   },
   "devDependencies": {
-    "@storybook/addon-docs": "10.6.2",
-    "@storybook/react-vite": "10.6.2",
+    "@storybook/addon-docs": "10.6.9",
+    "@storybook/react-vite": "10.6.9",
     "@vitejs/plugin-react-swc": "4.3.3",
     "@zendeskgarden/eslint-config": "48.0.1",
     "@zendeskgarden/react-grid": "9.16.1",
     "@zendeskgarden/react-theming": "9.16.1",
     "@zendeskgarden/react-typography": "9.16.1",
     "@zendeskgarden/scripts": "2.5.4",
-    "commit-and-tag-version": "13.2.1",
+    "commit-and-tag-version": "13.5.0",
     "envalid": "8.2.0",
-    "eslint": "10.11.0",
-    "eslint-config-prettier": "10.1.8",
+    "eslint": "10.16.0",
+    "eslint-config-prettier": "10.1.9",
     "husky": "9.1.7",
     "jscodeshift": "17.4.0",
-    "prettier": "3.9.9",
+    "prettier": "3.10.1",
     "prettier-package-json": "2.8.0",
     "prop-types": "15.8.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "semver": "7.8.5",
-    "storybook": "10.6.2",
-    "styled-components": "6.5.3",
-    "svg-sprite": "2.0.2",
+    "semver": "7.8.6",
+    "storybook": "10.6.9",
+    "styled-components": "6.7.0",
+    "svg-sprite": "2.0.4",
     "svg4everybody": "2.1.9",
     "svglint": "4.2.1",
     "svgo": "4.1.0",
     "typescript": "5.9.3",
-    "vite": "8.3.3"
+    "vite": "8.4.0"
   },
   "keywords": [
     "garden",
@@ -78,7 +78,7 @@
   },
   "overrides": {
     "cacache": {
-      "tar": "7.5.22"
+      "tar": "7.5.24"
     }
   }
 }
